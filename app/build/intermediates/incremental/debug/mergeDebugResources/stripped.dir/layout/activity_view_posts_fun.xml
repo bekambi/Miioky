@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".profile.ViewPostsFun"
+    tools:layout_editor_absoluteY="81dp">
+
+    <com.bekambimouen.miiokychallenge.toro.widget.Container
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relLayout_publish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/cadre_fun_video_icon"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp"
+        tools:ignore="RelativeOverlap">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/add"
+            android:textSize="16sp"
+            android:textColor="@color/black_semi_transparent"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/camera_id"
+            android:layout_width="25dp"
+            android:layout_height="23dp"
+            android:layout_toEndOf="@id/text"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            app:srcCompat="@drawable/camera_video"
+            app:tint="@color/black"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/backArrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:contentDescription="@null"
+            app:tint="@color/white"
+            />
+
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        style="@android:style/Widget.ProgressBar.Inverse"
+        android:layout_gravity="center_horizontal"
+        android:indeterminate="false" />
+
+    <RelativeLayout
+        android:id="@+id/relLayout_view_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+        <include layout="@layout/layout_overlay"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

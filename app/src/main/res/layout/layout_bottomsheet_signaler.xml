@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_sexual"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/sexual"
+        android:textSize="18sp"
+        android:background="@drawable/selector_2"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp"
+        android:background="@color/black_semi_transparent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_violent"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/violent"
+        android:textSize="18sp"
+        android:background="@drawable/selector_2"
+        android:gravity="center_vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp"
+        android:background="@color/black_semi_transparent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_fake"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/fake"
+        android:textSize="18sp"
+        android:background="@drawable/selector_2"
+        android:gravity="center_vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp"
+        android:background="@color/black_semi_transparent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_hat_speech"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/hat_speech"
+        android:textSize="18sp"
+        android:background="@drawable/selector_2"
+        android:gravity="center_vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp"
+        android:background="@color/black_semi_transparent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_others"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/others"
+        android:textSize="18sp"
+        android:background="@drawable/selector_2"
+        android:gravity="center_vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".messages.UpdateStatus">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@drawable/white_grey_border_bottom"
+        >
+
+        <RelativeLayout
+            android:id="@+id/relLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/arrowBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_circle">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_arrowback_size"
+                    android:layout_height="@dimen/icon_arrowback_size"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    app:tint="@color/black" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toStartOf="@id/done"
+                android:layout_toEndOf="@id/arrowBack"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/update"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/done"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_baseline_done_24"
+                app:tint="@color/textcolor" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/linLayout1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:layout_below="@id/toolbar"
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update_your_status"
+            android:textSize="20sp"
+            android:textColor="@color/caption_color"
+            android:layout_marginTop="20dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/relLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:background="@drawable/cadre_rectangle"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <com.bekambimouen.miiokychallenge.Utils.MyEditText
+                android:id="@+id/edit_status"
+                android:layout_width="488dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/done1"
+                android:background="@null"
+                android:minHeight="48dp"
+                android:hint="@string/field_status"
+                android:importantForAutofill="no"
+                android:inputType="textNoSuggestions|textCapSentences"
+                android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                android:maxLength="50"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/done1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/cadre_cercle"
+                android:contentDescription="@null"
+                android:padding="4dp"
+                android:src="@drawable/ic_baseline_done_24"
+                app:tint="@color/light_green_700"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

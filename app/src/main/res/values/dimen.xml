@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="option_icon_size">27dp</dimen>
+    <dimen name="bottom_icon_size">20dp</dimen>
+    <dimen name="share_only_icon_size">35dp</dimen>
+    <dimen name="icon_comment_send_save_size">25dp</dimen>
+    <dimen name="icon_arrowback_size">30dp</dimen>
+    <dimen name="icon_done_size">35dp</dimen>
+    <dimen name="photo_profile_size">50dp</dimen>
+    <dimen name="photo_profile_group_size">36dp</dimen>
+    <dimen name="flag_size_width">20dp</dimen>
+    <dimen name="flag_size_height">13dp</dimen>
+    <dimen name="country_name_size">13sp</dimen>
+    <dimen name="online_point_size">10dp</dimen>
+    <dimen name="corner_star_size">25dp</dimen>
+    <dimen name="point_follow_size">3dp</dimen>
+    <dimen name="image_vpn_size">15dp</dimen>
+    <dimen name="logo_dialog_size">15dp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="menu_more_horiz_width">25dp</dimen>
+    <dimen name="menu_more_horiz_height">26dp</dimen>
+    <dimen name="icons_menu_size">30dp</dimen>
+    <dimen name="group_profile_corner_radius">15dp</dimen>
+    <dimen name="include_group_photo_profile_size">28dp</dimen>
+    <dimen name="bottomSheet_comment_icon_discussion_size">50dp</dimen>
+    <!-- VS size -->
+    <dimen name="versus_size">30sp</dimen>
+    <!-- grid item recyclerview dimens -->
+    <dimen name="recycler_padding">3dp</dimen>
+
+    <!-- recyclerView views dimens -->
+    <dimen name="username_and_group_name_size">20sp</dimen>
+    <dimen name="group_username_of_profile_photo_size">16sp</dimen>
+    <dimen name="time_txt_size">15sp</dimen>
+    <dimen name="caption_size">18sp</dimen>
+    <dimen name="action_txt_size">15sp</dimen>
+    <dimen name="txt_size_17">17sp</dimen>
+    <dimen name="image_une_height">425dp</dimen>
+    <dimen name="video_une_height">400dp</dimen>
+    <dimen name="min_height_img_recycler_item">150dp</dimen>
+    <dimen name="min_height_vid_recycler_item">150dp</dimen>
+    <dimen name="editText_erase_size">18sp</dimen>
+    <dimen name="answer_challenge_icon_size">40dp</dimen>
+
+    <!-- recyclerView views dimens -->
+    <dimen name="bottomsheet_item_txt_size">18sp</dimen>
+
+    <dimen name="dimen_icon_cmtaire">25dp</dimen>
+    <dimen name="option_icon_fun_size">35dp</dimen>
+    <dimen name="icon_profile_like_size">25dp</dimen>
+    <dimen name="icon_play_size">50dp</dimen>
+
+    <!-- pagination. -->
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="activity_margin_quarter">4dp</dimen>
+    <dimen name="activity_margin_content">24dp</dimen>
+    <dimen name="activity_margin_half">8dp</dimen>
+
+    <dimen name="paddingItemDecorationDefault">8dp</dimen>
+    <dimen name="paddingItemDecorationEdge">24dp</dimen>
+
+    <dimen name="poster_thumb_width">72dp</dimen>
+    <dimen name="poster_thumb_height">96dp</dimen>
+
+    <dimen name="poster_hero_height">192dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- video trimmer. -->
+    <dimen name="thumb_width">30dp</dimen>
+    <dimen name="thumb_height">30dp</dimen>
+
+    <dimen name="bubble_thumb_width">70dp</dimen>
+    <dimen name="bubble_thumb_height">70dp</dimen>
+
+</resources>

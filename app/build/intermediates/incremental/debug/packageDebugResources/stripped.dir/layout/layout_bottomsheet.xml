@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomSheet_menu"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="10dp"
+    android:fitsSystemWindows="true"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    android:paddingTop="5dp"
+    app:behavior_hideable="false"
+    android:elevation="10dp"
+    app:behavior_peekHeight="0dp">
+
+    <LinearLayout
+        android:id="@+id/linLayout_view_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="5dp"
+            android:background="@color/black_semi_transparent"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+    </LinearLayout>
+
+    <com.bekambimouen.miiokychallenge.Utils.TouchDetectableScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/linLayout_saved"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_2"
+                tools:ignore="UseCompoundDrawables">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/cercle_parameters">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/icons_saved"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/registration"
+                    android:textSize="@dimen/bottomsheet_item_txt_size"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_report"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_2"
+                tools:ignore="UseCompoundDrawables">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/cercle_parameters">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/icons_warning"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/apartment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/report"
+                    android:textSize="@dimen/bottomsheet_item_txt_size"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.bekambimouen.miiokychallenge.Utils.TouchDetectableScrollView>
+
+</LinearLayout>

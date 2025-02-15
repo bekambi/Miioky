@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/iv_view"
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:background="@color/blue_grey_100"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/iv_view"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:id="@+id/relayout_profile"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/grey_200"
+                >
+
+                <ImageView
+                    android:id="@+id/profile_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@null"
+                    android:scaleType="centerCrop" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayout_go_about_class"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relayout_profile"
+                android:paddingTop="10dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/white_grey_border_bottom"
+                >
+
+                <TextView
+                    android:id="@+id/group_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/relLayout_button"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="5dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/group_name"
+                    android:layout_toStartOf="@id/relLayout_button"
+                    android:paddingTop="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="5dp"
+                    android:paddingBottom="10dp"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/group"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/open"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size"
+                        />
+
+                    <TextView
+                        android:id="@+id/private_public"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/close"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size"
+                        />
+
+                    <TextView
+                        android:id="@+id/total_members"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relLayout_button"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="20dp"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/relLayout_button_cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/grey_button"
+                        android:visibility="gone"
+                        >
+
+                        <TextView
+                            android:id="@+id/button_cancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:text="@string/cancel"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relLayout_button_join"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_blue"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/button_join"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/join_group"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/relLayout_go_about_class"
+                android:layout_marginTop="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/caption_size"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+
+                <com.csguys.viewmoretextview.ViewMoreTextView
+                    android:id="@+id/group_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size"
+                    app:tv_click_color="@color/blue_300"
+                    app:tv_click_underline="false"
+                    app:tv_collapse_text="@string/see_minus"
+                    app:tv_expand_text="@string/see_more"
+                    app:tv_max_char="375"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <!-- tablayout -->
+            <RelativeLayout
+                android:id="@+id/relLayout_tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linLayout_about"
+                android:layout_marginTop="10dp"
+                >
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabTextColor="@color/black_semi_transparent"
+                    app:tabSelectedTextColor="@color/black"
+                    app:tabMode="fixed"
+                    app:tabTextAppearance="@style/TabLayoutTextStyle"
+                    app:tabIndicatorColor="@color/black_semi_transparent"
+                    app:tabIndicatorFullWidth="false"
+                    app:tabIndicatorHeight="2dp"
+                    app:tabPaddingEnd="4dp"
+                    app:tabPaddingStart="4dp"
+                    android:background="@color/white"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relLayout_tabLayout"
+                >
+
+                <include layout="@layout/snippet_viewpager"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

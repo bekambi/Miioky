@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:background="@color/black_transparent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/blue_grey_900"
+            android:text=""
+            android:textSize="@dimen/time_txt_size"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/cadre_date"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/deleted_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@drawable/cadre_selected_text"
+        android:backgroundTint="@color/blue_50"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/this_message_has_been_deleted"
+            android:textSize="14sp"
+            android:textColor="@color/background_dark_violet"
+            android:textStyle="italic"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_listitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:paddingStart="1dp"
+        android:paddingEnd="5dp"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="80"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:id="@+id/linLayout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="30dp"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/relLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    >
+
+                    <com.bekambimouen.miiokychallenge.messages.util.RoundRectCornerImageView
+                        android:id="@+id/image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cadre_chat_photo_left"
+                        android:contentDescription="@null"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/white_person" />
+
+                    <RelativeLayout
+                        android:id="@+id/relLayout_photo_simple"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        >
+
+                        <com.bekambimouen.miiokychallenge.messages.util.RoundRectCornerImageView
+                            android:id="@+id/imageSimple"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/white_person"
+                            android:contentDescription="@null" />
+
+                        <TextView
+                            android:id="@+id/hourPhotoSimple"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingEnd="20dp"
+                            android:paddingStart="5dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:text=""
+                            android:textSize="@dimen/time_txt_size"
+                            android:textColor="@color/white"
+                            android:background="@color/lightgray3"
+                            />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/img_play"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/play"
+                        android:background="@drawable/play_background"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@null"
+                        android:visibility="gone"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/pbProgressAction"
+                        style="?android:attr/progressBarStyleLarge"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_centerInParent="true"
+                        />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/showMessagePhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingTop="3dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="5dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:background="@color/background_dark_violet"
+                    android:textSize="17sp"/>
+
+                <TextView
+                    android:id="@+id/hourPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:paddingBottom="3dp"
+                    android:text=""
+                    android:textColor="@color/lightgray"
+                    android:textSize="@dimen/time_txt_size"
+                    android:background="@drawable/back_left_radius"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_simple_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/shape_bg_incoming_bubble"
+                android:layout_gravity="start"
+                android:layout_marginTop="2dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/showMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    />
+
+                <TextView
+                    android:id="@+id/hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:paddingBottom="3dp"
+                    android:text=""
+                    android:textSize="@dimen/time_txt_size"
+                    android:textColor="@color/lightgray"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/shape_bg_incoming_bubble"
+                android:layout_gravity="start"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <include layout="@layout/layout_voice_left_msg_view" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/voice_hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:paddingBottom="3dp"
+                    android:text=""
+                    android:textSize="@dimen/time_txt_size"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

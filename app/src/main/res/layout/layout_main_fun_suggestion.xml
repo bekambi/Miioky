@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relLayout_parent"
+        android:layout_width="match_parent"
+        android:layout_height="455dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="4dp"
+        android:paddingTop="10dp"
+        android:background="@color/white"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:id="@+id/relLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toStartOf="@id/imageview"
+                android:text="@string/videos_fun_suggest"
+                android:textSize="17sp"
+                android:textColor="@color/caption_color" />
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/tv_tout_regarder"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_play"
+                app:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_tout_regarder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:text="@string/watch_everything"
+                android:textColor="@color/shinning_blue"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relLayout1"
+            android:layout_marginTop="5dp"
+            android:clipToPadding="false"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+        <RelativeLayout
+            android:id="@+id/relLayout_button_create"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recyclerView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_blue_clear"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/button_follow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/create"
+                android:textColor="@color/shinning_blue"
+                android:textSize="@dimen/text_size"
+                tools:ignore="RelativeOverlap" />
+
+            <ImageView
+                android:id="@+id/follow"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@id/button_follow"
+                android:contentDescription="@null"
+                app:srcCompat="@drawable/ic_baseline_photo_camera_24"
+                app:tint="@color/shinning_blue" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

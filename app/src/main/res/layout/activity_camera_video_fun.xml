@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View"/>
+        <variable
+            name="cameraListener"
+            type="com.bekambimouen.miiokychallenge.fun.listener.CameraListener" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="@color/black"
+        >
+
+        <!-- first section camera section -->
+        <RelativeLayout
+            android:id="@+id/relLayout_section_camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <androidx.camera.view.PreviewView
+                android:id="@+id/previewViewFender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="#00FFFFFF"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="80dp"
+                android:layout_alignParentBottom="true"
+                android:onClick="@{(view) -> cameraListener.playPause(view, captureVideo)}"
+                >
+
+                <ImageView
+                    android:id="@+id/captureVideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@null"
+                    app:srcCompat="@drawable/ic_play_stop" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_countDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/seconds_rec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/double_zero"
+                    android:textColor="@color/white"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/two_points"
+                    android:textColor="@color/white"
+                    />
+
+                <TextView
+                    android:id="@+id/mili_zero_rec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/mili_second_rec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/double_zero"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayout_flash_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{(view) -> cameraListener.flashOff(view, flashLight)}"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="100dp"
+                android:layout_marginStart="50dp"
+                android:padding="5dp"
+                android:background="@drawable/selector_circle2"
+                >
+
+                <ImageView
+                    android:id="@+id/flashLight"
+                    android:layout_width="@dimen/option_icon_size"
+                    android:layout_height="@dimen/option_icon_size"
+                    android:contentDescription="@null"
+                    app:srcCompat="@drawable/ic_flash_off_on" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayout_tunr_front"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{(view) -> cameraListener.changeCamera(view)}"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="100dp"
+                android:padding="5dp"
+                android:background="@drawable/selector_circle2"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/option_icon_size"
+                    android:layout_height="@dimen/option_icon_size"
+                    android:contentDescription="@null"
+                    app:srcCompat="@drawable/ic_baseline_flip_camera_android_24" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/iv_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="50dp"
+                android:padding="5dp"
+                android:background="@drawable/selector_circle2"
+                android:layout_centerVertical="true"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/option_icon_size"
+                    android:layout_height="@dimen/option_icon_size"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_baseline_collections_24" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/view_ok"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@null"
+                app:srcCompat="@drawable/ic_baseline_done_24"
+                app:tint="@color/white"
+                app:cardElevation="0dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="100dp"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+        <!-- second section result section here -->
+        <RelativeLayout
+            android:id="@+id/relLayout_previewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:visibility="gone"
+            >
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                />
+
+            <RelativeLayout
+                android:id="@+id/relLayout_stop_play"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:padding="10dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardElevation="0dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_centerVertical="true"
+                    android:onClick="@{(view) -> cameraListener.closeBackToCamera(view)}"
+                    android:background="@drawable/selector_circle2"
+                    >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/ic_baseline_close_24"
+                        app:tint="@color/white"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="30dp"
+                    app:cardElevation="0dp"
+                    android:layout_centerVertical="true"
+                    android:onClick="@{(view) -> cameraListener.submitClick(view)}"
+                    android:background="@drawable/selector_circle2"
+                    >
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/ic_baseline_navigate_next_24"
+                        app:tint="@color/vertWatsApp"
+                        android:layout_centerInParent="true"
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/relLayout3"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/number_of_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/zero"
+            android:textColor="@color/black_semi_transparent"
+            android:textSize="20sp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:visibility="gone"
+            />
+
+        <View
+            android:id="@+id/line_view"
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/grey"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+        <ProgressBar
+            android:id="@+id/loading_progressBar"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_gravity="center_horizontal"
+            android:indeterminate="true"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLayout_first_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/bottomSheet_comment_icon_discussion_size"
+            android:layout_height="@dimen/bottomSheet_comment_icon_discussion_size"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"
+            android:src="@drawable/icons_discussion"
+            app:tint="@color/grey"
+            />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/be_the_first_to_comment"
+            android:textSize="@dimen/txt_size_17"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:id="@+id/relLayout3"
+        android:layout_alignParentBottom="true"
+        android:paddingStart="10dp"
+        android:paddingEnd="1dp"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/white_grey_border_top">
+
+        <com.bekambimouen.miiokychallenge.Utils.MyEditText
+            android:id="@+id/EditText_commentaire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:paddingBottom="20dp"
+            android:layout_toStartOf="@id/icon_photo"
+            android:autofillHints="@null"
+            android:background="@null"
+            android:hint="@string/add_comment"
+            android:inputType="textCapSentences|textMultiLine|textNoSuggestions"
+            android:maxHeight="200dp"
+            android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+            android:textColor="@color/caption_color"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/icon_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/posterComment"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:padding="5dp"
+            android:background="@drawable/selector_2"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:contentDescription="@null"
+                android:src="@drawable/camera_photo"
+                app:tint="@color/black" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/posterComment"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_baseline_send_24"
+            app:tint="@color/blue_600" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

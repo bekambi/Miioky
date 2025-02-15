@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:layout_marginStart="2dp"
+    android:layout_marginTop="7dp"
+    android:layout_marginEnd="2dp"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_100"
+        >
+
+        <ImageView
+            android:id="@+id/profile_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/group_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/cadre_background_for_white_objetct"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/white"
+            />
+
+        <RelativeLayout
+            android:id="@+id/relLayout_nber_of_hide_views"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cadre_black_semi"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/nber_of_views"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:ellipsize="end"
+                android:maxLines="2"
+                tools:ignore="RelativeOverlap" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_add_24"
+                android:layout_toStartOf="@id/nber_of_views"
+                android:contentDescription="@null"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

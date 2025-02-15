@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="40dp"
+    android:paddingTop="20dp"
+    android:paddingEnd="40dp"
+    android:paddingBottom="15dp"
+    android:background="@drawable/cadre_msg_dialog"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/you_have_saisine_phone"
+        android:textSize="17sp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/caption_color"
+        />
+
+    <TextView
+        android:id="@+id/tv_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="17sp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/caption_color"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/its_correct"
+        android:textSize="17sp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/caption_color"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_update"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="@string/update"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/blue_500"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_yes"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/correct"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="17sp"
+            android:textColor="@color/blue_500"
+            android:gravity="end"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

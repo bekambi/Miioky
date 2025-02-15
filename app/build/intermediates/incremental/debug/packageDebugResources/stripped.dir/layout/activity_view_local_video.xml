@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".challenge_publication.ViewLocalVideo">
+
+    <RelativeLayout
+        android:id="@+id/arrowBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/selector_1"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/icon_arrowback_size"
+            android:layout_height="@dimen/icon_arrowback_size"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_baseline_close_24"
+            app:tint="@color/white"
+            />
+
+    </RelativeLayout>
+
+    <com.bekambimouen.miiokychallenge.Utils.MyVideoView
+        android:id="@+id/videoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/arrowBack"
+        android:background="@color/black"
+        android:layout_above="@id/relLayout_img_play"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relLayout_img_play"
+        android:layout_width="@dimen/icon_play_size"
+        android:layout_height="@dimen/icon_play_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/cercle_bouton_play"
+        android:gravity="center"
+        android:padding="3dp"
+        >
+
+        <ImageView
+            android:id="@+id/img_play"
+            style="@style/WView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_play"
+            app:tint="@color/white"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/img_pause"
+            style="@style/WView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_pause_white_24dp"
+            app:tint="@color/white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

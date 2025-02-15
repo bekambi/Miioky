@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".profile.CompletBioAndUsername">
+
+    <RelativeLayout
+        android:id="@+id/relLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/arrowBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/selector_circle"
+            android:layout_centerVertical="true"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/icon_arrowback_size"
+                android:layout_height="@dimen/icon_arrowback_size"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_baseline_close_24"
+                app:tint="@color/black"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_toStartOf="@id/done"
+            android:layout_toEndOf="@id/arrowBack"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/caption_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/selector_circle"
+            android:contentDescription="@null"
+            >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_baseline_done_24"
+                app:tint="@color/textcolor" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linLayout_modify_bio"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:layout_below="@id/relLayout"
+        android:padding="20dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_speeck_about_you"
+            android:textSize="18sp"
+            android:textColor="@color/caption_color"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/linLayout_nber_char_sequence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="horizontal"
+            android:background="@drawable/cadre_textview"
+            android:layout_marginStart="20dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/nber_char_sequence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:text="@string/zero"
+                android:textSize="18sp"
+                android:textColor="@color/black_semi_transparent4"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="13dp"
+                android:background="@color/black_semi_transparent"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:text="@string/two_hundred"
+                android:textSize="18sp"
+                android:textColor="@color/black_semi_transparent4"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:minHeight="50dp"
+            android:background="@drawable/cadre_rectangle"
+            >
+
+            <com.bekambimouen.miiokychallenge.Utils.MyEditText
+                android:id="@+id/edit_bio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/bio"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences|textMultiLine|textNoSuggestions"
+                android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                android:textSize="18sp"
+                android:maxLength="150"
+                android:layout_centerVertical="true"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="10dp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linLayout_modify_name"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:layout_below="@id/relLayout"
+        android:padding="20dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/modify_your_name"
+            android:textSize="20sp"
+            android:textColor="@color/caption_color"
+            android:layout_marginTop="20dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/relLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/cadre_rectangle"
+            >
+
+            <com.bekambimouen.miiokychallenge.Utils.MyEditText
+                android:id="@+id/edit_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:hint="@string/username"
+                android:textSize="18sp"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences|textNoSuggestions"
+                android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

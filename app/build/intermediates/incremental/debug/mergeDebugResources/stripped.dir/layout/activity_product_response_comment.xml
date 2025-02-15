@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".market_place.comment.product_comment.ProductResponseComment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@drawable/white_grey_border_bottom">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/arrowBack"
+                android:layout_width="@dimen/icon_arrowback_size"
+                android:layout_height="@dimen/icon_arrowback_size"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_circle">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    app:tint="@color/black" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/answering_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@+id/arrowBack"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/caption_color"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="20sp"
+                />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/toolBar"
+        android:layout_above="@id/relLayout"
+        android:paddingBottom="10dp"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:id="@+id/loading_progressBar"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_gravity="center_horizontal"
+            android:indeterminate="true"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:layout_alignParentBottom="true"
+        android:paddingStart="10dp"
+        android:paddingEnd="1dp"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/white_grey_border_top">
+
+        <com.bekambimouen.miiokychallenge.Utils.MyEditText
+            android:id="@+id/EditText_commentaire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/icone_photo"
+            android:autofillHints="@null"
+            android:background="@null"
+            android:hint="@string/add_comment"
+            android:inputType="textMultiLine|textNoSuggestions|textCapSentences"
+            android:maxHeight="200dp"
+            android:padding="2dp"
+            android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+            android:textColor="@color/caption_color"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/icone_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/posterComment"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:padding="5dp"
+            android:background="@drawable/selector_2"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:contentDescription="@null"
+                android:src="@drawable/camera_photo"
+                app:tint="@color/black" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/posterComment"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_baseline_send_24"
+            app:tint="@color/blue_600" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLayout_view_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+        <include layout="@layout/layout_overlay"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <View
+        android:id="@+id/iv_view"
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:background="@color/blue_grey_100"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/iv_view"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:id="@+id/relayout_profile"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/grey_200"
+                >
+
+                <ImageView
+                    android:id="@+id/profile_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@null"
+                    android:scaleType="centerCrop" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayout_go_about_class"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relayout_profile"
+                android:paddingTop="10dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/white_grey_border_bottom"
+                >
+
+                <TextView
+                    android:id="@+id/group_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/relLayout_button"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="5dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/group_name"
+                    android:layout_toStartOf="@id/relLayout_button"
+                    android:paddingTop="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="5dp"
+                    android:paddingBottom="10dp"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/group"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/open"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size"
+                        />
+
+                    <TextView
+                        android:id="@+id/private_public"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/close"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size"
+                        />
+
+                    <TextView
+                        android:id="@+id/total_members"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relLayout_button"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="20dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/bouton_voir"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_blue"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/see"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size"
+                        />
+
+                    <TextView
+                        android:id="@+id/bouton_rejoindre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_blue"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/join_group"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/relLayout_go_about_class"
+                android:layout_marginTop="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/title_about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/caption_size"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:visibility="gone"/>
+
+                <com.csguys.viewmoretextview.ViewMoreTextView
+                    android:id="@+id/group_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size"
+                    app:tv_click_color="@color/blue_300"
+                    app:tv_click_underline="false"
+                    app:tv_collapse_text="@string/see_minus"
+                    app:tv_expand_text="@string/see_more"
+                    app:tv_max_char="375"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/members_maj"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/caption_size"
+                    android:textStyle="bold"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cercle_white"
+                    android:layout_marginTop="10dp"
+                    android:padding="4dp"
+                    android:gravity="center"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/admin_master_profile_photo"
+                        android:layout_width="@dimen/photo_profile_group_size"
+                        android:layout_height="@dimen/photo_profile_group_size"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/circle_image2"
+                        android:scaleType="centerCrop"
+                        app:civ_border_color="@color/grey"
+                        app:civ_border_width="0.5dp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/admin_master_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/relLayout_profile_members"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/relLayout_member_i"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cercle_white"
+                        android:padding="4dp"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/member_i"
+                            android:layout_width="@dimen/photo_profile_group_size"
+                            android:layout_height="@dimen/photo_profile_group_size"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/circle_image2"
+                            android:scaleType="centerCrop"
+                            app:civ_border_color="@color/grey"
+                            app:civ_border_width="0.5dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relLayout_member_ii"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cercle_white"
+                        android:layout_marginStart="33dp"
+                        android:padding="4dp"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/member_ii"
+                            android:layout_width="@dimen/photo_profile_group_size"
+                            android:layout_height="@dimen/photo_profile_group_size"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/circle_image2"
+                            android:scaleType="centerCrop"
+                            app:civ_border_color="@color/grey"
+                            app:civ_border_width="0.5dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relLayout_member_iii"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cercle_white"
+                        android:layout_marginStart="66dp"
+                        android:padding="4dp"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/member_iii"
+                            android:layout_width="@dimen/photo_profile_group_size"
+                            android:layout_height="@dimen/photo_profile_group_size"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/circle_image2"
+                            android:scaleType="centerCrop"
+                            app:civ_border_color="@color/grey"
+                            app:civ_border_width="0.5dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relLayout_member_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cercle_white"
+                        android:layout_marginStart="99dp"
+                        android:padding="4dp"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/member_iv"
+                            android:layout_width="@dimen/photo_profile_group_size"
+                            android:layout_height="@dimen/photo_profile_group_size"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/circle_image2"
+                            android:scaleType="centerCrop"
+                            app:civ_border_color="@color/grey"
+                            app:civ_border_width="0.5dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relLayout_member_v"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cercle_white"
+                        android:layout_marginStart="133dp"
+                        android:padding="4dp"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/member_v"
+                            android:layout_width="@dimen/photo_profile_group_size"
+                            android:layout_height="@dimen/photo_profile_group_size"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/circle_image2"
+                            android:scaleType="centerCrop"
+                            app:civ_border_color="@color/grey"
+                            app:civ_border_width="0.5dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relLayout_member_vi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cercle_white"
+                        android:layout_marginStart="166dp"
+                        android:padding="4dp"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/member_vi"
+                            android:layout_width="@dimen/photo_profile_group_size"
+                            android:layout_height="@dimen/photo_profile_group_size"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/circle_image2"
+                            android:scaleType="centerCrop"
+                            app:civ_border_color="@color/grey"
+                            app:civ_border_width="0.5dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relLayout_member_vii"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cercle_white"
+                        android:layout_marginStart="199dp"
+                        android:padding="4dp"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/member_vii"
+                            android:layout_width="@dimen/photo_profile_group_size"
+                            android:layout_height="@dimen/photo_profile_group_size"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/circle_image2"
+                            android:scaleType="centerCrop"
+                            app:civ_border_color="@color/grey"
+                            app:civ_border_width="0.5dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relLayout_member_viii"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cercle_white"
+                        android:layout_marginStart="232dp"
+                        android:padding="4dp"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/member_viii"
+                            android:layout_width="@dimen/photo_profile_group_size"
+                            android:layout_height="@dimen/photo_profile_group_size"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/circle_image2"
+                            android:scaleType="centerCrop"
+                            app:civ_border_color="@color/grey"
+                            app:civ_border_width="0.5dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relLayout_member_ix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cercle_white"
+                        android:layout_marginStart="265dp"
+                        android:padding="4dp"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/member_ix"
+                            android:layout_width="@dimen/photo_profile_group_size"
+                            android:layout_height="@dimen/photo_profile_group_size"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/circle_image2"
+                            android:scaleType="centerCrop"
+                            app:civ_border_color="@color/grey"
+                            app:civ_border_width="0.5dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relLayout_member_x"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cercle_white"
+                        android:layout_marginStart="298dp"
+                        android:padding="4dp"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        >
+
+                        <ImageView
+                            android:id="@+id/member_x"
+                            android:layout_width="@dimen/photo_profile_group_size"
+                            android:layout_height="@dimen/photo_profile_group_size"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_baseline_more_horiz_24"
+                            app:tint="@color/white"
+                            android:background="@drawable/cercle_semi_transparent"
+                            />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20sp"
+                    android:text="@string/group_activity"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/caption_size"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/icons_publication"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/icons_publication"
+                        app:tint="@color/grey_700" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toEndOf="@id/icons_publication"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/publications_today"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/publications_last_month"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="@dimen/text_size" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/icons_person"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_baseline_person_24"
+                        app:tint="@color/grey_700" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toEndOf="@id/icons_person"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/total_members2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/total_members_last_sevens_days"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="@dimen/text_size" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/icons_group"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:contentDescription="@null"
+                        app:tint="@color/grey_700"
+                        android:src="@drawable/icons_group"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_toEndOf="@id/icons_group"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/date_creation"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/date_group_creation2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size"
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

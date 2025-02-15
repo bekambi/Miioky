@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".register.RegisterTownAndQuarter">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@drawable/white_grey_border_bottom"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/arrowBack"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_circle">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_arrowback_size"
+                    android:layout_height="@dimen/icon_arrowback_size"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    app:tint="@color/black" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/arrowBack"
+                android:text="@string/back"
+                android:textColor="@color/caption_color"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/relLayout_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/selector_2"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="5dp"
+                tools:ignore="RelativeOverlap">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/next"
+                    android:textColor="@color/shinning_blue"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolBar"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/town_and_quater"
+                android:textColor="@color/caption_color"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/write_real_town_and_quater_name"
+                android:textSize="@dimen/text_size"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/you_must_update_this_informations"
+                android:textColor="@color/shinning_blue"
+                android:textSize="@dimen/text_size"
+                android:textStyle="italic" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/town_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/town_name"
+                    android:textColor="@color/caption_color"
+                    android:textSize="@dimen/txt_size_17"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/relLayout_town_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/town_name"
+                    android:background="@drawable/cadre_rectangle"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp">
+
+                    <com.bekambimouen.miiokychallenge.Utils.MyEditText
+                        android:id="@+id/edit_town_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint="@string/your_current_city"
+                        android:importantForAutofill="no"
+                        android:inputType="textCapSentences|textNoSuggestions"
+                        android:maxLength="30"
+                        android:maxLines="1"
+                        android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                        android:textColor="@color/caption_color"
+                        android:textSize="17sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/neighborhood_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/neighborhood_name"
+                    android:textColor="@color/caption_color"
+                    android:textSize="@dimen/txt_size_17"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/relLayout_neighborhood_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/neighborhood_name"
+                    android:background="@drawable/cadre_rectangle"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp">
+
+                    <com.bekambimouen.miiokychallenge.Utils.MyEditText
+                        android:id="@+id/edit_neighborhood_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint="@string/your_neighborhood"
+                        android:importantForAutofill="no"
+                        android:inputType="textCapSentences|textNoSuggestions"
+                        android:maxLength="30"
+                        android:maxLines="1"
+                        android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                        android:textColor="@color/caption_color"
+                        android:textSize="17sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/native_and_hometown"
+                android:textColor="@color/shinning_blue"
+                android:textStyle="italic"
+                android:textSize="@dimen/text_size"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/text_cant_be_update"
+                android:textSize="@dimen/text_size"
+                android:textStyle="italic" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/native_country_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/native_country_name"
+                    android:textColor="@color/caption_color"
+                    android:textSize="@dimen/txt_size_17"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/relLayout_native_country_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/native_country_name"
+                    android:background="@drawable/cadre_rectangle"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp">
+
+                    <ImageView
+                        android:id="@+id/countryIcon"
+                        android:layout_width="35dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:id="@+id/txt_native_country_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@id/countryIcon"
+                        android:text="@string/your_native_country"
+                        android:textSize="@dimen/txt_size_17" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/hometown_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hometown_name"
+                    android:textColor="@color/caption_color"
+                    android:textSize="@dimen/txt_size_17"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/relLayout_hometown_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/hometown_name"
+                    android:background="@drawable/cadre_rectangle"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp">
+
+                    <com.bekambimouen.miiokychallenge.Utils.MyEditText
+                        android:id="@+id/edit_hometown_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint="@string/your_hometown"
+                        android:importantForAutofill="no"
+                        android:inputType="textCapSentences|textNoSuggestions"
+                        android:maxLength="30"
+                        android:maxLines="1"
+                        android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                        android:textColor="@color/caption_color"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

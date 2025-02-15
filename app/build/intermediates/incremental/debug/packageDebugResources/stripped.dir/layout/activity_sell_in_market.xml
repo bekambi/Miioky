@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:animateLayoutChanges="true"
+    tools:context=".market_place.publication.SellInMarket">
+
+    <RelativeLayout
+        android:id="@+id/relLayout_post_product"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:background="@drawable/white_grey_border_bottom"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/arrowBack"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/selector_circle"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/close"
+                        android:layout_width="@dimen/icon_arrowback_size"
+                        android:layout_height="@dimen/icon_arrowback_size"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_baseline_arrow_back_24"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/toolBar_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toStartOf="@id/relLayout_publish"
+                    android:layout_toEndOf="@id/arrowBack"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/sell"
+                    android:textColor="@color/caption_color"
+                    android:textSize="20sp" />
+
+                <RelativeLayout
+                    android:id="@+id/relLayout_publish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/selector_2"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/text_publish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/publisher"
+                        android:textColor="@color/shinning_blue"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.bekambimouen.miiokychallenge.Utils.TouchDetectableScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolBar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/relLayout_go_user_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_2"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <RelativeLayout
+                        android:id="@+id/relLayout_profile"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/cercle_suggestions">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/profile_photo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/circle_image2"
+                            android:scaleType="centerCrop"
+                            app:civ_border_color="@color/grey"
+                            app:civ_border_width="0.5dp" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toEndOf="@id/relLayout_profile"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="@color/caption_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/full_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/username"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toEndOf="@id/relLayout_profile"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="@color/black_semi_transparent"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:id="@+id/relLayout_post"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:animateLayoutChanges="true"
+                        android:background="@drawable/cadre_stroke">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/camera_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:contentDescription="@null"
+                                android:scaleType="centerCrop"
+                                android:visibility="gone" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:visibility="gone" />
+
+                            <ru.tinkoff.scrollingpagerindicator.ScrollingPagerIndicator
+                                android:id="@+id/recyclerIndicator"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="10dp"
+                                android:visibility="gone"
+                                app:spi_dotColor="@color/blue_clair"
+                                app:spi_dotSelectedColor="@color/shinning_blue" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linLayout_add_photo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:contentDescription="@null"
+                                android:src="@drawable/icons_gallery" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/add_photos"
+                                android:textSize="18sp"
+                                android:textColor="@color/caption_color" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/photos_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:text=""
+                    android:textColor="@color/black_semi_transparent"
+                    />
+
+                <!-- neighborhood section -->
+                <RelativeLayout
+                    android:id="@+id/relLayout_neighborhood"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginEnd="20sp"
+                    android:background="@drawable/cadre_rectangle"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/edit_neighborhood"
+                        android:layout_width="488dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:minHeight="48dp"
+                        android:background="@null"
+                        android:hint="@string/neighborhood"
+                        android:importantForAutofill="no"
+                        android:inputType="textCapSentences|textNoSuggestions"
+                        android:maxLines="1"
+                        android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                        android:textColor="@color/caption_color"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <!-- category section -->
+                <RelativeLayout
+                    android:id="@+id/relLayout_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginEnd="20sp"
+                    android:background="@drawable/cadre_rectangle"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/relLayout6"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp">
+
+                        <TextView
+                            android:id="@+id/txt_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_toStartOf="@id/arrow_down"
+                            android:text="@string/the_category"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/arrow_down"
+                            android:layout_width="@dimen/icon_arrowback_size"
+                            android:layout_height="@dimen/icon_arrowback_size"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_baseline_arrow_drop_down_24"
+                            app:tint="@color/black" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <!-- product name section -->
+                <RelativeLayout
+                    android:id="@+id/relLayout_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginEnd="20sp"
+                    android:background="@drawable/cadre_rectangle"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/relLayout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:elevation="10dp"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp">
+
+                        <com.bekambimouen.miiokychallenge.Utils.MyEditText
+                            android:id="@+id/edit_product_name"
+                            android:layout_width="488dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:minHeight="48dp"
+                            android:background="@null"
+                            android:hint="@string/name_the_product"
+                            android:importantForAutofill="no"
+                            android:inputType="textCapSentences|textNoSuggestions"
+                            android:maxLines="1"
+                            android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                            android:textColor="@color/caption_color"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <!-- product state -->
+                <LinearLayout
+                    android:id="@+id/linLayout_product_state"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/product_condition"
+                        android:textColor="@color/caption_color"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        />
+
+                    <com.bekambimouen.miiokychallenge.Utils.ToggleButtonGroupTableLayout
+                        android:id="@+id/radio_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        >
+
+                        <TableRow>
+
+                            <androidx.appcompat.widget.AppCompatRadioButton
+                                android:id="@+id/radio_new"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/radio_new"
+                                android:textSize="@dimen/text_size"
+                                android:checked="true"
+                                android:textColor="@color/caption_color"
+                                />
+
+                            <androidx.appcompat.widget.AppCompatRadioButton
+                                android:id="@+id/radio_second_hand"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="@string/radio_second_hand"
+                                android:textSize="@dimen/text_size"
+                                android:textColor="@color/caption_color"
+                                />
+
+                            <androidx.appcompat.widget.AppCompatRadioButton
+                                android:id="@+id/radio_old"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="@string/radio_old"
+                                android:textSize="@dimen/text_size"
+                                android:textColor="@color/caption_color"
+                                />
+                        </TableRow>
+
+                    </com.bekambimouen.miiokychallenge.Utils.ToggleButtonGroupTableLayout>
+
+                </LinearLayout>
+
+                <!-- price section -->
+                <RelativeLayout
+                    android:id="@+id/relLayout_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginEnd="20sp"
+                    android:background="@drawable/cadre_rectangle"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="6"
+                        android:elevation="10dp"
+                        android:baselineAligned="false"
+                        tools:ignore="UselessParent">
+
+                        <RelativeLayout
+                            android:id="@+id/relLayout52"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="4"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp"
+                            >
+
+                            <com.bekambimouen.miiokychallenge.Utils.MyEditText
+                                android:id="@+id/edit_price"
+                                android:layout_width="488dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="10dp"
+                                android:minHeight="48dp"
+                                android:background="@null"
+                                android:hint="@string/price"
+                                android:importantForAutofill="no"
+                                android:inputType="number"
+                                android:maxLength="15"
+                                android:maxLines="1"
+                                android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                                android:textColor="@color/caption_color"
+                                android:textSize="18sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="2"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp">
+
+                            <View
+                                android:id="@+id/view_bar2"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@color/blue_grey_100"
+                                />
+
+                            <TextView
+                                android:id="@+id/country_devise2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="10dp"
+                                android:text=""
+                                android:textColor="@color/caption_color"
+                                android:textSize="18sp" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relLayout_old_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginEnd="20sp"
+                    android:background="@drawable/cadre_rectangle"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="6"
+                        android:elevation="10dp"
+                        android:baselineAligned="false"
+                        tools:ignore="UselessParent">
+
+                        <RelativeLayout
+                            android:id="@+id/relLayout51"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="4"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp"
+                            >
+
+                            <com.bekambimouen.miiokychallenge.Utils.MyEditText
+                                android:id="@+id/edit_old_price"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="10dp"
+                                android:background="@null"
+                                android:hint=""
+                                android:importantForAutofill="no"
+                                android:inputType="number"
+                                android:maxLength="15"
+                                android:maxLines="1"
+                                android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                                android:textColor="@color/caption_color"
+                                android:textSize="18sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="2"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp">
+
+                            <View
+                                android:id="@+id/view_bar"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@color/blue_grey_100"
+                                />
+
+                            <TextView
+                                android:id="@+id/country_devise1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="10dp"
+                                android:text=""
+                                android:textColor="@color/caption_color"
+                                android:textSize="18sp" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <!-- description section -->
+
+                <RelativeLayout
+                    android:id="@+id/relLayout_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginEnd="20sp"
+                    android:background="@drawable/cadre_rectangle"
+                    android:padding="10dp"
+                    >
+
+                    <com.bekambimouen.miiokychallenge.Utils.MyEditText
+                        android:id="@+id/edit_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:autofillHints="@null"
+                        android:background="@null"
+                        android:hint="@string/the_description"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:maxHeight="200dp"
+                        android:padding="2dp"
+                        android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                        android:textColor="@color/caption_color"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginEnd="20sp"
+                    android:text="@string/a_detail_description_can_help_you_sell_faster"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        </com.bekambimouen.miiokychallenge.Utils.TouchDetectableScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLayout_pic_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:id="@+id/relLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar_choose_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:id="@+id/relLayout_arrowBack_choose_photo"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/selector_circle">
+
+                            <ImageView
+                                android:id="@+id/arrowBack_choose_photo"
+                                android:layout_width="@dimen/icon_arrowback_size"
+                                android:layout_height="@dimen/icon_arrowback_size"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:contentDescription="@null"
+                                android:src="@drawable/ic_baseline_arrow_back_24"
+                                app:tint="@color/black" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/toolBar_textview_choose_photo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_toEndOf="@+id/relLayout_arrowBack_choose_photo"
+                            android:layout_toStartOf="@id/number"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@string/publication"
+                            android:textColor="@color/caption_color"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/number"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_toStartOf="@id/relLayout_photo"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@drawable/cercle_blue1"
+                            android:clickable="false"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:text="@string/zero"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <RelativeLayout
+                            android:id="@+id/relLayout_photo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="10dp"
+                            android:layout_toStartOf="@id/menu_item"
+                            android:background="@drawable/selector_circle"
+                            >
+
+                            <ImageView
+                                android:id="@+id/iv_video"
+                                android:layout_width="35dp"
+                                android:layout_height="30dp"
+                                android:contentDescription="@null"
+                                android:src="@drawable/camera_photo"
+                                app:tint="@color/black" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/menu_item"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="15dp"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:background="@drawable/selector_2"
+                            >
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="25dp"
+                                android:layout_centerVertical="true"
+                                android:contentDescription="@null"
+                                app:srcCompat="@drawable/menu_icon"
+                                app:tint="@color/black_semi_transparent" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </androidx.appcompat.widget.Toolbar>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/pub_RecyclerView_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayout_button_ok"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_blue"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/button_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ok"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        style="@android:style/Widget.ProgressBar.Inverse"
+        android:layout_gravity="center_horizontal"
+        android:indeterminate="false"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/relLayout_view_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+        <include layout="@layout/layout_overlay"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

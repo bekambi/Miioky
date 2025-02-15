@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".register.RegisterUserName">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name_and_password"
+        android:gravity="center"
+        android:textColor="@color/caption_color"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:id="@+id/complet_profil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/complet_your_profile"
+        android:gravity="center"
+        android:textColor="@color/red_600"
+        android:textStyle="bold"
+        android:textSize="@dimen/txt_size_17"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/real_name"
+        android:layout_marginTop="40dp"
+        android:textSize="@dimen/text_size"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rel_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cadre_rectangle"
+        >
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:autofillHints="@null"
+            android:background="@null"
+            android:hint="@string/name"
+            android:inputType="textCapSentences|textPersonName"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cadre_rectangle"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_country_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:text=""
+            android:textColor="@color/caption_color"
+            android:textSize="16sp"
+            />
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/tv_country_code"
+            android:background="@color/black_semi_transparent2" />
+
+        <EditText
+            android:id="@+id/edit_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@id/separator"
+            android:autofillHints="@null"
+            android:background="@null"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/caption_color" />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="@dimen/txt_size_17"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/blue_rounded_button"/>
+
+</LinearLayout>
