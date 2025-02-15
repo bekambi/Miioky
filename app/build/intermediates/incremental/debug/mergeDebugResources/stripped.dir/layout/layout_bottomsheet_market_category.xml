@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:id="@+id/linLayout_view_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="5dp"
+            android:background="@color/black_semi_transparent"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+    </LinearLayout>
+
+    <com.bekambimouen.miiokychallenge.Utils.TouchDetectableScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/linLayout_vehicles"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_2"
+                tools:ignore="UseCompoundDrawables"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/cercle_parameters">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/icons_car"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/vehicles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/vehicles"
+                    android:textSize="@dimen/bottomsheet_item_txt_size"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_to_rent_out"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_2"
+                tools:ignore="UseCompoundDrawables">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/cercle_parameters">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/icons_renting"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/to_rent_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/to_rent_out"
+                    android:textSize="@dimen/bottomsheet_item_txt_size"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_women_clothing_and_shoes"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_2"
+                tools:ignore="UseCompoundDrawables">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/cercle_parameters">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/icons_women_clothing_and_shoes"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/women_clothing_and_shoes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/women_clothing_and_shoes"
+                    android:textSize="@dimen/bottomsheet_item_txt_size"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_men_clothing_and_shoes"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_2"
+                tools:ignore="UseCompoundDrawables">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/cercle_parameters">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/icons_men_clothing_and_shoes"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/men_clothing_and_shoes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/men_clothing_and_shoes"
+                    android:textSize="@dimen/bottomsheet_item_txt_size"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_baby"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_2"
+                tools:ignore="UseCompoundDrawables">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/cercle_parameters">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/icons_baby"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/baby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/baby"
+                    android:textSize="@dimen/bottomsheet_item_txt_size"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_furniture"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_2"
+                tools:ignore="UseCompoundDrawables">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/cercle_parameters">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/icons_furniture"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/furniture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/furniture"
+                    android:textSize="@dimen/bottomsheet_item_txt_size"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_electronic_appliances"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_2"
+                tools:ignore="UseCompoundDrawables">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/cercle_parameters">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/icons_electronic_appliances"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/electronic_appliances"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/electronic_appliances"
+                    android:textSize="@dimen/bottomsheet_item_txt_size"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_home_appliances"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_2"
+                tools:ignore="UseCompoundDrawables">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/cercle_parameters">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/icons_home_appliances"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/home_appliances"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/home_appliances"
+                    android:textSize="@dimen/bottomsheet_item_txt_size"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_antiques_and_collectibles"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_2"
+                tools:ignore="UseCompoundDrawables">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/cercle_parameters">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/icons_antiques"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/antiques_and_collectibles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/antiques_and_collectibles"
+                    android:textSize="@dimen/bottomsheet_item_txt_size"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_art_and_crafts"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_2"
+                tools:ignore="UseCompoundDrawables">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/cercle_parameters">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/icons_art_and_crafts"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/art_and_crafts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/art_and_crafts"
+                    android:textSize="@dimen/bottomsheet_item_txt_size"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_car_parts"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_2"
+                tools:ignore="UseCompoundDrawables">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/cercle_parameters">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/icons_car_parts"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/car_parts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/car_parts"
+                    android:textSize="@dimen/bottomsheet_item_txt_size"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_book_film_and_music"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_2"
+                tools:ignore="UseCompoundDrawables">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/cercle_parameters">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/icons_book_stack"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/book_film_and_music"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/book_film_and_music"
+                    android:textSize="@dimen/bottomsheet_item_txt_size"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_garage_sale"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_2"
+                tools:ignore="UseCompoundDrawables">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/cercle_parameters">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/icons_garage_sale"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/garage_sale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/garage_sale"
+                    android:textSize="@dimen/bottomsheet_item_txt_size"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_health_and_beauty"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_2"
+                tools:ignore="UseCompoundDrawables">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/cercle_parameters">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/icons_health_and_beauty"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/health_and_beauty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/health_and_beauty"
+                    android:textSize="@dimen/bottomsheet_item_txt_size"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_interior_items_and_decoration"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_2"
+                tools:ignore="UseCompoundDrawables">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/cercle_parameters">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/icons_interior_items_and_decoration"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/interior_items_and_decoration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/interior_items_and_decoration"
+                    android:textSize="@dimen/bottomsheet_item_txt_size"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_interior_design_and_tools"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_2"
+                tools:ignore="UseCompoundDrawables">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/cercle_parameters">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/icons_interior_items_and_decoration"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/interior_design_and_tools"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/interior_design_and_tools"
+                    android:textSize="@dimen/bottomsheet_item_txt_size"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_sale_of_housing"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_2"
+                tools:ignore="UseCompoundDrawables">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/cercle_parameters">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/icons_interior_items_and_decoration"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/sale_of_housing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/sale_of_housing"
+                    android:textSize="@dimen/bottomsheet_item_txt_size"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_jewelry_and_watches"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_2"
+                tools:ignore="UseCompoundDrawables">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/cercle_parameters">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/icons_jewelry_and_watches"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/jewelry_and_watches"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/jewelry_and_watches"
+                    android:textSize="@dimen/bottomsheet_item_txt_size"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_luggage_and_bags"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_2"
+                tools:ignore="UseCompoundDrawables">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/cercle_parameters">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/icons_luggage_and_bags"
+                        app:tint="@color/black"
+                        tools:ignore="TooManyViews" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/luggage_and_bags"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/luggage_and_bags"
+                    android:textSize="@dimen/bottomsheet_item_txt_size"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_miscellaneous"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_2"
+                tools:ignore="UseCompoundDrawables">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/cercle_parameters">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/icons_miscellaneous"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/miscellaneous"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/miscellaneous"
+                    android:textSize="@dimen/bottomsheet_item_txt_size"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_musical_instruments"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_2"
+                tools:ignore="UseCompoundDrawables">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/cercle_parameters">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/icons_musical_instruments"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/musical_instruments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/musical_instruments"
+                    android:textSize="@dimen/bottomsheet_item_txt_size"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_patio_and_garden"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_2"
+                tools:ignore="UseCompoundDrawables">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/cercle_parameters">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/icons_patio_and_garden"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/patio_and_garden"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/patio_and_garden"
+                    android:textSize="@dimen/bottomsheet_item_txt_size"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_animal_product"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_2"
+                tools:ignore="UseCompoundDrawables">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/cercle_parameters">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/icons_animal_product"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/animal_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/animal_product"
+                    android:textSize="@dimen/bottomsheet_item_txt_size"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_sport_stuff"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_2"
+                tools:ignore="UseCompoundDrawables">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/cercle_parameters">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/icons_sport_stuff8"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/sport_stuff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/sport_stuff"
+                    android:textSize="@dimen/bottomsheet_item_txt_size"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_game_and_toys"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_2"
+                tools:ignore="UseCompoundDrawables">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/cercle_parameters">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/icons_game_and_toys"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/game_and_toys"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/game_and_toys"
+                    android:textSize="@dimen/bottomsheet_item_txt_size"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.bekambimouen.miiokychallenge.Utils.TouchDetectableScrollView>
+
+</LinearLayout>

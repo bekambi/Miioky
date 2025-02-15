@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/day_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textSize="18sp"
+        android:textColor="@color/caption_color"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/selector_2"
+        >
+
+        <RelativeLayout
+            android:id="@+id/relLayout"
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:background="@drawable/cercle_suggestions"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_photo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/circle_image2"
+                android:scaleType="centerCrop"
+                app:civ_border_color="@color/grey"
+                app:civ_border_width="0.5dp" />
+
+            <ImageView
+                android:id="@+id/group_icon"
+                android:layout_width="@dimen/icons_menu_size"
+                android:layout_height="@dimen/icons_menu_size"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/cercle_blue2"
+                android:contentDescription="@null"
+                android:padding="5dp"
+                android:layout_marginStart="10dp"
+                app:srcCompat="@drawable/icons_group"
+                app:tint="@color/white"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/person_icon"
+                android:layout_width="@dimen/icons_menu_size"
+                android:layout_height="@dimen/icons_menu_size"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/cercle_mic"
+                android:contentDescription="@null"
+                android:padding="5dp"
+                android:layout_marginStart="10dp"
+                app:srcCompat="@drawable/ic_baseline_person_24"
+                app:tint="@color/white"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/market_icon"
+                android:layout_width="@dimen/icons_menu_size"
+                android:layout_height="@dimen/icons_menu_size"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/cercle_brown"
+                android:contentDescription="@null"
+                android:padding="5dp"
+                android:layout_marginStart="10dp"
+                app:srcCompat="@drawable/icons_shop_blue"
+                app:tint="@color/white"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linLayout_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/menu_item"
+            android:layout_toEndOf="@id/relLayout"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/message_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_17" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/black_semi_transparent"
+                android:textSize="@dimen/time_txt_size" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/invitation_accepted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/linLayout_txt"
+            android:layout_toEndOf="@id/relLayout"
+            android:text="@string/invitation_accepted"
+            android:textColor="@color/black_semi_transparent"
+            android:textSize="@dimen/time_txt_size"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/linLayout_buttons_join_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linLayout_txt"
+            android:layout_toEndOf="@id/relLayout"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:weightSum="2"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone"
+            >
+
+            <RelativeLayout
+                android:id="@+id/relLayout_button_join_group"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_blue"
+                >
+
+                <TextView
+                    android:id="@+id/btn_manage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/join"
+                    android:textColor="@color/white"
+                    tools:ignore="RelativeOverlap" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayout_button_delete_invitation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/grey_button">
+
+                <TextView
+                    android:id="@+id/btn_invite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/delete"
+                    android:textColor="@color/black" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/menu_item"
+            android:layout_width="@dimen/menu_more_horiz_width"
+            android:layout_height="@dimen/menu_more_horiz_height"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_baseline_more_horiz_24"
+            app:tint="@color/black_semi_transparent" />
+
+    </RelativeLayout>
+
+</LinearLayout>

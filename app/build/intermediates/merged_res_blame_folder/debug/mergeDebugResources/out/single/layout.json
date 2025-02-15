@@ -1,0 +1,2046 @@
+[
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_pub_comment_text.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_pub_comment_text.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_non_rescpected_rules.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_non_rescpected_rules.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_fun_suggestions.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_fun_suggestions.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_simple_full_image.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_simple_full_image.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_recycler_full_image_share.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_recycler_full_image_share.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_vue_user_image_battle_big_img.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_vue_user_image_battle_big_img.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_selected_image_list.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_selected_image_list.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_shared_top_bottom_reponse_imagedouble.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_shared_top_bottom_reponse_imagedouble.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_market_sell_in_store.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_market_sell_in_store.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/custom_player_control_view.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/custom_player_control_view.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/fragment_invitation_suggestions.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/fragment_invitation_suggestions.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_dialog_msg_challenge_photo.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_dialog_msg_challenge_photo.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_share_image_double.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_share_image_double.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_shared_top_bottom_circle_image.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_shared_top_bottom_circle_image.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_college_profile_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_college_profile_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_view_video.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_view_video.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_response_image_double_full_image_share.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_response_image_double_full_image_share.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_view_category_image_big_img.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_view_category_image_big_img.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_child_recycler_response_comment_share.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_child_recycler_response_comment_share.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_view_profile.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_view_profile.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/snippet_profile_view_user.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/snippet_profile_view_user.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/fragment_fun_grid_current_user_profile.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/fragment_fun_grid_current_user_profile.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_header_group_view_admin_profile.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_header_group_view_admin_profile.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_shared_single_top_reponse_imagedouble.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_shared_single_top_reponse_imagedouble.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_profile_reponse_imagedouble.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_profile_reponse_imagedouble.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_pub_instag_video.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_pub_instag_video.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/fragment_stores_suggestion.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/fragment_stores_suggestion.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_shared_single_top_imageune.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_shared_single_top_imageune.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_shared_single_bottom_circle_image.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_shared_single_bottom_circle_image.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_invite_from_same_town.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_invite_from_same_town.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_grid_imageune.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_grid_imageune.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_market_update_menu_of_restaurant.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_market_update_menu_of_restaurant.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_shared_single_bottom_reponse_imagedouble.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_shared_single_bottom_reponse_imagedouble.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_full_video.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_full_video.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_dialog_delete_one_publication.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_dialog_delete_one_publication.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_membership.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_membership.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_shared_single_bottom_imageune.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_shared_single_bottom_imageune.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/fragment_challenges.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/fragment_challenges.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_bottomsheet_sell_or_create_store.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_bottomsheet_sell_or_create_store.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_friend_see_all_my_friends_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_friend_see_all_my_friends_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_video_full_challenge.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_video_full_challenge.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_grid_videoview.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_grid_videoview.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/item_folder.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/item_folder.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_image_picker_list.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_image_picker_list.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_child_recycler_response_comment.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_child_recycler_response_comment.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_recyclerview_your_group.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_recyclerview_your_group.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/snippet_pub_chat_download_photo.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/snippet_pub_chat_download_photo.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_manege.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_manege.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_act_video_trimmer.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_act_video_trimmer.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_dialog_delete_account.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_dialog_delete_account.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_share_publication_in_miioky.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_share_publication_in_miioky.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_see_section_about_me.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_see_section_about_me.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_full_challenge_video.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_full_challenge_video.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_view_category_video.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_view_category_video.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_full_video.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_full_video.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_only_photo_gradle.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_only_photo_gradle.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_dialog_get_out.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_dialog_get_out.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_story_spotlight_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_story_spotlight_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_see_group_member_all_background_profile.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_see_group_member_all_background_profile.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_view_recycler_share.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_view_recycler_share.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_private_suggestion_discover.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_private_suggestion_discover.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_only_video_gradle.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_only_video_gradle.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_header_group_view_profile.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_header_group_view_profile.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_download_spotlight.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_download_spotlight.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_update_profile.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_update_profile.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_public_suggestion_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_public_suggestion_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_shared_single_bottom_recycler.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_shared_single_bottom_recycler.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_recycler_full_image.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_recycler_full_image.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_videoune_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_videoune_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_shared_top_bottom_recycler.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_shared_top_bottom_recycler.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_view_video_une_share.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_view_video_une_share.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_text_suggestion.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_text_suggestion.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_shared_single_top_recycler.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_shared_single_top_recycler.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_child_recycler_comment_share.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_child_recycler_comment_share.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_personalized_images_gallery.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_personalized_images_gallery.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_private_search_in_group.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_private_search_in_group.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_main_friends_suggestion.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_main_friends_suggestion.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_grid_explore_recycler_img.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_grid_explore_recycler_img.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_grid_videodouble.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_grid_videodouble.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_profile_imageune.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_profile_imageune.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/snippet_pub_insta_download_video.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/snippet_pub_insta_download_video.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_image_list.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_image_list.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_about.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_about.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_response_image_double_full_image_share.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_response_image_double_full_image_share.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_shared_top_bottom_videodouble_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_shared_top_bottom_videodouble_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_see_all_followings_request.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_see_all_followings_request.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_members_page.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_members_page.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/fragment_market_explorer.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/fragment_market_explorer.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_market_selected_img.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_market_selected_img.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_grid_categories.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_grid_categories.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_register_town_and_quarter.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_register_town_and_quarter.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/share_progress_dialog.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/share_progress_dialog.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_challenges_response.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_challenges_response.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_grid_recycler_img.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_grid_recycler_img.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/snippet_profile_toolbar.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/snippet_profile_toolbar.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_view_only_videos.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_view_only_videos.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_dialog_banishmen_in_group.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_dialog_banishmen_in_group.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_members_of_group.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_members_of_group.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_photo.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_photo.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_ivideo_gallery_fun.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_ivideo_gallery_fun.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/fragment_battle_grid.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/fragment_battle_grid.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_view_local_video.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_view_local_video.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_comment_text.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_comment_text.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_following_recyclerview.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_following_recyclerview.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_workplace_profile_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_workplace_profile_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_main_videodouble_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_main_videodouble_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_vue_user_image_battle_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_vue_user_image_battle_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_add_rules_with_example.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_add_rules_with_example.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_invit_persons.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_invit_persons.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_create_new_store.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_create_new_store.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_public_search_in_group.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_public_search_in_group.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_accept_private_rules.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_accept_private_rules.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_vue_user_video_battle_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_vue_user_video_battle_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_reponse_videodouble_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_reponse_videodouble_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_users_has_saw_stories.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_users_has_saw_stories.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_recycler_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_recycler_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/snippet_profile_recyclerview_suggestions.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/snippet_profile_recyclerview_suggestions.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_search_in_group.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_search_in_group.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_register_user_name.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_register_user_name.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_profile_videoune.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_profile_videoune.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_store_explorer_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_store_explorer_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/snippet_top_gallerytoolbar.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/snippet_top_gallerytoolbar.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_main_shared_imageune_big_img.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_main_shared_imageune_big_img.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_recycler_view.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_recycler_view.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_shared_single_top_videoune_big_img.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_shared_single_top_videoune_big_img.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_share_image_une.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_share_image_une.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_view_video_une.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_view_video_une.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_crop_image.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_crop_image.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/snippet_profile_recyclerview_spotlight.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/snippet_profile_recyclerview_spotlight.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_shared_single_top_videodouble_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_shared_single_top_videodouble_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_full_challenge_video_share.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_full_challenge_video_share.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_main_imageune_big_img.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_main_imageune_big_img.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_comment_share_publication.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_comment_share_publication.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_vue_image_battle_big_img.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_vue_image_battle_big_img.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_bottomsheet_market_select_store.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_bottomsheet_market_select_store.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_response_image_double_full_image.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_response_image_double_full_image.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_comment.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_comment.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_image_une_full_image.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_image_une_full_image.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_shared_single_bottom_videodouble.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_shared_single_bottom_videodouble.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_comment_response.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_comment_response.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_image_une_full_image_share.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_image_une_full_image_share.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_main_shared_imageune.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_main_shared_imageune.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_establishment_profile_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_establishment_profile_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_see_group_all_profile.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_see_group_all_profile.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_recycler_view_share.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_recycler_view_share.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_dialog_verification_phone_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_dialog_verification_phone_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_grid_explore_imageune.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_grid_explore_imageune.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_friends_grid_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_friends_grid_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_accept_subscription_request.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_accept_subscription_request.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/snippet_group_pub_challenge_download_photo.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/snippet_group_pub_challenge_download_photo.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_share_top_bottom_view_video_une.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_share_top_bottom_view_video_une.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_go_response_challenge_photo.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_go_response_challenge_photo.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_view_recycler.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_view_recycler.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_notification_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_notification_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_bottomsheet_add_spotlight.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_bottomsheet_add_spotlight.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/snippet_download_story_image.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/snippet_download_story_image.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_register_subscription.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_register_subscription.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_private_view_profile_discover.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_private_view_profile_discover.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_grid_video_fun.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_grid_video_fun.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/snippet_profile_recyclerview_spotlight_search.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/snippet_profile_recyclerview_spotlight_search.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_story_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_story_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_visit_profile.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_visit_profile.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_challenges_iresponded.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_challenges_iresponded.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_full_image_user_profile_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_full_image_user_profile_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_store_suggestion_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_store_suggestion_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_view_category_video.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_view_category_video.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_grid_imageview.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_grid_imageview.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_imageune_big_img.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_imageune_big_img.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/fragment_challenge_invitation.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/fragment_challenge_invitation.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_market_about_product.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_market_about_product.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_adhesion.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_adhesion.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_bottomsheet_see_user_challenges.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_bottomsheet_see_user_challenges.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_store_response_comment.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_store_response_comment.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_market_product_recycler_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_market_product_recycler_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_view_challenge_videos.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_view_challenge_videos.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_download_response_challenge.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_download_response_challenge.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_view_my_challenges.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_view_my_challenges.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/fragment_bottom_sheet_information.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/fragment_bottom_sheet_information.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_response_comment.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_response_comment.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_bottomsheet_comment.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_bottomsheet_comment.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_publication_fun.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_publication_fun.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/snippet_top_view_profilebar.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/snippet_top_view_profilebar.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_full_challenge_video_share.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_full_challenge_video_share.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/fragment_invite_and_follow.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/fragment_invite_and_follow.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_grid_videoune.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_grid_videoune.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_invite_members.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_invite_members.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_response_comment_share.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_response_comment_share.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_bottomsheet_public_discover.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_bottomsheet_public_discover.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_pub_photos_chat.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_pub_photos_chat.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_vue_video_battle_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_vue_video_battle_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_cover_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_cover_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_pub_challenge_video.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_pub_challenge_video.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_person_invited_in_group.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_person_invited_in_group.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_image_recycler.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_image_recycler.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_full_img_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_full_img_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_pub_instag_photo.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_pub_instag_photo.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_shared_single_bottom_imageune_big_img.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_shared_single_bottom_imageune_big_img.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_bottomsheet_visit_profile.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_bottomsheet_visit_profile.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_shared_top_bottom_videoune.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_shared_top_bottom_videoune.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_recyclerview_story.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_recyclerview_story.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_dialog_group_rules.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_dialog_group_rules.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_complet_profile_photo_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_complet_profile_photo_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_main_reponse_imagedouble.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_main_reponse_imagedouble.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_profile_admin.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_profile_admin.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_share_publication_in_group.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_share_publication_in_group.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_main_shared_imagedouble.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_main_shared_imagedouble.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_view_category_image.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_view_category_image.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_suggestion_toutvoir.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_suggestion_toutvoir.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_message.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_message.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/progress_dialog.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/progress_dialog.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_publication_video.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_publication_video.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_view_grid_categories.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_view_grid_categories.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_fun.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_fun.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_sell_in_market.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_sell_in_market.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/fragment_group_explorer.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/fragment_group_explorer.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/snippet_profile_recyclerview_complet.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/snippet_profile_recyclerview_complet.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_recycler_invite_challenge.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_recycler_invite_challenge.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_where_user_is_member.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_where_user_is_member.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_imagedouble_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_imagedouble_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_challenge_invite_group_video.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_challenge_invite_group_video.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_bottomsheet_share_publication.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_bottomsheet_share_publication.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_dialog_market_result_search_modify_the_parameters.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_dialog_market_result_search_modify_the_parameters.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_shared_top_bottom_reponse_videodouble.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_shared_top_bottom_reponse_videodouble.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_market_result_search.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_market_result_search.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_simple_full_challenge_video.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_simple_full_challenge_video.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_profile_suggestion.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_profile_suggestion.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_report_post.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_report_post.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_recycler_full_image.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_recycler_full_image.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_grid_imagedouble.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_grid_imagedouble.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_no_connexion_black.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_no_connexion_black.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_explore_grid_view.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_explore_grid_view.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_image_double_full_image_share.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_image_double_full_image_share.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_bottomsheet_answer_challenge.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_bottomsheet_answer_challenge.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_shared_single_bottom_reponse_videodouble.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_shared_single_bottom_reponse_videodouble.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_shared_single_top_videoune.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_shared_single_top_videoune.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_single_choose_followers.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_single_choose_followers.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_main_comment_text.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_main_comment_text.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_main_shared_videoune_big_img.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_main_shared_videoune_big_img.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_common_friends.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_common_friends.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_profile_member.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_profile_member.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_main_imageune_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_main_imageune_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_view_posts_battle.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_view_posts_battle.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_limit_explanation.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_limit_explanation.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_bottomsheet_signaler.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_bottomsheet_signaler.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/fragment_friend_confirmation.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/fragment_friend_confirmation.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_workplace_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_workplace_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_vue_image_battle_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_vue_image_battle_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_shared_single_bottom_videoune.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_shared_single_bottom_videoune.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_profile_videoune_big_img.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_profile_videoune_big_img.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/snippet_pub_insta_download_photo.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/snippet_pub_insta_download_photo.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_market_recyclerview_your_store.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_market_recyclerview_your_store.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_choose_confidentiality.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_choose_confidentiality.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_product_comment_publication.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_product_comment_publication.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_profile_comment_text.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_profile_comment_text.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_full_challenge_video.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_full_challenge_video.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_video.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_video.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_view_posts_fun.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_view_posts_fun.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_my_challenges.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_my_challenges.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_complet_displayname_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_complet_displayname_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_simple_full_profil_photo.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_simple_full_profil_photo.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_view_recyclerview.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_view_recyclerview.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_overlay.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_overlay.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_visit_profile.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_visit_profile.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_voice_right_msg_view.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_voice_right_msg_view.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_comment.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_comment.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_grid_explore_comment_text.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_grid_explore_comment_text.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_market_explorer_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_market_explorer_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_main_recycler_invit.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_main_recycler_invit.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_shared_single_bottom_videoune_big_img.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_shared_single_bottom_videoune_big_img.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_main_fun_suggestion.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_main_fun_suggestion.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_comment_first_comment.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_comment_first_comment.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_child_recycler_comment_share.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_child_recycler_comment_share.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/fragment_your_shop.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/fragment_your_shop.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/image_chat_list.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/image_chat_list.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_view_explore.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_view_explore.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_child_recycler_comment.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_child_recycler_comment.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/fragment_group_your_groups.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/fragment_group_your_groups.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_main.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_view_saved_publications.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_view_saved_publications.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/snippet_viewpager.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/snippet_viewpager.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_view_category_image.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_view_category_image.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_limit_member_action.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_limit_member_action.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_shared_top_bottom_videoune_big_img.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_shared_top_bottom_videoune_big_img.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_crushers.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_crushers.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/snippet_pub_challenge_download_photo.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/snippet_pub_challenge_download_photo.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_create_new_group.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_create_new_group.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_shared_top_bottom_imagedouble.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_shared_top_bottom_imagedouble.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_see_all_suggestions.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_see_all_suggestions.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_public_view_profile_discover.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_public_view_profile_discover.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_bottomsheet_private_discover_with_rules.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_bottomsheet_private_discover_with_rules.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_view_comment_fun.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_view_comment_fun.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_bottomsheet_private_discover.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_bottomsheet_private_discover.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_choose_followers_to_send_challenge.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_choose_followers_to_send_challenge.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/fragment_invitation_home_town.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/fragment_invitation_home_town.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/snippet_tablayout.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/snippet_tablayout.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_add_rules.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_add_rules.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_videoune_big_img.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_videoune_big_img.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_update_member.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_update_member.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_header_group_public_view_profile_discover.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_header_group_public_view_profile_discover.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_vue_video_battle_big_img.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_vue_video_battle_big_img.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_dialog_market_the_menu.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_dialog_market_the_menu.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_complet_bio_and_username.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_complet_bio_and_username.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_view_category_image_big_img.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_view_category_image_big_img.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_gallery_folder.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_gallery_folder.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_publication_photo.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_publication_photo.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_home.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_home.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_view_response_comment_share.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_view_response_comment_share.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_friends_suggestion.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_friends_suggestion.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_pubblication_video.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_pubblication_video.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/fragment_main.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/fragment_main.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/fragment_all_user_friends.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/fragment_all_user_friends.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_image_list.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_image_list.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_chat_contacts.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_chat_contacts.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_vue_user_image_battle_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_vue_user_image_battle_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_grid_comment_text.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_grid_comment_text.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_bottomsheet_add_recycler_description.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_bottomsheet_add_recycler_description.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_vue_user_video_battle_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_vue_user_video_battle_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_shared_single_top_circle_image.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_shared_single_top_circle_image.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/custom_arrayadaper_layout.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/custom_arrayadaper_layout.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_share_single_top_view_video_une.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_share_single_top_view_video_une.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_dialog_msg_challenge_video.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_dialog_msg_challenge_video.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_complet_bio_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_complet_bio_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_bottomsheet_manege_friend.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_bottomsheet_manege_friend.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_profile.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_profile.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/fragment_group_discover.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/fragment_group_discover.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_comment_publication.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_comment_publication.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_bottomsheet_update_profile_or_story.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_bottomsheet_update_profile_or_story.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_shared_top_bottom_imageune_big_img.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_shared_top_bottom_imageune_big_img.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_parameters.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_parameters.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_view_response_comment.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_view_response_comment.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_shared_single_top_imagedouble.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_shared_single_top_imagedouble.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/view_more_progress.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/view_more_progress.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_pub_challenge_video.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_pub_challenge_video.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_comment_publication_share.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_comment_publication_share.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_fun_suggestios_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_fun_suggestios_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_shared_single_bottom_imagedouble.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_shared_single_bottom_imagedouble.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_comment_share.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_comment_share.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_see_all_members_by_admin.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_see_all_members_by_admin.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/fragment_invitation_from_same_town.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/fragment_invitation_from_same_town.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_image_double_full_image.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_image_double_full_image.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_vue_image_battle_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_vue_image_battle_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/msg_item_left.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/msg_item_left.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/alert_convert.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/alert_convert.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_vue_video_battle_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_vue_video_battle_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_challenge_invite_video.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_challenge_invite_video.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_share_publication_in_group.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_share_publication_in_group.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_nb_followings.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_nb_followings.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_profil_photo.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_profil_photo.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_ivideo_list.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_ivideo_list.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_pub_comment_text.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_pub_comment_text.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_spotlight_image.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_spotlight_image.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_invit_persons_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_invit_persons_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_personalized_videos_gallery.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_personalized_videos_gallery.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_share_cover_image.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_share_cover_image.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_view_comment.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_view_comment.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_only_recyclerview.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_only_recyclerview.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_profile_imageune_big_img.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_profile_imageune_big_img.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_bottomsheet_market_location_category.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_bottomsheet_market_location_category.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_gallery.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_gallery.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_update_status.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_update_status.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_suspend_member.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_suspend_member.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_story_spot_light.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_story_spot_light.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_edit_profile.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_edit_profile.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_main_reponse_videodouble.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_main_reponse_videodouble.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/view_video_controller.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/view_video_controller.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_main_shared_user_profile.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_main_shared_user_profile.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_vue_user_image_battle_big_img.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_vue_user_image_battle_big_img.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_product_response_comment.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_product_response_comment.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_publication_photo.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_publication_photo.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_image_double_full_image.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_image_double_full_image.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/msg_item_right.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/msg_item_right.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_main_shared_recycler.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_main_shared_recycler.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_publication_stories.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_publication_stories.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/snippet_pub_chat_video.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/snippet_pub_chat_video.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_members_lists.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_members_lists.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_vue_video_battle_big_img.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_vue_video_battle_big_img.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_see_list_of_all_admins_and_moderators.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_see_list_of_all_admins_and_moderators.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_store_comment_publication.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_store_comment_publication.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_invite_new_members.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_invite_new_members.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_pub_profile_photo.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_pub_profile_photo.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_header_group_member_profile.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_header_group_member_profile.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_shared_top_bottom_imageune.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_shared_top_bottom_imageune.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_pub_challenge_photo.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_pub_challenge_photo.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_see_user_friends.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_see_user_friends.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_imageune_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_imageune_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_waiting_approval.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_waiting_approval.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_bottomsheet_manage_members_in_group.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_bottomsheet_manage_members_in_group.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_private_suggestion_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_private_suggestion_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/fragment_friends_suggestions.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/fragment_friends_suggestions.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/snippet_profile_center_top.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/snippet_profile_center_top.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_header_group_admin_profile.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_header_group_admin_profile.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_view_comment_share.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_view_comment_share.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_dialog_create_store_msg.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_dialog_create_store_msg.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_term_of_use.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_term_of_use.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_choose_profile_photo.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_choose_profile_photo.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_main_shared_reponse_imagedouble.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_main_shared_reponse_imagedouble.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_child_recycler_response_comment_share.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_child_recycler_response_comment_share.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_view_category_video_big_img.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_view_category_video_big_img.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_history.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_history.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_see_all_friends_request.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_see_all_friends_request.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_grid_explore_imagedouble.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_grid_explore_imagedouble.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_main_shared_videodouble_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_main_shared_videodouble_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_see_all_my_friends.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_see_all_my_friends.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_view_only_photos.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_view_only_photos.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_friend_confirmation.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_friend_confirmation.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/fragment_battle_grid_profile.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/fragment_battle_grid_profile.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_video_fun.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_video_fun.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/fragment_market_recommendations.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/fragment_market_recommendations.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_explorer.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_explorer.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_suivie_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_suivie_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_story.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_story.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_profile_imagedouble.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_profile_imagedouble.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_main_videoune_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_main_videoune_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_location_publication.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_location_publication.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_view_profile.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_view_profile.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/fragment_parameters.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/fragment_parameters.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_ivideo_list.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_ivideo_list.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_view_admin.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_view_admin.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_market_store.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_market_store.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_image_une_full_image_share.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_image_une_full_image_share.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_groups_following.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_groups_following.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_vue_user_video_battle_big_img.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_vue_user_video_battle_big_img.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_comment_publication.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_comment_publication.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_adhesion_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_adhesion_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_grid_explore_videoune.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_grid_explore_videoune.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_view_video_une.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_view_video_une.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/image_picker_list.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/image_picker_list.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_main_recycler_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_main_recycler_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_image_double_full_image_share.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_image_double_full_image_share.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_share_recycler.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_share_recycler.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_response_image_double_full_image.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_response_image_double_full_image.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_accepted_challenges.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_accepted_challenges.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_register_login.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_register_login.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_bottomsheet_update_profile.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_bottomsheet_update_profile.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_nb_followers.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_nb_followers.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_insta_cropper.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_insta_cropper.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_vue_image_battle_big_img.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_vue_image_battle_big_img.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_videodouble_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_videodouble_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_pub_challenge_photo.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_pub_challenge_photo.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/snippet_profile_view_nber_post_and_followers.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/snippet_profile_view_nber_post_and_followers.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_view_category_video_big_img.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_view_category_video_big_img.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_bottomsheet_share.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_bottomsheet_share.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_child_recycler_comment.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_child_recycler_comment.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/fragment_follow_approbation.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/fragment_follow_approbation.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/fragment_notification.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/fragment_notification.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_invite_persons_after_group_created.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_invite_persons_after_group_created.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_no_connexion.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_no_connexion.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_bottomsheet_chat.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_bottomsheet_chat.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_profile_reponse_videodouble.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_profile_reponse_videodouble.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_main_shared_reponse_videodouble.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_main_shared_reponse_videodouble.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_share_in_pub_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_share_in_pub_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_friend_see_all_user_his_friends.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_friend_see_all_user_his_friends.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_image_une_full_image.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_image_une_full_image.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_bottomsheet_market_category.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_bottomsheet_market_category.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_main_user_profile.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_main_user_profile.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_suggestion.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_suggestion.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_market_explorer_product.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_market_explorer_product.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_share_single_bottom_view_video_une.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_share_single_bottom_view_video_une.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/snippet_editprofile_center.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/snippet_editprofile_center.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_admin_members_of_group.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_admin_members_of_group.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_ivideo_picker_list.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_ivideo_picker_list.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_update_product_data.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_update_product_data.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_cover_photo.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_cover_photo.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_establishment_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_establishment_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_view_local_video.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_view_local_video.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_bottomsheet.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_bottomsheet.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_bottomsheet_market_store_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_bottomsheet_market_store_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/fragment_chat.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/fragment_chat.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_view_response_fun_comment.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_view_response_fun_comment.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_see_all_members.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_see_all_members.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_register_birth_day.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_register_birth_day.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/fragment_common_friends.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/fragment_common_friends.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_reponse_imagedouble_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_reponse_imagedouble_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/fragment_fun_user_grid_profile.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/fragment_fun_user_grid_profile.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_bottomsheet_challenge_categories.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_bottomsheet_challenge_categories.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_market_recycler_full_image.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_market_recycler_full_image.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_shared_single_top_reponse_videodouble.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_shared_single_top_reponse_videodouble.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_simple_full_challenge_image.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_simple_full_challenge_image.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_public_suggestion_discover.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_public_suggestion_discover.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_recycler_full_image_share.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_recycler_full_image_share.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_market_search_store.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_market_search_store.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_grid_explore_videodouble.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_grid_explore_videodouble.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_market_grid_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_market_grid_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_camera_video_fun.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_camera_video_fun.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/snippet_pub_challenge_download_video.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/snippet_pub_challenge_download_video.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/snippet_group_pub_challenge_download_video.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/snippet_group_pub_challenge_download_video.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_child_recycler_response_comment.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_child_recycler_response_comment.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_shared_single_top_imageune_big_img.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_shared_single_top_imageune_big_img.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_voice_left_msg_view.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_voice_left_msg_view.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_likers.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_likers.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_download_spotlight.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_download_spotlight.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_see_user_all_profile_on_miioky.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_see_user_all_profile_on_miioky.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_profile_recycler.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_profile_recycler.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_membership_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_membership_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_dialog_delete_msg_chat.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_dialog_delete_msg_chat.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_group_profile_videodouble.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_group_profile_videodouble.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/friends_single_layout.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/friends_single_layout.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_main_shared_videoune.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_main_shared_videoune.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/crop_image_view.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/crop_image_view.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_main_imagedouble_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_main_imagedouble_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_main_videoune_big_img.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_main_videoune_big_img.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/fragment_bottomsheet_rules.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/fragment_bottomsheet_rules.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_suspension_expalanation.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_suspension_expalanation.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_update_store_data.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_update_store_data.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_college_item.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_college_item.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_main_recycler_story_icon.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_main_recycler_story_icon.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_group_create_member_background_profile_photo.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_group_create_member_background_profile_photo.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_story_add_spotlight_icon.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_story_add_spotlight_icon.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/activity_status_gallery.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/activity_status_gallery.xml"
+    },
+    {
+        "merged": "com.bekambimouen.miiokychallenge.app-mergeDebugResources-111:/layout/layout_vue_user_video_battle_big_img.xml",
+        "source": "com.bekambimouen.miiokychallenge.app-main-114:/layout/layout_vue_user_video_battle_big_img.xml"
+    }
+]

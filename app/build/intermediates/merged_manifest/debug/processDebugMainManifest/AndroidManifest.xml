@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bekambimouen.miiokychallenge"
+    android:versionCode="14"
+    android:versionName="1.1.63" >
+
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="34" />
+    <!-- prevents installing the application on devices with no camera -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+    <uses-permission android:name="com.bekambimouen.miiokychallenge.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <permission
+        android:name="com.bekambimouen.miiokychallenge.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <application
+        android:name="com.bekambimouen.miiokychallenge.App"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:persistent="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/Theme.MiiokyChallenge"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.full_img_and_vid_simple.SimpleFullChallengeVideo"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.full_img_and_vid_simple.SimpleFullChallengeImage"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.profile.VisitProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.friends.SeeAllFollowingsRequest"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.friends.SeeAllFriendsRequest"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.challenge_home.view_my_challenges.ChallengesIResponded"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.register.RegisterLogin"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.publication.GroupPublicationVideo"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.story.UsersHasSawStories"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.profile.in_the_spotlight.StatusGallery"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.messages.UpdateStatus"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.market_place.update.UpdateStoreData"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.market_place.update.UpdateProductData"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.market_place.search.MarketResultSearch"
+            android:exported="false"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.market_place.recycler_full_image.MarketRecyclerFullImage"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.publication.GroupCreateMemberBackgroundProfilePhoto"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.GroupMembersPage"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.GroupMembersLists"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.simple_member.GroupSeeAllMembers"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.video_trimmer.ActVideoTrimmer"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/VideoTrimmerTheme" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.photos_videos_only.GroupViewOnlyVideos"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.photos_videos_only.GroupViewOnlyPhotos"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.parameters.GroupsFollowing"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.parameters.GroupInvitPersons"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.parameters.GroupAdhesion"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.manage_member.suspend.SuspensionExpalanation"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.manage_member.limit_member_actions.LimitActivityExplanation"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.invite_user_in_group.InvitePersonsAfterGroupCreated"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.parameters.GroupSearchInGroup"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.parameters.GroupParameters"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.manage_member.group_where_user_is_member.GroupWhereUserIsMember"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.GroupHistory"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.publication.GroupPublicationPhoto"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.publication.GroupPubCommentText"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.invite_user_in_group.PersonInvitedInGroup"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.invite_user_in_group.GroupInviteNewMembers"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.manage_member.post_approval.GroupWaitingApproval"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.administrators.GroupSeeListOfAllAdminsAndModerators"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.administrators.GroupSeeAllMembersByAdmin"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.administrators.GroupManege"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.see_member_profile.SeeGroupAllProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.photos_videos_only.GroupOnlyVideoGradle"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.photos_videos_only.GroupOnlyPhotoGradle"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.invite_user_in_group.GroupInviteFromSameTown"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.see_member_profile.SeeGroupMemberAllBackgroundProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.GroupUpdateMember"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.publication.GroupCreateNewGroup"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.manage_member.suspend.GroupSuspendMember"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.manage_member.suspend.GroupAddRulesWithExample"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.manage_member.limit_member_actions.LimitMemberAction"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.manage_member.membership.GroupMembership"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.child_recyclerview_share.comment.GroupChildRecyclerResponseCommentShare"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.child_recyclerview.comment.GroupChildRecyclerResponseComment"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.market_place.comment.store_comment.publication.StoreCommentPublication"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.market_place.comment.store_comment.StoreResponseComment"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.market_place.MarketStore"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.market_place.comment.product_comment.publication.ProductCommentPublication"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.market_place.comment.product_comment.ProductResponseComment"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.market_place.search.MarketSearchStore"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.market_place.publication.CreateNewStore"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.market_place.publication.SellInMarket"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.market_place.publication.LocationPublication"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.market_place.publication.MarketSellInStore"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.market_place.MarketAboutProduct"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.discover.GroupPublicViewProfileDiscover"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.manage_member.membership.AcceptPrivateRules"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.discover.GroupPrivateViewProfileDiscover"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.messages.ChatContacts"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.comment_fun.ViewCommentFun"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.child_recyclerview.comment.ChildRecyclerResponseComment"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.child_recyclerview_share.comment.ChildRecyclerResponseCommentShare"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.challenges_view_all.ViewGridCategories"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.publication.GroupPubChallengeVideo"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.publication.GroupPubChallengePhoto"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.challenge_publication.PubChallengeVideo"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.challenge_publication.PubChallengePhoto"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.challenges_view_all.ViewChallengeVideos"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.challenges_response.ChallengesResponse"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.profile.in_the_spotlight.StorySpotLightActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.display_insta.see_user_all_profile.SeeUserAllProfileOnMiioky"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.followersfollowings.NbFollowings"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.profile.SeeSectionAboutMe"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.profile.in_the_spotlight.DownloadSpotlight"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.profile.ViewPostsBattle"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.profile.CompletBioAndUsername"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.suggestions.SeeAllSuggestions"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.search.ExploreGridView"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.friends.CommonFriends"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.search.user_common_friends.SeeUserFriends"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.challenge_home.view_my_challenges.AcceptedChallenges"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.challenge_home.view_my_challenges.MyChallenges"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.challenge.GoResponseChallengePhoto"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.challenge.ViewMyChallenges"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.explorer.GroupExplorer"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.comment_share.GroupResponseCommentShare"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.comment_share.publication.GroupCommentSharePublication"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.comment.GroupResponseComment"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.comment.publication.GroupCommentPublication"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.comment_share.ViewResponseCommentShare"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.comment_share.publication.CommentPublicationShare"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.view_videos.ViewVideo"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.search.ViewExplore"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.messages.publication.PubPhotosChat"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.child_recyclerview_share.comment.ChildRecyclerCommentShare"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.child_recyclerview_share.RecyclerViewActivityShare"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.full_image_share.ResponseImageDoubleFullImageShare"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.full_image_share.RecyclerFullImageShare"
+            android:exported="false"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.full_image_share.ImageUneFullImageShare"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.full_image_share.ImageDoubleFullImageShare"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.child_recyclerview.comment.ChildRecyclerComment"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.child_recyclerview.RecyclerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.full_image.ResponseImageDoubleFullImage"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.full_image.RecyclerFullImage"
+            android:exported="false"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.full_image.ImageUneFullImage"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.full_image.ImageDoubleFullImage"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.child_recyclerview_share.comment.GroupChildRecyclerCommentShare"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.child_recyclerview_share.GroupViewRecyclerShare"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.full_image_share.GroupResponseImageDoubleFullImageShare"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.full_image_share.GroupRecyclerFullImageShare"
+            android:exported="false"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.full_image_share.GroupImageUneFullImageShare"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.full_image_share.GroupImageDoubleFullImageShare"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.full_image.GroupResponseImageDoubleFullImage"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.child_recyclerview.comment.GroupChildRecyclerComment"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.child_recyclerview.GroupViewRecycler"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.full_image.GroupRecyclerFullImage"
+            android:exported="false"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.full_image.GroupImageUneFullImage"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.simple_member.GroupViewProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.administrators.GroupViewAdmin"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.full_image.GroupImageDoubleFullImage"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.comment_share.GroupCommentShare"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.full_challenge_video_share.GroupFullChallengeVideoShare"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.comment.GroupComment"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.full_challenge_video.GroupFullChallengeVideo"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.simple_member.GroupProfileMember"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.administrators.GroupProfileAdmin"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.comment_share.ViewCommentShare"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.full_challenge_video_share.FullChallengeVideoShare"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.messages.FullVideo"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.comment_fun.ViewResponseFunComment"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.comment.ViewResponseComment"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.comment.publication.CommentPublication"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.challenges_view_all.GridCategories"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.comment.ViewComment"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.share_publication.SharePublicationInMiioky"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.share_publication.SharePublicationInGroup"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.shared_in_group.GroupSharePublicationInGroup"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.full_challenge_video.FullChallengeVideo"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.friends.SeeAllMyFriends"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.profile.ViewPostsFun"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.fun.FunActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.challenge_publication.ViewLocalVideo"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.fun.publication.PublicationFun"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="video/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.fun.publication.Gallery"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.fun.publication.CameraVideoFun"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.manage_member.report_post.GroupReportPost"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.groups.GroupAbout"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.publication_saved.ViewSavedPublications"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.search.ViewProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.followersfollowings.NbFollowers"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.fun.FunSuggestions"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.editprofile.EditProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.challenge.DownloadResponseChallenge"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.editprofile.UpdateProfile"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.instacropper.InstaCropperActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.crushers_and_likers.Likers"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.crushers_and_likers.Crushers"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.messages.MessageActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.full_img_and_vid_simple.SimpleFullProfilPhoto"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.full_img_and_vid_simple.SimpleFullImage"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.publication_insta.PubInstagVideo"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.publication_insta.PubCommentText"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.publication_insta.PubInstagPhoto"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.crop_profile_image.CropImageActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CropImage" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.story.publication.PublicationStories"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.story.StoryActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.editprofile.ChooseProfilePhoto"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.profile.Profile"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.challenge_home.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.register.RegisterBirthDay"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.register.RegisterSubscription"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.register.RegisterTownAndQuarter"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.register.RegisterUserName"
+            android:exported="false" />
+        <activity
+            android:name="com.bekambimouen.miiokychallenge.EnterAppActivity"
+            android:exported="true"
+            android:theme="@style/Theme.CustomSplashScreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+        <service
+            android:name="com.google.firebase.sessions.SessionLifecycleService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.nl.languageid.bundled.internal.ThickLanguageIdRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.nl.languageid.internal.LanguageIdRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <provider
+            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+            android:authorities="com.bekambimouen.miiokychallenge.mlkitinitprovider"
+            android:exported="false"
+            android:initOrder="99" />
+
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false" >
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct" />
+        </service>
+
+        <activity
+            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="firebase.auth"
+                    android:path="/"
+                    android:scheme="genericidp" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="firebase.auth"
+                    android:path="/"
+                    android:scheme="recaptcha" />
+            </intent-filter>
+        </activity>
+
+        <property
+            android:name="android.adservices.AD_SERVICES_CONFIG"
+            android:resource="@xml/ga_ad_services_config" />
+
+        <service
+            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+            android:enabled="true"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+        </service>
+
+        <activity
+            android:name="androidx.credentials.playservices.HiddenActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:enabled="true"
+            android:exported="false"
+            android:fitsSystemWindows="true"
+            android:theme="@style/Theme.Hidden" >
+        </activity>
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+            Service handling Google Sign-In user revocation. For apps that do not integrate with
+            Google Sign-In, this service will never be started.
+        -->
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+            android:visibleToInstantApps="true" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.bekambimouen.miiokychallenge.firebaseinitprovider"
+            android:directBootAware="true"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <service
+            android:name="androidx.camera.core.impl.MetadataHolderService"
+            android:enabled="false"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+        </service>
+
+        <activity
+            android:name="androidx.compose.ui.tooling.PreviewActivity"
+            android:exported="true" />
+        <activity
+            android:name="androidx.activity.ComponentActivity"
+            android:exported="true" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.bekambimouen.miiokychallenge.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+        <uses-library
+            android:name="android.ext.adservices"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.DUMP" >
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+        <activity
+            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+            android:exported="false"
+            android:stateNotNeeded="true"
+            android:theme="@style/Theme.PlayCore.Transparent" />
+    </application>
+
+</manifest>

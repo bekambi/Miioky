@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/blue_300"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_marginStart="0.5dp"
+    android:layout_marginTop="0.5dp">
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:src="@drawable/camera_video"
+        app:tint="@color/white"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/camera"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        />
+
+</LinearLayout>

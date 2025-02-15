@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="20dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:background="@drawable/cadre_msg_dialog"
+    >
+
+    <ImageView
+        android:id="@+id/iv_warning"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_baseline_warning_24"
+        android:contentDescription="@null"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/really_want_delete_one_publication"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_toEndOf="@id/iv_warning"
+        android:layout_marginStart="20dp"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_warning"
+        android:paddingStart="40dp"
+        android:paddingEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_no"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/tv_yes"
+            android:background="@drawable/cadre_selected_text"
+            android:backgroundTint="@color/blue_50"
+            android:gravity="center"
+            android:text="@string/no"
+            android:textColor="@color/black_semi_transparent"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_yes"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="@string/yes"
+            android:textColor="@color/blue_600"
+            android:textSize="15sp"
+            android:textStyle="bold"
+
+            tools:ignore="RelativeOverlap" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

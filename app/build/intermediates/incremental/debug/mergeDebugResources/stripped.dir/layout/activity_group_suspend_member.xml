@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".groups.manage_member.suspend.GroupSuspendMember">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@drawable/white_grey_border_bottom"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:id="@+id/arrowBack"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:background="@drawable/selector_circle">
+
+                <ImageView
+                    android:id="@+id/close"
+                    android:layout_width="@dimen/icon_arrowback_size"
+                    android:layout_height="@dimen/icon_arrowback_size"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    app:tint="@color/black" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/toolBar_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text=""
+                android:textColor="@color/caption_color"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.bekambimouen.miiokychallenge.Utils.TouchDetectableScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolBar"
+        android:layout_above="@id/linLayout_button_suspend"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/suspension_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text=""
+                android:textSize="20sp"
+                android:textColor="@color/caption_color"
+                android:textStyle="bold"
+                />
+
+            <RelativeLayout
+                android:id="@+id/relLayout_edit_about_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/cadre_stroke"
+                >
+
+                <com.bekambimouen.miiokychallenge.Utils.MyEditText
+                    android:id="@+id/edit_about_group"
+                    android:layout_width="488dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black_semi_transparen3"
+                    android:hint="@string/write_comment"
+                    android:importantForAutofill="no"
+                    android:minHeight="48dp"
+                    android:inputType="textMultiLine|textNoSuggestions|textCapSentences"
+                    android:maxLength="250"
+                    android:padding="10dp"
+                    android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                    android:textColorHint="@color/black_semi_transparent2"
+                    android:textSize="17sp"
+                    android:textColor="@color/caption_color"
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_nber_char_sequence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="10dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/nber_rule_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:text="@string/zero"
+                    android:textSize="17sp"
+                    android:textColor="@color/caption_color"
+                    />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="13dp"
+                    android:background="@color/caption_color"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:text="@string/two_hundred_and_fifty"
+                    android:textSize="17sp"
+                    android:textColor="@color/caption_color"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/suspension_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/suspension_time"
+                android:textSize="20sp"
+                android:textColor="@color/caption_color"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/suspension_message"
+                android:textSize="17sp"
+                android:textColor="@color/black_semi_transparent4"
+                />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_margin="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radio_id1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/twelve_hours"
+                    android:textColor="@color/caption_color"
+                    android:textSize="17sp"
+                    android:buttonTint="@color/blue_600"
+                    android:checked="true"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey_300"/>
+
+                <RadioButton
+                    android:id="@+id/radio_id2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/twenty_four_hours"
+                    android:textColor="@color/caption_color"
+                    android:textSize="17sp"
+                    android:buttonTint="@color/blue_600"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey_300"/>
+
+                <RadioButton
+                    android:id="@+id/radio_id3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/three_days"
+                    android:textColor="@color/caption_color"
+                    android:textSize="17sp"
+                    android:buttonTint="@color/blue_600"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey_300"/>
+
+                <RadioButton
+                    android:id="@+id/radio_id4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/seven_days"
+                    android:textColor="@color/caption_color"
+                    android:textSize="17sp"
+                    android:buttonTint="@color/blue_600"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey_300"/>
+
+                <RadioButton
+                    android:id="@+id/radio_id5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/fourteen_days"
+                    android:textColor="@color/caption_color"
+                    android:textSize="17sp"
+                    android:buttonTint="@color/blue_600"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey_300"/>
+
+                <RadioButton
+                    android:id="@+id/radio_id6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/twenty_eight_days"
+                    android:textColor="@color/caption_color"
+                    android:textSize="17sp"
+                    android:buttonTint="@color/blue_600"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey_300"/>
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/linLayout_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/leave_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    android:textColor="@color/caption_color"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="@string/the_non_respected_rules"
+                    android:textSize="17sp"
+                    android:textColor="@color/black_semi_transparent"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/relLayout_see_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/selector_2"
+                    >
+
+                    <TextView
+                        android:id="@+id/see_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@id/next"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="20dp"
+                        android:text="@string/see_more"
+                        android:textColor="@color/black_semi_transparent"
+                        />
+
+                    <ImageView
+                        android:id="@+id/next"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        android:src="@drawable/icons_next"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_300"/>
+
+            </LinearLayout>
+
+            <!-- invitation to add rules -->
+            <LinearLayout
+                android:id="@+id/linLayout_invite_to_write_rules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@null"
+                    android:src="@drawable/icons_group_rules" />
+
+                <TextView
+                    android:id="@+id/go_add_rules"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/group_without_rules"
+                    android:textSize="17sp"
+                    android:textColorLink="@drawable/selector_2"
+                    android:textColor="@color/black_semi_transparent"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.bekambimouen.miiokychallenge.Utils.TouchDetectableScrollView>
+
+    <LinearLayout
+        android:id="@+id/linLayout_button_suspend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/button_suspension_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text=""
+            android:textColor="@color/caption_color"
+            android:textSize="17sp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey_300"/>
+
+        <TextView
+            android:id="@+id/button_suspend"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_blue"
+            android:gravity="center"
+            android:text="@string/suspend_member"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLayout_view_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+        <include layout="@layout/layout_overlay"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

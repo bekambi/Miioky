@@ -1,0 +1,1132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_grey_50"
+    tools:context=".editprofile.UpdateProfile">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@drawable/white_grey_border_bottom">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/backArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_circle">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_arrowback_size"
+                    android:layout_height="@dimen/icon_arrowback_size"
+                    android:layout_marginStart="10dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    app:tint="@color/black" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/backArrow"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/update"
+                android:textColor="@color/caption_color"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- username section -->
+    <RelativeLayout
+        android:id="@+id/relLayout_update_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolBar"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/pseudo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/username"
+            android:textColor="@color/caption_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/relLayout_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/pseudo"
+            android:background="@drawable/cadre_rectangle"
+            >
+
+            <com.bekambimouen.miiokychallenge.Utils.MyEditText
+                android:id="@+id/edit_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="20"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@null"
+                android:hint="@string/username"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences|textNoSuggestions"
+                android:maxLines="1"
+                android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                android:textColor="@color/caption_color"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!-- fullName section -->
+    <RelativeLayout
+        android:id="@+id/relLayout_update_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolBar"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/name"
+            android:textColor="@color/caption_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/relLayout_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/name"
+            android:background="@drawable/cadre_rectangle"
+            >
+
+            <com.bekambimouen.miiokychallenge.Utils.MyEditText
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@null"
+                android:hint="@string/name"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences|textNoSuggestions"
+                android:maxLines="1"
+                android:maxLength="20"
+                android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                android:textColor="@color/caption_color"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!-- bio section -->
+    <RelativeLayout
+        android:id="@+id/relLayout_update_bio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolBar"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/bio"
+            android:textColor="@color/caption_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/linLayout_nber_char_sequence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"
+            android:background="@drawable/cadre_textview"
+            android:layout_marginStart="20dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center_vertical"
+            tools:ignore="RelativeOverlap">
+
+            <TextView
+                android:id="@+id/nber_char_sequence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:text="@string/zero"
+                android:textSize="18sp"
+                android:textColor="@color/black_semi_transparent4"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="13dp"
+                android:background="@color/black_semi_transparent"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:text="@string/two_hundred"
+                android:textSize="18sp"
+                android:textColor="@color/black_semi_transparent4"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relLayout_bio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="80dp"
+            android:layout_below="@id/bio"
+            android:padding="10dp"
+            android:background="@drawable/cadre_rectangle"
+            >
+
+            <com.bekambimouen.miiokychallenge.Utils.MyEditText
+                android:id="@+id/edit_bio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="@null"
+                android:background="@null"
+                android:hint="@string/bio"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="200"
+                android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                android:textColor="@color/caption_color"
+                android:textSize="18sp"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!-- town name section -->
+    <RelativeLayout
+        android:id="@+id/relLayout_update_town_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolBar"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/town_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/town_name"
+            android:textColor="@color/caption_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/relLayout_town_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/town_name"
+            android:background="@drawable/cadre_rectangle"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/edit_town_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@null"
+                android:hint="@string/your_town"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences|textNoSuggestions"
+                android:maxLines="1"
+                android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                android:textColor="@color/caption_color"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!-- town neighborhood section -->
+    <RelativeLayout
+        android:id="@+id/relLayout_update_neighborhood_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolBar"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/neighborhood_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/neighborhood_name"
+            android:textColor="@color/caption_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/relLayout_neighborhood_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/neighborhood_name"
+            android:background="@drawable/cadre_rectangle"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/edit_neighborhood_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@null"
+                android:hint="@string/your_neighborhood"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences|textNoSuggestions"
+                android:maxLines="1"
+                android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                android:textColor="@color/caption_color"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!-- marital status section -->
+    <RelativeLayout
+        android:id="@+id/relLayout_update_marital_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolBar"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/marital_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/relationship_status"
+            android:textColor="@color/caption_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_margin="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/marital_status"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:id="@+id/radio_single"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/single"
+                android:textColor="@color/caption_color"
+                android:textSize="@dimen/text_size"
+                android:buttonTint="@color/shinning_blue"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_300"/>
+
+            <RadioButton
+                android:id="@+id/radio_married"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/married"
+                android:textColor="@color/caption_color"
+                android:textSize="@dimen/text_size"
+                android:buttonTint="@color/shinning_blue"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_300"/>
+
+            <RadioButton
+                android:id="@+id/radio_divorced"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/divorced"
+                android:textColor="@color/caption_color"
+                android:textSize="@dimen/text_size"
+                android:buttonTint="@color/shinning_blue"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_300"/>
+
+            <RadioButton
+                android:id="@+id/radio_in_a_relationship_with"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/in_a_relationship_with"
+                android:textColor="@color/caption_color"
+                android:textSize="@dimen/text_size"
+                android:buttonTint="@color/shinning_blue"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_300"/>
+
+            <RadioButton
+                android:id="@+id/radio_separated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/separated"
+                android:textColor="@color/caption_color"
+                android:textSize="@dimen/text_size"
+                android:buttonTint="@color/shinning_blue"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_300"/>
+
+            <RadioButton
+                android:id="@+id/radio_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/other"
+                android:textColor="@color/caption_color"
+                android:textSize="@dimen/text_size"
+                android:buttonTint="@color/shinning_blue"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_300"/>
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <!-- gender section -->
+    <RelativeLayout
+        android:id="@+id/relLayout_update_genter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolBar"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/genter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/gender"
+            android:textColor="@color/caption_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_genter"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/genter"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:id="@+id/radio_man"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/man"
+                android:textColor="@color/caption_color"
+                android:textSize="@dimen/text_size"
+                android:buttonTint="@color/shinning_blue"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_300"/>
+
+            <RadioButton
+                android:id="@+id/radio_women"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/women"
+                android:textColor="@color/caption_color"
+                android:textSize="@dimen/text_size"
+                android:buttonTint="@color/shinning_blue"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_300"/>
+
+            <RadioButton
+                android:id="@+id/radio_binary_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/binary_name"
+                android:textColor="@color/caption_color"
+                android:textSize="@dimen/text_size"
+                android:buttonTint="@color/shinning_blue"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_300"/>
+
+            <RadioButton
+                android:id="@+id/radio_other_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/other"
+                android:textColor="@color/caption_color"
+                android:textSize="@dimen/text_size"
+                android:buttonTint="@color/shinning_blue"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_300"/>
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <!-- add school section -->
+    <RelativeLayout
+        android:id="@+id/relLayout_add_college"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolBar"
+        android:layout_marginTop="10dp"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="20dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/add_college"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/school_high_school_college"
+            android:textColor="@color/caption_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_college"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+                <com.bekambimouen.miiokychallenge.Utils.MyEditText
+                    android:id="@+id/edit_add_college_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:hint="@string/add"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapSentences|textNoSuggestions"
+                    android:maxLines="1"
+                    android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                    android:textColor="@color/caption_color"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayout_college"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/cadre_rectangle"
+                >
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_add_college"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:paddingStart="1dp"
+                    android:paddingEnd="10dp"
+                    android:background="@null"
+                    android:hint="@string/add_college"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapSentences|textNoSuggestions"
+                    android:maxLines="1"
+                    android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                    android:textColor="@color/caption_color"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- update school section -->
+    <RelativeLayout
+        android:id="@+id/relLayout_update_school_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolBar"
+        android:layout_marginTop="10dp"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="20dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/school_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/school_name"
+            android:textColor="@color/caption_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/school_name"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+                <com.bekambimouen.miiokychallenge.Utils.MyEditText
+                    android:id="@+id/edit_school_name_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:hint="@string/add"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapSentences|textNoSuggestions"
+                    android:maxLines="1"
+                    android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                    android:textColor="@color/caption_color"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayout_school_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/cadre_rectangle"
+                >
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_school_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:paddingStart="1dp"
+                    android:paddingEnd="10dp"
+                    android:background="@null"
+                    android:hint="@string/school"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapSentences|textNoSuggestions"
+                    android:maxLines="1"
+                    android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                    android:textColor="@color/caption_color"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- add establishment section -->
+    <RelativeLayout
+        android:id="@+id/relLayout_add_establishment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolBar"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/add_establishment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/university"
+            android:textColor="@color/caption_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_establishment"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+                <com.bekambimouen.miiokychallenge.Utils.MyEditText
+                    android:id="@+id/edit_add_establishment_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:hint="@string/add"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapSentences|textNoSuggestions"
+                    android:maxLines="1"
+                    android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                    android:textColor="@color/caption_color"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayout_establishment"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/cadre_rectangle"
+                >
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_add_establishment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:background="@null"
+                    android:hint="@string/add_university"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapSentences|textNoSuggestions"
+                    android:maxLines="1"
+                    android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                    android:textColor="@color/caption_color"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- update establishment section -->
+    <RelativeLayout
+        android:id="@+id/relLayout_update_establishment_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolBar"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/establishment_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/establishment_name"
+            android:textColor="@color/caption_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/establishment_name"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            tools:ignore="TooManyViews">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+                <com.bekambimouen.miiokychallenge.Utils.MyEditText
+                    android:id="@+id/edit_establishment_name_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:hint="@string/add"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapSentences|textNoSuggestions"
+                    android:maxLines="1"
+                    android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                    android:textColor="@color/caption_color"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayout_establishment_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/cadre_rectangle"
+                >
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_establishment_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:background="@null"
+                    android:hint="@string/university"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapSentences|textNoSuggestions"
+                    android:maxLines="1"
+                    android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                    android:textColor="@color/caption_color"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- add workplace section -->
+    <RelativeLayout
+        android:id="@+id/relLayout_add_workplace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolBar"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/add_workplace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/workplace"
+            android:textColor="@color/caption_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_workplace"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+                <com.bekambimouen.miiokychallenge.Utils.MyEditText
+                    android:id="@+id/edit_add_workplace_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:hint="@string/add"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapSentences|textNoSuggestions"
+                    android:maxLines="1"
+                    android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                    android:textColor="@color/caption_color"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayout_workplace"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/cadre_rectangle"
+                >
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_add_workplace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:background="@null"
+                    android:hint="@string/workplace"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapSentences|textNoSuggestions"
+                    android:maxLines="1"
+                    android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                    android:textColor="@color/caption_color"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- update work section -->
+    <RelativeLayout
+        android:id="@+id/relLayout_update_workplace_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolBar"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/workplace_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/school_name"
+            android:textColor="@color/caption_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/workplace_name"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            tools:ignore="TooManyViews">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+                <com.bekambimouen.miiokychallenge.Utils.MyEditText
+                    android:id="@+id/edit_workplace_name_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:hint="@string/add"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapSentences|textNoSuggestions"
+                    android:maxLines="1"
+                    android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                    android:textColor="@color/caption_color"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayout_workplace_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/cadre_rectangle"
+                >
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_workplace_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:background="@null"
+                    android:hint="@string/workplace"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapSentences|textNoSuggestions"
+                    android:maxLines="1"
+                    android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                    android:textColor="@color/caption_color"
+                    android:textSize="18sp"
+                    tools:ignore="TooManyViews" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/relLayout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_blue"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/update"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

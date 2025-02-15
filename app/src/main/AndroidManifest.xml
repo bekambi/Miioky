@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- prevents installing the application on devices with no camera -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_MEDIA_STORAGE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:persistent="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MiiokyChallenge"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".full_img_and_vid_simple.SimpleFullChallengeVideo"
+            android:exported="false" />
+        <activity
+            android:name=".full_img_and_vid_simple.SimpleFullChallengeImage"
+            android:exported="false" />
+        <activity
+            android:name=".profile.VisitProfile"
+            android:exported="false" />
+        <activity
+            android:name=".friends.SeeAllFollowingsRequest"
+            android:exported="false" />
+        <activity
+            android:name=".friends.SeeAllFriendsRequest"
+            android:exported="false" />
+        <activity
+            android:name=".challenge_home.view_my_challenges.ChallengesIResponded"
+            android:exported="false" />
+        <activity
+            android:name=".register.RegisterLogin"
+            android:exported="false" />
+        <activity
+            android:name=".groups.publication.GroupPublicationVideo"
+            android:exported="false" />
+        <activity
+            android:name=".story.UsersHasSawStories"
+            android:exported="false" />
+        <activity
+            android:name=".profile.in_the_spotlight.StatusGallery"
+            android:exported="false" />
+        <activity
+            android:name=".messages.UpdateStatus"
+            android:exported="false" />
+        <activity
+            android:name=".market_place.update.UpdateStoreData"
+            android:exported="false" />
+        <activity
+            android:name=".market_place.update.UpdateProductData"
+            android:exported="false" />
+        <activity
+            android:name=".market_place.search.MarketResultSearch"
+            android:exported="false"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".market_place.recycler_full_image.MarketRecyclerFullImage"
+            android:exported="false" />
+        <activity
+            android:name=".groups.publication.GroupCreateMemberBackgroundProfilePhoto"
+            android:exported="false" />
+        <activity
+            android:name=".groups.GroupMembersPage"
+            android:exported="false" />
+        <activity
+            android:name=".groups.GroupMembersLists"
+            android:exported="false" />
+        <activity
+            android:name=".groups.simple_member.GroupSeeAllMembers"
+            android:exported="false" />
+        <activity
+            android:name=".video_trimmer.ActVideoTrimmer"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/VideoTrimmerTheme" />
+        <activity
+            android:name=".groups.photos_videos_only.GroupViewOnlyVideos"
+            android:exported="false" />
+        <activity
+            android:name=".groups.photos_videos_only.GroupViewOnlyPhotos"
+            android:exported="false" />
+        <activity
+            android:name=".groups.parameters.GroupsFollowing"
+            android:exported="false" />
+        <activity
+            android:name=".groups.parameters.GroupInvitPersons"
+            android:exported="false" />
+        <activity
+            android:name=".groups.parameters.GroupAdhesion"
+            android:exported="false" />
+        <activity
+            android:name=".groups.manage_member.suspend.SuspensionExpalanation"
+            android:exported="false" />
+        <activity
+            android:name=".groups.manage_member.limit_member_actions.LimitActivityExplanation"
+            android:exported="false" />
+        <activity
+            android:name=".groups.invite_user_in_group.InvitePersonsAfterGroupCreated"
+            android:exported="false" />
+        <activity
+            android:name=".groups.parameters.GroupSearchInGroup"
+            android:exported="false" />
+        <activity
+            android:name=".groups.parameters.GroupParameters"
+            android:exported="false" />
+        <activity
+            android:name=".groups.manage_member.group_where_user_is_member.GroupWhereUserIsMember"
+            android:exported="false" />
+        <activity
+            android:name=".groups.GroupHistory"
+            android:exported="false" />
+        <activity
+            android:name=".groups.publication.GroupPublicationPhoto"
+            android:exported="false" />
+        <activity
+            android:name=".groups.publication.GroupPubCommentText"
+            android:exported="false" />
+        <activity
+            android:name=".groups.invite_user_in_group.PersonInvitedInGroup"
+            android:exported="false" />
+        <activity
+            android:name=".groups.invite_user_in_group.GroupInviteNewMembers"
+            android:exported="false" />
+        <activity
+            android:name=".groups.manage_member.post_approval.GroupWaitingApproval"
+            android:exported="false" />
+        <activity
+            android:name=".groups.administrators.GroupSeeListOfAllAdminsAndModerators"
+            android:exported="false" />
+        <activity
+            android:name=".groups.administrators.GroupSeeAllMembersByAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".groups.administrators.GroupManege"
+            android:exported="false" />
+        <activity
+            android:name=".groups.see_member_profile.SeeGroupAllProfile"
+            android:exported="false" />
+        <activity
+            android:name=".groups.photos_videos_only.GroupOnlyVideoGradle"
+            android:exported="false" />
+        <activity
+            android:name=".groups.photos_videos_only.GroupOnlyPhotoGradle"
+            android:exported="false" />
+        <activity
+            android:name=".groups.invite_user_in_group.GroupInviteFromSameTown"
+            android:exported="false" />
+        <activity
+            android:name=".groups.see_member_profile.SeeGroupMemberAllBackgroundProfile"
+            android:exported="false" />
+        <activity
+            android:name=".groups.GroupUpdateMember"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".groups.publication.GroupCreateNewGroup"
+            android:exported="false" />
+        <activity
+            android:name=".groups.manage_member.suspend.GroupSuspendMember"
+            android:exported="false" />
+        <activity
+            android:name=".groups.manage_member.suspend.GroupAddRulesWithExample"
+            android:exported="false" />
+        <activity
+            android:name=".groups.manage_member.limit_member_actions.LimitMemberAction"
+            android:exported="false" />
+        <activity
+            android:name=".groups.manage_member.membership.GroupMembership"
+            android:exported="false" />
+        <activity
+            android:name=".groups.child_recyclerview_share.comment.GroupChildRecyclerResponseCommentShare"
+            android:exported="false" />
+        <activity
+            android:name=".groups.child_recyclerview.comment.GroupChildRecyclerResponseComment"
+            android:exported="false" />
+        <activity
+            android:name=".market_place.comment.store_comment.publication.StoreCommentPublication"
+            android:exported="false" />
+        <activity
+            android:name=".market_place.comment.store_comment.StoreResponseComment"
+            android:exported="false" />
+        <activity
+            android:name=".market_place.MarketStore"
+            android:exported="false" />
+        <activity
+            android:name=".market_place.comment.product_comment.publication.ProductCommentPublication"
+            android:exported="false" />
+        <activity
+            android:name=".market_place.comment.product_comment.ProductResponseComment"
+            android:exported="false" />
+        <activity
+            android:name=".market_place.search.MarketSearchStore"
+            android:exported="false" />
+        <activity
+            android:name=".market_place.publication.CreateNewStore"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".market_place.publication.SellInMarket"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".market_place.publication.LocationPublication"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".market_place.publication.MarketSellInStore"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".market_place.MarketAboutProduct"
+            android:exported="false" />
+        <activity
+            android:name=".groups.discover.GroupPublicViewProfileDiscover"
+            android:exported="false" />
+        <activity
+            android:name=".groups.manage_member.membership.AcceptPrivateRules"
+            android:exported="false" />
+        <activity
+            android:name=".groups.discover.GroupPrivateViewProfileDiscover"
+            android:exported="false" />
+        <activity
+            android:name=".messages.ChatContacts"
+            android:exported="false" />
+        <activity
+            android:name=".comment_fun.ViewCommentFun"
+            android:exported="false" />
+        <activity
+            android:name=".child_recyclerview.comment.ChildRecyclerResponseComment"
+            android:exported="false" />
+        <activity
+            android:name=".child_recyclerview_share.comment.ChildRecyclerResponseCommentShare"
+            android:exported="false" />
+        <activity
+            android:name=".challenges_view_all.ViewGridCategories"
+            android:exported="false" />
+        <activity
+            android:name=".groups.publication.GroupPubChallengeVideo"
+            android:exported="false" />
+        <activity
+            android:name=".groups.publication.GroupPubChallengePhoto"
+            android:exported="false" />
+        <activity
+            android:name=".challenge_publication.PubChallengeVideo"
+            android:exported="false" />
+        <activity
+            android:name=".challenge_publication.PubChallengePhoto"
+            android:exported="false" />
+        <activity
+            android:name=".challenges_view_all.ViewChallengeVideos"
+            android:exported="false" />
+        <activity
+            android:name=".challenges_response.ChallengesResponse"
+            android:exported="false" />
+        <activity
+            android:name=".profile.in_the_spotlight.StorySpotLightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".display_insta.see_user_all_profile.SeeUserAllProfileOnMiioky"
+            android:exported="false" />
+        <activity
+            android:name=".followersfollowings.NbFollowings"
+            android:exported="false" />
+        <activity
+            android:name=".profile.SeeSectionAboutMe"
+            android:exported="false" />
+        <activity
+            android:name=".profile.in_the_spotlight.DownloadSpotlight"
+            android:exported="false" />
+        <activity
+            android:name=".profile.ViewPostsBattle"
+            android:exported="false" />
+        <activity
+            android:name=".profile.CompletBioAndUsername"
+            android:exported="false" />
+        <activity
+            android:name=".suggestions.SeeAllSuggestions"
+            android:exported="false" />
+        <activity
+            android:name=".search.ExploreGridView"
+            android:exported="false" />
+        <activity
+            android:name=".friends.CommonFriends"
+            android:exported="false" />
+        <activity
+            android:name=".search.user_common_friends.SeeUserFriends"
+            android:exported="false" />
+        <activity
+            android:name=".challenge_home.view_my_challenges.AcceptedChallenges"
+            android:exported="false" />
+        <activity
+            android:name=".challenge_home.view_my_challenges.MyChallenges"
+            android:exported="false" />
+        <activity
+            android:name=".challenge.GoResponseChallengePhoto"
+            android:exported="false" />
+        <activity
+            android:name=".challenge.ViewMyChallenges"
+            android:exported="false" />
+        <activity
+            android:name=".groups.explorer.GroupExplorer"
+            android:exported="false" />
+        <activity
+            android:name=".groups.comment_share.GroupResponseCommentShare"
+            android:exported="false" />
+        <activity
+            android:name=".groups.comment_share.publication.GroupCommentSharePublication"
+            android:exported="false" />
+        <activity
+            android:name=".groups.comment.GroupResponseComment"
+            android:exported="false" />
+        <activity
+            android:name=".groups.comment.publication.GroupCommentPublication"
+            android:exported="false" />
+        <activity
+            android:name=".comment_share.ViewResponseCommentShare"
+            android:exported="false" />
+        <activity
+            android:name=".comment_share.publication.CommentPublicationShare"
+            android:exported="false" />
+        <activity
+            android:name=".view_videos.ViewVideo"
+            android:exported="false" />
+        <activity
+            android:name=".search.ViewExplore"
+            android:exported="false" />
+        <activity
+            android:name=".messages.publication.PubPhotosChat"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".child_recyclerview_share.comment.ChildRecyclerCommentShare"
+            android:exported="false" />
+        <activity
+            android:name=".child_recyclerview_share.RecyclerViewActivityShare"
+            android:exported="false" />
+        <activity
+            android:name=".full_image_share.ResponseImageDoubleFullImageShare"
+            android:exported="false" />
+        <activity
+            android:name=".full_image_share.RecyclerFullImageShare"
+            android:exported="false"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".full_image_share.ImageUneFullImageShare"
+            android:exported="false" />
+        <activity
+            android:name=".full_image_share.ImageDoubleFullImageShare"
+            android:exported="false" />
+        <activity
+            android:name=".child_recyclerview.comment.ChildRecyclerComment"
+            android:exported="false" />
+        <activity
+            android:name=".child_recyclerview.RecyclerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".full_image.ResponseImageDoubleFullImage"
+            android:exported="false" />
+        <activity
+            android:name=".full_image.RecyclerFullImage"
+            android:exported="false"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".full_image.ImageUneFullImage"
+            android:exported="false" />
+        <activity
+            android:name=".full_image.ImageDoubleFullImage"
+            android:exported="false" />
+        <activity
+            android:name=".groups.child_recyclerview_share.comment.GroupChildRecyclerCommentShare"
+            android:exported="false" />
+        <activity
+            android:name=".groups.child_recyclerview_share.GroupViewRecyclerShare"
+            android:exported="false" />
+        <activity
+            android:name=".groups.full_image_share.GroupResponseImageDoubleFullImageShare"
+            android:exported="false" />
+        <activity
+            android:name=".groups.full_image_share.GroupRecyclerFullImageShare"
+            android:exported="false"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".groups.full_image_share.GroupImageUneFullImageShare"
+            android:exported="false" />
+        <activity
+            android:name=".groups.full_image_share.GroupImageDoubleFullImageShare"
+            android:exported="false" />
+        <activity
+            android:name=".groups.full_image.GroupResponseImageDoubleFullImage"
+            android:exported="false" />
+        <activity
+            android:name=".groups.child_recyclerview.comment.GroupChildRecyclerComment"
+            android:exported="false" />
+        <activity
+            android:name=".groups.child_recyclerview.GroupViewRecycler"
+            android:exported="false" />
+        <activity
+            android:name=".groups.full_image.GroupRecyclerFullImage"
+            android:exported="false"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".groups.full_image.GroupImageUneFullImage"
+            android:exported="false" />
+        <activity
+            android:name=".groups.simple_member.GroupViewProfile"
+            android:exported="false" />
+        <activity
+            android:name=".groups.administrators.GroupViewAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".groups.full_image.GroupImageDoubleFullImage"
+            android:exported="false" />
+        <activity
+            android:name=".groups.comment_share.GroupCommentShare"
+            android:exported="false" />
+        <activity
+            android:name=".groups.full_challenge_video_share.GroupFullChallengeVideoShare"
+            android:exported="false" />
+        <activity
+            android:name=".groups.comment.GroupComment"
+            android:exported="false" />
+        <activity
+            android:name=".groups.full_challenge_video.GroupFullChallengeVideo"
+            android:exported="false" />
+        <activity
+            android:name=".groups.simple_member.GroupProfileMember"
+            android:exported="false" />
+        <activity
+            android:name=".groups.administrators.GroupProfileAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".comment_share.ViewCommentShare"
+            android:exported="false" />
+        <activity
+            android:name=".full_challenge_video_share.FullChallengeVideoShare"
+            android:exported="false" />
+        <activity
+            android:name=".messages.FullVideo"
+            android:exported="false" />
+        <activity
+            android:name=".comment_fun.ViewResponseFunComment"
+            android:exported="false" />
+        <activity
+            android:name=".comment.ViewResponseComment"
+            android:exported="false" />
+        <activity
+            android:name=".comment.publication.CommentPublication"
+            android:exported="false" />
+        <activity
+            android:name=".challenges_view_all.GridCategories"
+            android:exported="false" />
+        <activity
+            android:name=".comment.ViewComment"
+            android:exported="false" />
+        <activity
+            android:name=".share_publication.SharePublicationInMiioky"
+            android:exported="false" />
+        <activity
+            android:name=".share_publication.SharePublicationInGroup"
+            android:exported="false" />
+        <activity
+            android:name=".groups.shared_in_group.GroupSharePublicationInGroup"
+            android:exported="false" />
+        <activity
+            android:name=".full_challenge_video.FullChallengeVideo"
+            android:exported="false" />
+        <activity
+            android:name=".friends.SeeAllMyFriends"
+            android:exported="false" />
+        <activity
+            android:name=".profile.ViewPostsFun"
+            android:exported="false" />
+        <activity
+            android:name=".fun.FunActivity"
+            android:exported="false" />
+        <activity
+            android:name=".challenge_publication.ViewLocalVideo"
+            android:exported="false" />
+        <activity
+            android:name=".fun.publication.PublicationFun"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="video/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fun.publication.Gallery"
+            android:exported="false" />
+        <activity
+            android:name=".fun.publication.CameraVideoFun"
+            android:exported="false" />
+        <activity
+            android:name=".groups.manage_member.report_post.GroupReportPost"
+            android:exported="false" />
+        <activity
+            android:name=".groups.GroupAbout"
+            android:exported="false" />
+        <activity
+            android:name=".publication_saved.ViewSavedPublications"
+            android:exported="false" />
+        <activity
+            android:name=".search.ViewProfile"
+            android:exported="false" />
+        <activity
+            android:name=".followersfollowings.NbFollowers"
+            android:exported="false" />
+        <activity
+            android:name=".fun.FunSuggestions"
+            android:exported="false" />
+        <activity
+            android:name=".editprofile.EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".challenge.DownloadResponseChallenge"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".editprofile.UpdateProfile"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".instacropper.InstaCropperActivity"
+            android:exported="false" />
+        <activity
+            android:name=".crushers_and_likers.Likers"
+            android:exported="false" />
+        <activity
+            android:name=".crushers_and_likers.Crushers"
+            android:exported="false" />
+        <activity
+            android:name=".messages.MessageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".full_img_and_vid_simple.SimpleFullProfilPhoto"
+            android:exported="false" />
+        <activity
+            android:name=".full_img_and_vid_simple.SimpleFullImage"
+            android:exported="false" />
+        <activity
+            android:name=".publication_insta.PubInstagVideo"
+            android:exported="false" />
+        <activity
+            android:name=".publication_insta.PubCommentText"
+            android:exported="false" />
+        <activity
+            android:name=".publication_insta.PubInstagPhoto"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".crop_profile_image.CropImageActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CropImage" />
+        <activity
+            android:name=".story.publication.PublicationStories"
+            android:exported="false" />
+        <activity
+            android:name=".story.StoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".editprofile.ChooseProfilePhoto"
+            android:exported="false" />
+        <activity
+            android:name=".profile.Profile"
+            android:exported="false" />
+        <activity
+            android:name=".challenge_home.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".register.RegisterBirthDay"
+            android:exported="false" />
+        <activity
+            android:name=".register.RegisterSubscription"
+            android:exported="false" />
+        <activity
+            android:name=".register.RegisterTownAndQuarter"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".register.RegisterUserName"
+            android:exported="false" />
+        <activity
+            android:name=".EnterAppActivity"
+            android:exported="true"
+            android:theme="@style/Theme.CustomSplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

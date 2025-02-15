@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabTextColor="@color/grey_500"
+            app:tabSelectedTextColor="@color/black"
+            app:tabMode="fixed"
+            app:tabTextAppearance="@style/TabLayoutTextStyle"
+            app:tabIndicatorColor="@color/black_semi_transparent"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorHeight="2dp"
+            app:tabPaddingEnd="4dp"
+            app:tabPaddingStart="4dp"
+            android:background="@color/white"
+            />
+
+    </RelativeLayout>
+</merge>

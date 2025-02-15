@@ -1,0 +1,2645 @@
+<resources>
+    <string name="app_name">Miioky</string>
+    <!-- crop profile photo -->
+    <string name="crop_image_activity_title"></string>
+    <string name="crop_image_menu_rotate_left">Tourner dans le sens inverse des aiguilles d\'une montre</string>
+    <string name="crop_image_menu_rotate_right">Tourner</string>
+    <string name="crop_image_menu_crop">Recadrer</string>
+    <string name="crop_image_menu_flip">Retourner</string>
+    <string name="crop_image_menu_flip_horizontally">Retourner horizontalement</string>
+    <string name="crop_image_menu_flip_vertically">Retourner verticalement</string>
+    <string name="pick_image_intent_chooser_title">Sélectionner la source</string>
+    <string name="crop_image_activity_no_permissions">Annulation, les autorisations requises ne sont pas accordées</string>
+
+    <!-- instaCropper-->
+    <string name="instacropper_crop">Crop</string>
+
+    <!-- trim video string -->
+    <string name="txt_empty" />
+    <string name="txt_done">C\'est fait!</string>
+    <string name="txt_title_not_supported">Alerte!</string>
+    <string name="txt_msg_not_supported">Désolé, cet appareil n\'est pas pris en charge</string>
+    <string name="txt_trimming_video">Traitement de la vidéo…</string>
+    <string name="txt_failed_to_trim">Impossible de couper</string>
+    <string name="txt_cancel">Annuler</string>
+    <string name="txt_dlah">\\</string>
+    <string name="txt_smaller">La vidéo doit être plus petite que</string>
+    <string name="edit_video">Modifier la vidéo</string>
+    <string name="txt_compress_video">Compression de la vidéo…</string>
+    <string name="txt_edt_video">Modifier la vidéo</string>
+    <string name="open_file_location">Ouvrir l\'emplacement du fichier ?</string>
+
+    <!-- register -->
+    <string name="email">E-mail</string>
+    <string name="password">Mot de passe</string>
+    <string name="forgot_password">Mot de passe oublié</string>
+    <string name="login">Login</string>
+    <string name="create_your_account">pas encore de compte ? créez votre compte</string>
+    <string name="password_reset_email_sent">E-mail de réinitialisation du mot de passe envoyé. Veuillez vérifier votre boîte de réception</string>
+    <string name="failed_to_send_password_reset_email">Impossible d\'envoyer l\'e-mail de réinitialisation du mot de passe. Veuillez vérifier votre adresse e-mail.</string>
+    <string name="phone_number">Téléphone</string>
+    <string name="coma">,</string>
+    <string name="hi_follow_me_on_miioky">Salut! suit moi sur Miioky</string>
+    <string name="this_number_is_not_valid">Ce numéro n\'est pas valide</string>
+    <string name="pleaseWait">Patientez svp…</string>
+    <string name="no_connexion">Vous n\'êtes pas connecté!</string>
+    <string name="you_have_saisine_phone">Vous avez saisi le numéro de téléphone suivant:</string>
+    <string name="its_correct">Est-il correct ou voulez-vous le modifier ?</string>
+    <string name="modify">Modifier</string>
+    <string name="correct">correct</string>
+    <string name="msg_notification">Vous allez recevoir un code de confirmation pour des raisons de sécurité.</string>
+    <string name="phone_number_not_valid">Ce numéro de téléphone n\'est pas valide!</string>
+    <string name="msg_send_code">Patientez nous allons envoyer un code de confirmation au</string>
+    <string name="msg_enter_code">Entrez le code de confirmation que nous avons envoyé au</string>
+    <string name="msg_resend_code">renvoyer le code</string>
+    <string name="exceeded_sms_quota">Vous avez dépassé le quota de SMS!</string>
+    <string name="error_has_occured">Une erreur s\'est produite!</string>
+    <string name="wrong_code">Code érronnée!</string>
+    <string name="code_confirmation">Code de confirmation</string>
+    <string name="next">Suivant</string>
+    <string name="cropper">Recadrage</string>
+    <string name="name_and_password">NOM COMPLET</string>
+    <string name="name">Nom</string>
+    <string name="town_and_quater">VILLE ET QUARTIER</string>
+    <string name="write_real_town_and_quater_name">Assurez-vous d\'écrire correctement le nom de votre ville ainsi que celui de votre quartier pour faciliter la recherche.</string>
+    <string name="town_name">Ville dans laquelle vous vivez</string>
+    <string name="your_town">Votre ville</string>
+    <string name="your_current_city">Votre ville actuelle</string>
+    <string name="neighborhood_name">Quartier dans lequel vous vivez</string>
+    <string name="your_neighborhood">Votre quartier</string>
+    <string name="native_and_hometown">Votre pays et ville d\'origine.</string>
+    <string name="text_cant_be_update">Vous ne pourez plus modifier ces informations.</string>
+    <string name="native_country_name">Votre pays d\'origine</string>
+    <string name="your_native_country">Votre pays d\'origine</string>
+    <string name="hometown_name">Votre ville d\'origine</string>
+    <string name="your_hometown">Votre ville d\'origine</string>
+    <string name="complet_your_profile">Completez votre profil</string>
+    <string name="real_name">C\'est mieux d\'utliser votre véritable nom pour que vos amis puissent vous reconnaître.</string>
+    <string name="add_your_birthday">Ajoutez votre date de naissance</string>
+    <string name="not_showing_birthday">Elle ne sera pas affiché sur votre profil public.</string>
+    <string name="day">jour</string>
+    <string name="month">mois</string>
+    <string name="year">Année</string>
+    <string name="olds">ans</string>
+    <string name="subscribe_ass">S\'inscrire en tant que</string>
+    <string name="msg_update_username">Vous pourrez toujours changer votre nom d\'utlisateur plus tard.</string>
+    <string name="accept_condition">En appuyant sur S\'inscrire vous acceptez nos Conditions d\'utilisation
+                                     notre Privacy Policy et notre Politique d\'utilisation des cookies.</string>
+    <string name="subscribe">S\'inscrire</string>
+    <string name="back">Retour</string>
+    <string name="you_must_update_this_informations">Vous devez modifier ces informations lorsque vous changez de ville ou de quartier.</string>
+
+    <!-- profile activity -->
+    <string name="update_your_profile">Modifiez votre Profil</string>
+    <string name="signout">Déconnexion</string>
+    <string name="really_want_delet_your_account">Voulez-vous vraiment supprimer votre compte?</string>
+    <string name="really_want_disconnect">Voulez-vous vraiment vous déconnecter?</string>
+    <string name="really_want_delete_challenge">Voulez-vous vraiment supprimer ce Challenge?</string>
+    <string name="really_want_delete_one_publication">Voulez-vous vraiment supprimer cette publication?</string>
+    <string name="really_want_delete_item">Voulez-vous vraiment supprimer cet élément?</string>
+    <string name="really_want_unfollow">Êtes-vous sûr(e) de vouloir vous désabonner?</string>
+    <string name="ok">OK</string>
+    <string name="yes">OUI</string>
+    <string name="no">NON</string>
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="followers">Abonnés</string>
+    <string name="followings">Abonnements</string>
+    <string name="title_add_profile_photo">Ajoutez une photo de profil</string>
+    <string name="title_update_profile_photo">Modifiez Votre photo de profil</string>
+    <string name="msg_add_profile_photo">Choisissez une photo de profil pour vous représenter sur Miioky.</string>
+    <string name="add">Ajouter</string>
+    <string name="msg_speeck_about_you">Parlez un peu de vous à vos followers.</string>
+    <string name="title_add_bio">Ajoutez une bio</string>
+    <string name="title_update_bio">Modifiez votre bio</string>
+    <string name="title_update_displayname">Modifier votre pseudo</string>
+    <string name="msg_update_displayname">Modifier votre nom utilistateur pour que vos followers puissent vous identifier.</string>
+    <string name="modify_your_name">Modifier votre nom utilistateur.</string>
+    <string name="update">Modifier</string>
+    <string name="update_day">Mise à jour</string>
+    <string name="made_post_in_group">a fait une publication dans le groupe</string>
+    <string name="on_four">sur 3</string>
+    <string name="finish">TERMINE</string>
+    <string name="suggestions_for_you">Suggestions pour vous</string>
+    <string name="see">Voir</string>
+    <string name="see_all">Voir tout</string>
+    <string name="see_minus">Voir moins</string>
+    <string name="seen_the">Vu le</string>
+    <string name="seen_there">Vu il y\'a</string>
+    <string name="seen_yesterday_at">Vu hier à</string>
+    <string name="seen_an_hour_ago">Vu il y\'a une heure</string>
+    <string name="seen_just_now">Vu à l\'instant</string>
+    <string name="follow">Suivre</string>
+    <string name="add_a_profile_photo">Ajouter une photo de profile</string>
+    <string name="publish_a_story">Publier une story</string>
+    <string name="photos_and_videos">Photos et vidéos</string>
+    <string name="if_u_share_photos_and_videos">Si vous partagez des photos et des vidéos elles apparaissent ici.</string>
+    <string name="share_ur_first_photo_or_video">Partagez votre première photo ou vidéo</string>
+    <string name="videos_fun">Vidéos fun</string>
+    <string name="if_u_share_videos">Si vous partagez des vidéos elles apparaissent ici.</string>
+    <string name="share_ur_first_video">Partagez votre première vidéo</string>
+    <string name="l_v">V</string>
+    <string name="l_s">S</string>
+    <string name="rationale_storage">L\'application doit accéder à votre espace de stockage</string>
+    <string name="from_miioky">Télécharge Miioky et regarde d\'avantage de publication…</string>
+    <string name="saved">Enregistré</string>
+    <string name="save_in_collection">Enregistré dans une collection</string>
+    <string name="save_in_gallery">Enregistré dans la gallery</string>
+    <string name="registration">Enregistrements</string>
+    <string name="if_u_saved_publication">Si vous enregistrez une publication elle apparaît ici…</string>
+    <string name="tv_eliminate_suggestion">éliminer</string>
+    <string name="miioky_will_definitely_remove_this_suggestion_for_you">Miioky va définitivement supprimer cette suggestion pour vous. Vous ne verrez plus de publications provenant de cette source.</string>
+    <string name="hide_suggestion">Masquer la suggestion ?</string>
+    <string name="tv_ok">D\'accord</string>
+    <string name="suggestion">Suggestions</string>
+    <string name="group_that_might_interest_you">Groupes qui pourraient vous intereser.</string>
+    <string name="story">Story</string>
+    <string name="are_u_sure_u_want_to_delete">Voulez-vous vraiment supprimer cette story?</string>
+    <string name="views">Vues</string>
+    <string name="view">Vue</string>
+    <string name="visits">Visites</string>
+    <string name="deleted">Supprimé!</string>
+    <string name="delete">Supprimer</string>
+    <string name="join">Rejoindre</string>
+    <string name="photo_upload_failed">Echec du téléchargement!</string>
+    <string name="failed">Echec!</string>
+    <string name="see_my_story">Voir mes Stories</string>
+    <string name="add_a_new_story">Ajouter une nouvelle Story</string>
+    <string name="see_my_challenge">Voir mes Challenges</string>
+    <string name="add_a_new_challenge">Ajouter un nouveau Challenge</string>
+    <string name="Challenge_your_subscribers">Lance un challenge à tes aboonnés ils auront 24h pour répondre.</string>
+    <string name="Challenge_group_members_subscribers">Lance un challenge aux membres du groupe ils auront 24h pour répondre.</string>
+    <string name="members_of_group_photo_vote">Les membres du groupe vont voter pour l\'une des photos.</string>
+    <string name="members_of_group_video_vote">Les membres du groupe vont voter pour l\'une des videos.</string>
+    <string name="your_subscribers_photo_vote">Vos abonnés vont voter pour l\'une des photos.</string>
+    <string name="your_subscribers_video_vote">Vos abonnés vont voter pour l\'une des videos.</string>
+    <string name="send_to_all_members_of_group">Envoyer à tous les membres</string>
+    <string name="republish_for_your_followers">PUBLIER POUR VOS ABONNE(E)S</string>
+    <string name="republish_for_all_followers">Vos abonnés ne peuvent pas voir ce challenge.\n\nVoulez-vous présenter ce challenge à vos abonnés ?</string>
+    <string name="republish_on_miioky">Publier sur Miioky?</string>
+    <string name="dont_display_againt">Ne plus afficher</string>
+    <string name="accept_challenges">Challenges acceptés</string>
+    <string name="comment">Commentaires</string>
+    <string name="comments">commentaires</string>
+    <string name="comment_single">commentaire</string>
+    <string name="your_comments">Ton commentaire…</string>
+    <string name="all_comments">Tous les commentaires</string>
+    <string name="see_the">Voir les</string>
+    <string name="change_your_profil_photo">Changez votre photo de profil</string>
+    <string name="username">Nom utilisateur</string>
+    <string name="bio">Bio</string>
+    <string name="city_and_neighborhood">Ville et Quartier</string>
+    <string name="private_informations">INFORMATIONS PRIVEES</string>
+    <string name="born_at">Né le </string>
+    <string name="profile_photo">Photo de profil</string>
+    <string name="camera">Camera</string>
+    <string name="done">Effectué!</string>
+    <string name="name_already_exists">Ce nom existe déja!</string>
+    <string name="connexion">Connexion</string>
+    <string name="validate">Valider</string>
+    <string name="search">Rechercher…</string>
+    <string name="searching">Recherche</string>
+    <string name="search_friends">Rechercher des amis</string>
+    <string name="invite_people">Inviter Des personnes</string>
+    <string name="my_challenges">Mes challenges</string>
+    <string name="publication">Publication</string>
+    <string name="publications">Publications</string>
+    <string name="post_in_group">Publier dans le groupe</string>
+    <string name="cant_selecte_more_than_seventeen_photos">Pas plus de 17 photos!</string>
+    <string name="cant_selecte_more_than_ten_photos">Pas plus de 10 personnes!</string>
+    <string name="cant_selecte_more_than_nine_videos">Pas plus de 09 vidéos!</string>
+    <string name="cant_selecte_more_than_two_photos">Pas plus de 02 photos!</string>
+    <string name="cant_selecte_more_than_two_videos">Pas plus de 02 vidéos!</string>
+    <string name="cant_selecte_more_than_ten_person">Pas plus de 10 personnes!</string>
+    <string name="video">Vidéos</string>
+    <string name="video_menu">Video</string>
+    <string name="photo_menu">Photo</string>
+    <string name="discription">Description…</string>
+    <string name="publish">Publiez</string>
+    <string name="zero_zero">00:00</string>
+    <string name="cant_selecte_more_than_six">vous ne pouvez pas séledtionner plus de 06 vidéos!</string>
+    <string name="double_zero">00</string>
+    <string name="two_points"> : </string>
+    <string name="gallery">Gallerie</string>
+    <string name="video_treatement">Le traitement de la vidéo ne sera pas enregistré!</string>
+    <string name="compressing_video">traitement de la vidéo…</string>
+    <string name="challenge">Challenge</string>
+    <string name="challenges">Challenges</string>
+    <string name="challenge_in_the_group">Challenge dans le groupe</string>
+    <string name="your_story">Votre story</string>
+    <string name="publish_fun_video">publiez une video</string>
+    <string name="publish_story">Publier une story</string>
+    <string name="add_comment">Ajouter un commentaire…</string>
+    <string name="aerobase">\@</string>
+    <string name="hour">heure</string>
+    <string name="r">R</string>
+    <string name="sexual">Sexuel</string>
+    <string name="violent">Violent</string>
+    <string name="fake">Fake</string>
+    <string name="hat_speech">Discours haineux</string>
+    <string name="others">Autres</string>
+    <string name="more">Plus…</string>
+    <string name="watch">Regarder</string>
+    <string name="publisher">Publier</string>
+    <string name="published">Publié</string>
+    <string name="nothing_here_yet">Rien ici pour le moment.</string>
+    <string name="not_yet_publication">Aucunne publication pour le moment.</string>
+    <string name="writing">Ecrit…</string>
+    <string name="in_line">En ligne</string>
+    <string name="new_message">Nouveau Message</string>
+    <string name="message">Message…</string>
+    <string name="message_question1">message ?</string>
+    <string name="message_question2">messages ?</string>
+    <string name="update_your_status">Modifiez votre status</string>
+    <string name="nouveau">Nouveau</string>
+    <string name="stories_spotlight">Stories à la une</string>
+    <string name="keep_your_stories">Conservez vos stories préférées sur votre profil</string>
+    <string name="selection">Selection</string>
+    <string name="selections">Selections</string>
+    <string name="completed">Terminé</string>
+    <string name="title">Ajoutez un titre</string>
+    <string name="plus">Plus</string>
+    <string name="spotlight">A la une</string>
+    <string name="share_on">Partager sur…</string>
+    <string name="new_element_in_spotlight">Nouvel élémént à la une</string>
+    <string name="videos_fun_suggest">Vidéos suggérées</string>
+    <string name="watch_everything">Tout regarder</string>
+    <string name="voice_message">Message vocal</string>
+    <string name="you_dont_have_count">Pas encore de compte?</string>
+    <string name="create_your_count_to_interact">Crèe ton compte pour faire partir de la communauté Miioky.</string>
+    <string name="permission_contacts">Pour utiliser l\'application sans problème, autorisez Miioky à accéder à vos contacts.</string>
+    <string name="permission_not_granted">Permission non accordées</string>
+    <string name="allready_saved">Déja enregistré</string>
+    <string name="create">Créer</string>
+    <string name="miioky_is_more_interesting">Miioky est plus intéressant lorsque vous suivez des personnes.</string>
+    <string name="video_treatment">traitement de la vidéo…</string>
+    <string name="today">Aujourd\'hui</string>
+    <string name="share_whatsapp_not_instaled">Whatsapp n\'est pas installé!</string>
+    <string name="share_instagram_not_instaled">Instagram n\'est pas installé!</string>
+    <string name="share_snapchat_not_instaled">Snapchat n\'est pas installé!</string>
+    <string name="not_story_yet">Vous n\'avez pas encore publié de Story.</string>
+    <string name="coming_soon">Bientôt disponible.</string>
+    <string name="discussion">Discussion</string>
+    <string name="are_u_sure_u_want_to_quit">Êtes-vous sûr(e) de vouloir quitter ?</string>
+    <string name="quit">Quitter</string>
+    <string name="msg_challenge_photo">\- Lorsque vous publiez une photo, vous lancez un challenge à vos abonnés.\n\n- Lorsque vous publiez deux photos, vous présentez votre propre challenge.</string>
+    <string name="msg_challenge_video">\- Lorsque vous publiez une vidéo, vous lancez un challenge à vos abonnés.\n\n- Lorsque vous publiez deux vidéos, vous présentez votre propre challenge.</string>
+    <string name="understood">J\'ai compris</string>
+    <string name="download">Téléchargement(s)</string>
+    <string name="downloading">Télécharger</string>
+    <string name="download_on_phone">Télécharger sur l\'appareil</string>
+    <string name="share">Partages</string>
+    <string name="sharer">Partager</string>
+    <string name="thanks_for_your_comment">Merci por votre commentaire</string>
+    <string name="response_challenge">Lorsqu\'un abonné répond à votre challenge ce challenge apparaît ici.</string>
+    <string name="translate">Traduire…</string>
+    <string name="new_user">Nouveau</string>
+    <string name="no_subscribers_at_the_moment">Aucun(e) abonné(e) pour le moment.</string>
+    <string name="no_subscription_at_the_moment">Aucun abonnement pour le moment.</string>
+    <string name="no_members_at_the_moment">Aucun membre pour le moment.</string>
+    <string name="one_person_accept_your_challenge">personne a accepté</string>
+    <string name="several_person_accept_your_challenge">personnes ont acceptés</string>
+    <string name="one_crush">coup de coeur</string>
+    <string name="several_crush">coups de coeur</string>
+    <string name="save_publication">Enregistrer la publication</string>
+    <string name="i_like">j\'aime</string>
+    <string name="sharing">Partager</string>
+    <string name="write_to">écrire à</string>
+    <string name="share_link_via">Partager le lien sur:</string>
+    <string name="mii">Mii</string>
+    <string name="oky">oky</string>
+    <string name="share_in">Partager dans</string>
+    <string name="share_in_group">Partager dans un groupe</string>
+    <string name="share_on_miioky">Partager sur Miioky</string>
+    <string name="share_external">Partager en externe</string>
+    <string name="add_description_to_recycler_image">Ajouter une description à la photo</string>
+    <string name="update_description">Modifier la description</string>
+    <string name="you_must_write_comment">Vous devez écrire un commentaire</string>
+    <string name="description">Description</string>
+    <string name="you_can_add_a_comment">Vous pouvez ajouter un commentaire</string>
+    <string name="sent">Envoyé</string>
+    <string name="send">Envoyer</string>
+    <string name="send_to">Envoyer à</string>
+    <string name="i_ndexation">ndexation</string>
+    <string name="be_the_first_to_comment">Soyez la première personne à commenter</string>
+    <string name="be_the_first_to_sell">Soyez la première personne à vendre dans la ville de</string>
+    <string name="menu">Menu</string>
+    <string name="see_your_profile">Voir votre profil</string>
+    <string name="markets">Marchés</string>
+    <string name="watch_videos">Regarder des vidéos</string>
+    <string name="create_a_challenge">Créer un challenge</string>
+    <string name="post_on_miioky">Publier sur MiioKy</string>
+    <string name="for_you">Pour vous</string>
+    <string name="challenge_accepted">Challenge accepté</string>
+    <string name="challenges_accepted">Challenges acceptés</string>
+    <string name="accepted_challenges">Challenges acceptés</string>
+    <string name="groups">Groupes</string>
+    <string name="group">Groupe</string>
+    <string name="is_a_member_of">est membre de</string>
+    <string name="create_group">Créer un groupe</string>
+    <string name="name_your_group">Nommez votre groupe</string>
+    <string name="confidentiality">Confidentialité</string>
+    <string name="choose_confidentiality">Choisissez la confidentialité</string>
+    <string name="title_public">Public</string>
+    <string name="title_private">Privé</string>
+    <string name="txt_public">public</string>
+    <string name="txt_private">privé</string>
+    <string name="public_msg">Tout le monde peut voir qui est dans le groupe et ce qui est publié.</string>
+    <string name="public_msg_explaination">Les membres et les visiteurs peuvent publier dans le groupe. Les admins peuvent examiner les personnes qui participent pour la première fois..</string>
+    <string name="private_msg">Seuls les membres peuvent voir qui est dans le groupe et ce qui est publié.</string>
+    <string name="private_msg_explaination">Afin de protéger la confidentialité de leurs membres les groupes privés sont restreint. Seuls les membres ont accès aux publications dans le groupe.</string>
+    <string name="add_group_profile_photo">donner à vos abonné(e)s une idée des préocupations de votre groupe avec une photo.</string>
+    <string name="add_group_profile_photo_title">Ajoutez une photo de profil</string>
+    <string name="update_group_profile_photo_title">Modifier la photo de profile</string>
+    <string name="finish_min">Terminé</string>
+    <string name="recommendations">Recommendations</string>
+    <string name="your_groups">Vos groupes</string>
+    <string name="discover">Découvrir</string>
+    <string name="managements">Gestions du groupe</string>
+    <string name="add_photo">ajoutez une photo</string>
+    <string name="add_photos">ajoutez des photos</string>
+    <string name="ten">10</string>
+    <string name="open">(</string>
+    <string name="close">)</string>
+    <string name="manage">Gérer</string>
+    <string name="invite">Inviter</string>
+    <string name="photos">Photos</string>
+    <string name="see_the_profile">Voir le profil</string>
+    <string name="created_the_group">A créé le groupe</string>
+    <string name="created_the_group2">a créé le groupe</string>
+    <string name="the">le</string>
+    <string name="group_created_today">Groupe créé</string>
+    <string name="date_group_creation">Groupe créé le</string>
+    <string name="search_in_group">Rechercher dans le groupe</string>
+    <string name="search_in_groups">Rechercher dans les groupes</string>
+    <string name="friends_in_same_town">Des personnes qui vivent dans la même ville que vous.</string>
+    <string name="friends_in_same_village">Des personnes qui sont de la même ville d\'origine que vous.</string>
+    <string name="admin">Admin</string>
+    <string name="updated_cover_photo">a mis à jour la photo de couverture du groupe.</string>
+    <string name="updated_cover_user_profile">a mis à jour sa photo de profil.</string>
+    <string name="member_of_group">Membre  du groupe</string>
+    <string name="member_from">depuis</string>
+    <string name="follower_on_miioky">follower sur Miioky.</string>
+    <string name="friend_on_miioky">ami(e) sur Miioky.</string>
+    <string name="followers_on_miioky">followers sur Miioky.</string>
+    <string name="friends_on_miioky">ami(e)s sur Miioky.</string>
+    <string name="one_follower">abonné(e)</string>
+    <string name="several_followers">abonné(e)s</string>
+    <string name="one_friend_on_miioky">ami(e) sur Miioky.</string>
+    <string name="several_friends_on_miioky">ami(e)s sur Miioky.</string>
+    <string name="publications_today">Nouvelles publications aujourd\'hui</string>
+    <string name="publications_last_month">au cours des 30 derniers jours</string>
+    <string name="total_members">membres au total</string>
+    <string name="total_members_last_sevens_days">au cours des 7 derniers jours</string>
+    <string name="no_yet_publication">n\'a encore rien publié dans</string>
+    <string name="members_live_in_same_town">Membres qui vivent à </string>
+    <string name="members">membres</string>
+    <string name="member_minus">membre</string>
+    <string name="member">Membre</string>
+    <string name="members_maj">Membres</string>
+    <string name="new_members">Nouveaux membres</string>
+    <string name="date_creation">Date de création</string>
+    <string name="no_members_in_this_group">Ce groupe ne compte aucun membre</string>
+    <string name="no_followers_in_same_town">Aucun de vos followers ne vit à</string>
+    <string name="no_followers">Personne ne vous suit</string>
+    <string name="join_group">Rejoindre</string>
+    <string name="last_visit">Dernière visite</string>
+    <string name="put_on_pause">Mettre en pause</string>
+    <string name="you_are_always_member">Vous resterez membre du groupe</string>
+    <string name="you_will_not_longer_see">mais vous ne verrez plus les publication de ce groupe sur le fil principal de Miioky.</string>
+    <string name="you_will_see_post_again">Vous verrez à nouveau les publications du groupe</string>
+    <string name="on_miioky">sur le fil principal de Miioky.</string>
+    <string name="continue_tv">Continuer</string>
+    <string name="pause">Pause</string>
+    <string name="do_you_really_want_to_leave_group">Voulez-vous vraiment quitter le groupe</string>
+    <string name="you_will_join">Vous allez rejoindre le groupe</string>
+    <string name="group_theme_normal">Normal</string>
+    <string name="group_theme_pink">Rose</string>
+    <string name="group_theme_blue">Bleue</string>
+    <string name="group_theme_green">Vert</string>
+    <string name="see_history">Voir l\'historique du groupe</string>
+    <string name="everyone_can_see_this_group">Tout le monde peut trouver ce groupe.</string>
+    <string name="everyone_can_see_who_is_in_the_group">Tout le monde peut voir qui est dans le groupe et ce qui est publié.</string>
+    <string name="only_members_can_see_who_is_in_the_group">Seuls les membres peuvent voir qui est dans le groupe et ce qui est publié.</string>
+    <string name="visible">Visible</string>
+    <string name="about">À Propos</string>
+    <string name="about_the">À propos de</string>
+    <string name="group_activity">Activité du groupe</string>
+    <string name="give_up_modifications">Abandonner les modifications ?</string>
+    <string name="not_yet_rules">Vous n\'avez pas encore fini cette règle. Si vous abandonnez les modifications, elles ne seront pas enregistrées.</string>
+    <string name="cancel">Annuler</string>
+    <string name="give_up">Abandonner</string>
+    <string name="you_can_create">Pous pouvez encore créer</string>
+    <string name="more_rules">règles</string>
+    <string name="suspension_reason">Indiquez à Paul la raison de sa suspension</string>
+    <string name="suspension_time">Combien de temps souhaitez-vous suspendre</string>
+    <string name="suspended_will_not_see_your_name">ne verra pas votre nom avec vos comentaires, mais les autres admins peuvent voir vos informations dans l\'historique d\'activité.</string>
+    <string name="suspension_message">Cette personne pourra voir le groupe, mais ne pourra pas publier, commenter, discuter ou effectuer d\'autres actions durant la période de suspension.</string>
+    <string name="write_comment">Ecrivez un commentaire…</string>
+    <string name="group_without_rules">Votre groupe n\'a pas de règles, ajoutez des règles pour indiquer aux membres le type de contenus qu\'ils peuvent publier dans le groupe. Si vous supprimez la publication d\'un membre, vous pouvez lui montrer le type de règles qu\'il n\'a pas suivies.</string>
+    <string name="suspend_member">Suspendre le membre</string>
+    <string name="verify_rules">Vérifier les règles</string>
+    <string name="videos_posting">Publication de vidéos</string>
+    <string name="images_posting">Publication de photos</string>
+    <string name="leave_a_comment_to">Laisser un commentaire (facultatif) à</string>
+    <string name="the_non_respected_rules">Quelles sont les règles qui n\'ont pas été respectées ?</string>
+    <string name="indicate_to">Indiquez à</string>
+    <string name="the_reason_of_suspension">la raison de sa suspension</string>
+    <string name="verification_informations">Ces informations apparaîtrons dans la section à propos de votre groupe.</string>
+    <string name="two_hundred">200</string>
+    <string name="two_hundred_and_fifty">250</string>
+    <string name="three_hundred">300</string>
+    <string name="one_hundred_and_fifty">150</string>
+    <string name="twelve_hours">12 heures</string>
+    <string name="twenty_four_hours">24 heures</string>
+    <string name="three_days">3 jours</string>
+    <string name="seven_days">7 jours</string>
+    <string name="fourteen_days">14 jours</string>
+    <string name="twenty_eight_days">28 jours</string>
+    <string name="creation_date">Date de création</string>
+    <string name="group_history">Historique du groupe</string>
+    <string name="history_explanation">L\'historique du groupe montre quand ce groupe a été créé, ainsi que les changements apportés à son fil. Vous pouvez l\'utiliser pour voir si l\'objet d\'un groupe a changé au fil du temps.</string>
+    <string name="no_recent_change_in_group">Aucun changement récent au nom du groupe.</string>
+    <string name="new_people_who_join_this_group_appear_here">Les nouvelles personnes qui rejoignent ce groupe apparaîtront ici.</string>
+    <string name="admin_and_moderator">Administrateurs et modérateurs</string>
+    <string name="contributor_in_group">Contributeurs dans le groupe</string>
+    <string name="administrator">Administrateurs</string>
+    <string name="this_list_include_members_with_the_most_contribution_points_in_the_group">Cette liste inclus les membres avec le plus de points de contibutions dans ce groupe.</string>
+    <string name="all_members_of_this_group">Cette liste comprend les nouveaux membres.</string>
+    <string name="invite_members">Inviter des membres</string>
+    <string name="title_create_rules">Créer des règles pour votre groupe</string>
+    <string name="create_ten_rules">Créez jusqu\'à 10 règles .Vous pouvez créer vos propres règles ou simplement modifier les exemples de règles.</string>
+    <string name="rules">Règles</string>
+    <string name="start">Commencer</string>
+    <string name="example_of_rules">EXEMPLES DE REGLES</string>
+    <string name="title_example1">Soyez aimable et courtois(e)</string>
+    <string name="example1">Créer un environnement chaleureux c\'est notre responsailité à tous. Traitons tout le monde avec respect. Il est normal d\'avoir des débats constructifs, mais il est essentiel de rester aimable.</string>
+    <string name="title_example2">Pas discours haineux, ni de harcellement</string>
+    <string name="example2">Faites en sorte que tout le monde se sente en sécurité. Le harcellement sous toutes ses formes est interdit et les commentaires dégradants qui portent sur l\'origine ethnique, la réligion, la culture, l\'orientation sexuelle, le genre ou l\'identité sexuelle ne sont pas tolérés.</string>
+    <string name="title_example3">Pas de promotions, ni de spam</string>
+    <string name="example3">Offrez plus que vous ne prenez au sein de ce groupe. l\'auto-promotion, le spam et les liens non pertinent ne sont pas autorisés.</string>
+    <string name="title_example4">Respecter la confidentialité de tous</string>
+    <string name="example4">Faire partir de ce groupe implique une confiance mutuelle. Des discussions animé et authentiques font tout l\'interêt des groupes, mais elles peuvent aussi contenir des informations sensibles et personnelles. ce qui est partagé dans ce groupe doit rester dans ce groupe.</string>
+    <string name="the_group">le group</string>
+    <string name="your_suspension_period_in_group">votre période de suspension dans le groupe</string>
+    <string name="notification_maj">Notification</string>
+    <string name="suspends_you">vous suspend de ces activité, vous ne pourrez pas faire de publication ni même de commentaires durant toute la période de suspension</string>
+    <string name="suspension_information_title">Votre profil est suspendu de ce groupe</string>
+    <string name="suspension_information">L\'admin vous a temporairement retiré la possibilité de publier, de commenter et de gagner des points de contribution dans le groupe. Vous pourrez à nouveau particper aux activités du groupe après la période de suspension qui est de</string>
+    <string name="there_is">il y\'a</string>
+    <string name="letter_h">h</string>
+    <string name="letter_s">s</string>
+    <string name="letter_j">j</string>
+    <string name="week">semaine</string>
+    <string name="weeks">semaines</string>
+    <string name="days">jours</string>
+    <string name="hours">heures</string>
+    <string name="save">enregistrer</string>
+    <string name="your_suspension">Votre suspension</string>
+    <string name="you_are_suspended_in_date">Vous avez été suspendu de ce groupe il y\'a</string>
+    <string name="admin_notation">Note de l\admin</string>
+    <string name="non_respected_rules">Règle(s) non respectée(s)</string>
+    <string name="suspension_duration">pour une durée de</string>
+    <string name="do_you__want_to_cancel_suspension">Voulez-vous annuler la suspension de ce membre dans le groupe ?</string>
+    <string name="admin_canceled_your_suspension">L\'admin a annuler votre suspension dans le groupe</string>
+    <string name="you_can_comment_and_publish_now">vous pouvez à nouveau commenter et faire des publications dans le groupe</string>
+    <string name="suspend_in_group">Suspendre dans le groupe</string>
+    <string name="cancel_suspension">Annuler la suspension</string>
+    <string name="enable_post_approval">Activer l\'approbation des publications</string>
+    <string name="disable_post_approval">Désactiver l\'approbation des publications</string>
+    <string name="dialog_enable_post_approval_title">Activer l\'approbation des publications pour</string>
+    <string name="dialog_all_group_post">Toutes les publications de groupe de</string>
+    <string name="dialog_they_will_be_checked">seront vérifiées par un admin ou un modérateur aucours des 30 prochains jours. Si vous approuvez une publication, elle apparaîtra dans le groupe et</string>
+    <string name="dialog_disable_post_approval_title">Désctiver l\'approbation des publications pour</string>
+    <string name="dialog_member_will_be_able_to_freely_make_a_post_in_group">pourra à nouveau faire des publications dans le groupe sans attendre l\'approbation de l\'admin.</string>
+    <string name="dialog_member_will_receive_notification">recevra une notification.</string>
+    <string name="activate">Activer</string>
+    <string name="during_a_period_of_30_days">durant une période de 30 jours vos publications dans le groupe</string>
+    <string name="posts_will_be_submitted">seront soumises à l\'approbation de l\'admin</string>
+    <string name="admin_disable_approval_request">l\'admin a désactiver les demandes d\'approbations pour vos publications dans le groupe</string>
+    <string name="your_post_approval_period">votre période d\'approbation des publications dans le groupe</string>
+    <string name="has_ended">est terminée.</string>
+    <string name="admin_note_title">Note de l\'admin</string>
+    <string name="posts_will_be_submitted_to_admin_before_display">Votre publication sera soumise à l\'approbation de l\'admin avant d\'être affiché dans le groupe.</string>
+    <string name="group_approval_post">Approuver la publication</string>
+    <string name="do_you_approval_post">Cette publication sera visible dans le groupe</string>
+    <string name="your_post_has_been_approval">votre publication a été approuvée par l\'admin dans le groupe</string>
+    <string name="activity_limit">Limites de l\'activité</string>
+    <string name="limit_activity_of">Limiter l\'activité de</string>
+    <string name="this_settings_allow_you">Ces paramettres vous permettent de limiter la fréquence à laquelle</string>
+    <string name="member_can_post_or_coment">peut publier ou commenter dans le groupe.</string>
+    <string name="limit_posts">Limiter les publications</string>
+    <string name="posts_in_group_per_day">publications dans le groupe par jour</string>
+    <string name="expires_in">Expire dans</string>
+    <string name="limit_comments">Limiter les commentaires</string>
+    <string name="comments_in_group_per_day">commentaires dans le groupe par jour</string>
+    <string name="admin_remarks">Remarques admin</string>
+    <string name="add_others_details">Ajouter d\'autres détails</string>
+    <string name="admin_limit_your_activities_in_group">l\'admin a limité votre fréquence d\'activité dans le groupe</string>
+    <string name="admin_cancel_your_limit_activities_in_group">l\'admin a annulé la limitation de vos activités de commentaires et de publications dans le groupe</string>
+    <string name="the_period_of_the_post_activity_limit_in_the_activity">la période de limitation de vos publications dans le groupe</string>
+    <string name="the_period_of_the_comment_activity_limit_in_the_activity">la période de limitation de commentaires des publications dans le groupe</string>
+    <string name="your_activity_is_limited_in_this_group">Votre activité est limité dans ce groupe</string>
+    <string name="admin_has_temporarily_limited_your_activity_in_this_groupe">L\'admin a temporairement limité vos activités de publications et de commentaires dans le groupe.</string>
+    <string name="your_post_activity_has_been_limited_in_this_group">La fréquence de vos publications a été limité dans ce groupe il y\'a</string>
+    <string name="your_comment_activity_has_been_limited_in_this_group">La fréquence de vos commentaires a été limité dans ce groupe il y\'a</string>
+    <string name="for_max_posts">Vos publications dans le groupe sont desormais limitées de maximum</string>
+    <string name="for_max_comments">Vos commentaires dans le groupe sont desormais limitées de maximum</string>
+    <string name="per_day">par jour.</string>
+    <string name="cancel_limit_activity">Annuler la limitation d\'activité</string>
+    <string name="dialog_cancel_limit_activity_title">Annuler la limitation d\'activité pour</string>
+    <string name="dialog_member_will_be_able_to_freely_make_a_post">pourra à nouveau normalement faire des publications dans le groupe sans limitation.</string>
+    <string name="you_have_reached_the_post_quota">Vous avez atteint votre quota de publications qui est de </string>
+    <string name="you_have_reached_the_comment_quota">Vous avez atteint votre quota des commentaires qui est de </string>
+    <string name="do_you_want_to_banish">Voulez-vous banir</string>
+    <string name="from_group">du groupe</string>
+    <string name="this_action_is_irreversible">Cette action est irreversible</string>
+    <string name="he_will_be_permanently_excluded_from_group">sera définitivement exclu du groupe.</string>
+    <string name="admin_banned_you_from_group">L\'admin vous a bani du groupe</string>
+    <string name="you_are_permanently_excluded_from_this_group">Vous êtes définitivement exclu de ce groupe.</string>
+    <string name="you_are_banned">Vous êtes bani du groupe</string>
+    <string name="admin_has_notice_that_you_do_not_respect_the_group_operating_rules">l\'admin a constaté que vous ne respectez pas les règles établies au sein du groupe. Il a donc décidé de vous banir définitivement du groupe</string>
+    <string name="send_invitation">Envoyer l\'invitation</string>
+    <string name="none_invitation_sent">Aucune invitation envoyé</string>
+    <string name="to_become_an_admin">à devenir admin</string>
+    <string name="he_will_be_able_to_modify_the_group_parameters">pourra modifier les paramètres du groupe, supprimer des membres et donner le statut d\'administrateur à d\'autres membres.</string>
+    <string name="appoint_group_moderator">Nommer modérateur du groupe</string>
+    <string name="appoint_moderator">Nommer modérateur</string>
+    <string name="moderators_are_like_admins">Les modérateurs sont comme des administrateurs, mais avec des droits limités.</string>
+    <string name="he_will_be_able_to_manage_members">pourra gérer les membres, examiner les publications et supprimer des commentaires dans le groupe.</string>
+    <string name="invite_you">vous invite</string>
+    <string name="has_canceled_your_invitation">a annuler votre invitation</string>
+    <string name="cancel_invitation_to_become_an_admin">Annuller l\'invitation à devenir admin</string>
+    <string name="cancel_invitation">Annuller l\'invitation</string>
+    <string name="cancel_invitation_of">Annuller l\'invitation de</string>
+    <string name="to_become_an_admin_in_the_group">à devenir admin dans le groupe</string>
+    <string name="to_become_a_moderator_in_the_group">à devenir modérateur dans le groupe</string>
+    <string name="remove_ass_moderator">retirer en tant que modérateur</string>
+    <string name="ass_moderator">en tant que modérateur</string>
+    <string name="remove">Retirer</string>
+    <string name="has_add_you">vous a ajouté</string>
+    <string name="ass_moderator_in_the_group">comme modérateur dans le groupe</string>
+    <string name="has_remove_to_you_the_oderator_rule">vous a retiré le rôle de modérateur dans le groupe</string>
+    <string name="a_moderator_rule_in_the_group">le rôle de modérateur dans le groupe</string>
+    <string name="accept_the_invitation_to_become_an_dmin">Accepter l\'invitation à devenir admin ?</string>
+    <string name="admin_rules">Les admins gèrent les groupes et lès aident à se protéger en créant des règles, en contrôlant les paramètres et en modérant les adhésions et les discussions</string>
+    <string name="accept_the_invitation_to_become_a_moderator">Accepter l\'invitation à devenir modérateur ?</string>
+    <string name="moderator_rules">Les moderateurs gèrent les groupes et lès aident à se protéger en créant des règles, en contrôlant les paramètres et en modérant les adhésions et les discussions </string>
+    <string name="refuse">Refuser</string>
+    <string name="accept">Accepter</string>
+    <string name="refuse_your_invitation_to_become_an_admin">a refusé votre invitation à devenir admin dans le groupe</string>
+    <string name="accept_your_invitation_to_become_an_admin">a accepté votre invitation à devenir admin dans le groupe</string>
+    <string name="refuse_your_invitation_to_become_a_moderator">a refusé votre invitation à devenir modérateur dans le groupe</string>
+    <string name="accept_your_invitation_to_become_a_moderator">a accepté votre invitation à devenir modérateur dans le groupe</string>
+    <string name="remove_yourself_from_admin">Se retirer des admins</string>
+    <string name="remove_from_admin_in_group">Retirer en tant qu\'administrateur</string>
+    <string name="delete_admin">Supprimer l\'admin</string>
+    <string name="you_are_about_to_remove_yourself_from_admins">Vous êtes sur le point de vous supprimer des admins.</string>
+    <string name="you_are_about_to_remove_member">Vous êtes sur le point de supprimer</string>
+    <string name="from_admins">des admins.</string>
+    <string name="from_moderators">des modérateurs.</string>
+    <string name="delete_like_moderator">Supprimer en tant que modérateur</string>
+    <string name="remove_yourself_like_moderator">Se retirer en tant que modérateur</string>
+    <string name="delete_moderator">Supprimer le modérateur</string>
+    <string name="you_are_about_to_remove_yourself_from_moderators">Vous êtes sur le point de vous supprimer des modérateurs.</string>
+    <string name="delete_you_like_admin_from_group">vous a supprimé en tant qu\'admin du groupe</string>
+    <string name="delete_you_like_moderator_from_group">vous a supprimé en tant que modérateur du groupe</string>
+    <string name="delete_his_self_like_admin_from_group">s\'est supprimé comme admin dans le groupe</string>
+    <string name="delete_his_self_like_moderator_from_group">s\'est supprimé comme modérateur dans le groupe</string>
+    <string name="invited">Invité(e)s</string>
+    <string name="invite_friends">Inviter des amis</string>
+    <string name="blocked">Bloqué(e)s</string>
+    <string name="invite_you_to_join_the_group">vous invite à rejoindre le groupe</string>
+    <string name="invitation_accepted">Invitation accepté</string>
+    <string name="invitation_refused">Invitation refusé</string>
+    <string name="accepted_you_invitation_to_become_member_of_group">a accepté votre invitation à devenir membre du groupe</string>
+    <string name="refused_you_invitation_to_become_member_of_group">a refusé votre invitation à devenir membre du groupe</string>
+    <string name="become_group_member_of_this_group">Devenez membre du groupe</string>
+    <string name="invite_you_to_become_member_of_group">vous invite à devenir membre du groupe</string>
+    <string name="you_will_see_the_group_posts">Vous verrez désormais les publications du group sur votre fil principal.</string>
+    <string name="report">Signaler</string>
+    <string name="subscribed">Abonné(e)</string>
+    <string name="unsubscribe_title">Se désabonner ?</string>
+    <string name="unsubscribe">Se désabonner</string>
+    <string name="leave_the_group">Quitter le groupe</string>
+    <string name="leave_the_group_title">Quitter le groupe ?</string>
+    <string name="you_are_about_to_leave_the_group">Vous êtes sur le point de quitter le groupe</string>
+    <string name="do_you_really_want_to_unsubscribe">Voulez-vous vraiment vous désabonner ?</string>
+    <string name="details">Détails</string>
+    <string name="ignore">Ignorer</string>
+    <string name="delete_post_title">Supprimer la publication?</string>
+    <string name="ignore_report">Ignorer le signalement</string>
+    <string name="do_you_really_want_to_ignore_this_report">Vous choisissez d\'ignorer ce signalement?</string>
+    <string name="this_post_has_been_report">Cette publication a été signalée</string>
+    <string name="time">fois</string>
+    <string name="for_the_following_reason">pour la raison suivante:</string>
+    <string name="reported_content">Contenu signalé</string>
+    <string name="pending_approval">Approbation en attente</string>
+    <string name="awaiting_approval">En attente d\'approbation</string>
+    <string name="post_reported">Publications signalées</string>
+    <string name="membership_request">Demande d\'adhésion</string>
+    <string name="you_are_about_to_delete_this_post">Vous êtes sur le point de supprimer cette publication.</string>
+    <string name="delete_group">Supprimer le groupe</string>
+    <string name="be_careful_you_are_about_to_delete_your_group">Attention! vous êtes sur le point de supprimer votre groupe. Ce groupe sera également supprimé chez tous les membres. Cette action est irreversible.</string>
+    <string name="cancel_group_paused">Annuler la pause</string>
+    <string name="any_changes_you_make_here_will_not_affect_your_your_profil">Les modifications que vous apportez ici n\'affectent pas votre profil principal sur Miioky.</string>
+    <string name="describe_yourself_for_the_group">Décrivez-vous pour le groupe…</string>
+    <string name="your_bio_for_the_group">Votre bio pour le groupe</string>
+    <string name="joined">a rejoint</string>
+    <string name="admin_master_member_from">membre depuis</string>
+    <string name="adding_by">ajouté(e) par</string>
+    <string name="what_do_you_think">A quoi pensez-vous?</string>
+    <string name="you_maj">Vous</string>
+    <string name="moderator">Modérateur</string>
+    <string name="view_group_history">Voir l\'historique du groupe</string>
+    <string name="everyone_can_see_who_is_in_the_group_and_what_is_posted">Tout le monde peut voir qui est dans le groupe et ce qui est publié.</string>
+    <string name="only_member_can_see_who_is_in_the_group">Seuls les membres peuvent voir qui est dans le groupe.</string>
+    <string name="admin_group_rules">Règles de group des admins</string>
+    <string name="posts_in_the_group">Publications dans le groupe</string>
+    <string name="group_manage_by">Groupes gérés par</string>
+    <string name="about_me">A propos de moi</string>
+    <string name="what_do_you_mean">Que voulez-vous dire?</string>
+    <string name="group_rules">Règles de groupe</string>
+    <string name="see_your_groups">Voir vos groupes</string>
+    <string name="join_the_group">Rejoindre le groupe</string>
+    <string name="followed">Suivi(e)s</string>
+    <string name="this_group_is_private">Ce groupe est privé</string>
+    <string name="join_this_group_to_view_or_participate_in_activities">Rejoignez ce groupe pour voir ou participer aux activités</string>
+    <string name="group_parameters">Paramètres du groupe</string>
+    <string name="control_what_you_see_in_your_news_feed">Contrôlez ce que vous voyez dans votre fil d\'actualité.</string>
+    <string name="membership">Adhésion</string>
+    <string name="leave_groups_that_no_longer_interest_you">Quittez les groupes qui ne vous interessent plus.</string>
+    <string name="invitation">Invitation</string>
+    <string name="manage_invitations_to_join_groups">Gerez les invitations à rejoindre des groupes.</string>
+    <string name="commented_on_your_post_in_the_group">a commenté votre publication dans le groupe</string>
+    <string name="commented_on_your_post">a commenté votre publication.</string>
+    <string name="responded_to_your_comment_in_the_group">a répondu à votre commentaire dans le groupe</string>
+    <string name="responded_to_your_comment">a répondu à votre commentaire.</string>
+    <string name="has_made_a_post_in_the_group">a fait une publication dans le groupe</string>
+    <string name="has_made_a_post">a fait une publication.</string>
+    <string name="the_shop">la boutique</string>
+    <string name="made_a_new_announcement">a fait une nouvelle annonce.</string>
+    <string name="asked_to_join_the_group">a demandé à rejoindre le groupe</string>
+    <string name="the_group_admins">Les admins du groupe</string>
+    <string name="reject_your_membership_request">ont rejeté votre demande d\'adhésion.</string>
+    <string name="have_accepted_your_membership_request">ont accepté votre demande d\'adhésion.</string>
+    <string name="point">point</string>
+    <string name="points">points</string>
+    <string name="asked">demande</string>
+    <string name="askeds">demandes</string>
+    <string name="approve">Approuver</string>
+    <string name="approve_all">Tout approuver</string>
+    <string name="refuse_all">Tout refuser</string>
+    <string name="your_membership_is_awaiting_approval">Votre adhésion est en attente d\'approbation les admins étudient votre demande.</string>
+    <string name="i_accept_the_group_rules">J\'accepte les règles du groupe</string>
+    <string name="joined_miioky_on">A rejoint Miioky</string>
+    <string name="only_member_can_see_who_is_in_the_group_and_what_is_published">Seuls les membres peuvent voir qui est dans le groupe et ce qui est publié.</string>
+    <string name="say_something">Dites quelque chose…</string>
+    <string name="your_comment">Votre commentaire</string>
+    <string name="one_hundred">100</string>
+    <string name="photo_post">Publication photo</string>
+    <string name="video_post">Publication video</string>
+    <string name="your_announce">Vore annonce</string>
+    <string name="yours_country">Votre pays</string>
+    <string name="yours_town">Votre ville</string>
+    <string name="yours_neighborhood">Votre quartier</string>
+    <string name="name_the_product">Nommer le produit</string>
+    <string name="name_the_dish">Nommer le plat</string>
+    <string name="name_the_pastry">Nommer la pâtisserie</string>
+    <string name="old_price">Ancien prix (Facultatif)</string>
+    <string name="price">Prix</string>
+    <string name="the_category">Catégorie</string>
+    <string name="the_description">Description</string>
+    <string name="a_detail_description_can_help_you_sell_faster">Une description détaillée peut vous aider à vendre plus rapidement.</string>
+    <string name="a_detail_description_can_help_you_rent_faster">Une description détaillée peut vous aider à louer plus rapidement.</string>
+    <string name="yours_shops">Vos boutiques</string>
+    <string name="create_a_shop">Créer une boutique</string>
+    <string name="create_a_restaurant">Créer un restaurant</string>
+    <string name="create_a_bakery">Créer une boulangerie</string>
+    <string name="add_your_store_cover_photo">Ajouter la photo de couverture de votre boutique</string>
+    <string name="add_your_restaurant_cover_photo">Ajouter la photo de couverture de votre restaurant</string>
+    <string name="add_your_bakery_cover_photo">Ajouter la photo de couverture de votre boulangerie</string>
+    <string name="update_your_store_cover_photo">Modifier la photo de couverture de votre boutique</string>
+    <string name="give_your_customers_an_idea_of_what_you_sell_with_a_photo">Donner à vos clients une idée de ce que vous vendez avec une photo.</string>
+    <string name="explain_your_specialty_to_your_customers">Expliquez à vos clients votre spécialité.</string>
+    <string name="name_your_store">Nommez votre boutiques</string>
+    <string name="name_your_restaurant">Nommez votre restaurant</string>
+    <string name="name_your_bakery">Nommez votre boulangerie</string>
+    <string name="tell_a_little_about_your_store">Parlez un peu de votre boutique…</string>
+    <string name="tell_a_little_about_your_restaurant">Parlez un peu de votre restaurant…</string>
+    <string name="tell_a_little_about_your_bakery">Parlez un peu de votre boulangerie…</string>
+    <string name="vehicles">Véhicules</string>
+    <string name="women_clothing_and_shoes">Vêtements et chaussures femmes</string>
+    <string name="men_clothing_and_shoes">Vêtements et chaussures hommes</string>
+    <string name="baby">Bébés</string>
+    <string name="furniture">Meubles</string>
+    <string name="electronic_appliances">Appareils électroniques</string>
+    <string name="home_appliances">Electroménager</string>
+    <string name="antiques_and_collectibles">Antiquités et objects de collections</string>
+    <string name="art_and_crafts">Art et artisanat</string>
+    <string name="car_parts">Pièces automobile</string>
+    <string name="book_film_and_music">Livre, film et musique</string>
+    <string name="garage_sale">Vide grenier</string>
+    <string name="health_and_beauty">Santé et beauté</string>
+    <string name="interior_items_and_decoration">Article d\'interieur et décoration</string>
+    <string name="interior_design_and_tools">Aménagement intérieur et outils</string>
+    <string name="sale_of_housing">Vente de logement</string>
+    <string name="jewelry_and_watches">Bijoux et montres</string>
+    <string name="luggage_and_bags">Bagage et sacs</string>
+    <string name="miscellaneous">Divers</string>
+    <string name="musical_instruments">Instruments de musique</string>
+    <string name="patio_and_garden">Patio et jardin</string>
+    <string name="animal_product">Produits pour animaux</string>
+    <string name="sport_stuff">Articles de sport</string>
+    <string name="game_and_toys">Jeux et jouets</string>
+    <string name="real_estate">Immobilier</string>
+    <string name="event_equipment">Matériel évènementiel</string>
+    <string name="decorative_objects">Objets de décoration</string>
+    <string name="machine">Engin</string>
+    <string name="device">Appareil</string>
+    <string name="article">Article</string>
+    <string name="market_max_post_photo_store">Choississez d\'abord la photo principale de votre annonce. Ajoutez plus de photos sous differents angles pour montrer toute trace de dommage ou d\'usure.</string>
+    <string name="market_max_post_photo_restaurant">Choississez d\'abord la photo principale de votre annonce. Vous pouvez ajouter plusieurs photos pour présenter le plat.</string>
+    <string name="market_max_post_photo_bakery">Choississez d\'abord la photo principale de votre annonce. Vous pouvez ajouter plusieurs photos pour présenter la patisserie.</string>
+    <string name="neighborhood">Quartier</string>
+    <string name="menu_today">Menu aujourd\'hui</string>
+    <string name="view_the_menu">Consulter le menu</string>
+    <string name="add_menu">Ajouter le menu</string>
+    <string name="present_to_your_customers_today_is_menu">Présentez à vos clients le menu d\'aujourd\'hui.</string>
+    <string name="edit_menu">Modifier le menu</string>
+    <string name="radio_new">Neuf</string>
+    <string name="radio_second_hand">Occasion</string>
+    <string name="radio_old">Usé</string>
+    <string name="write_to_the_seller">Ecrire au vendeur</string>
+    <string name="hello">Salut</string>
+    <string name="is_this_items_still_available">cet article est il toujours disponible ?</string>
+    <string name="is_this_dish_still_available">ce plat est il encore disponible ?</string>
+    <string name="this_product_is_still_available">cet article est toujours disponible ?</string>
+    <string name="store_information">Information sur la boutique</string>
+    <string name="restaurant_information">Information sur le restaurant</string>
+    <string name="bakery_information">Information sur la boulangerie</string>
+    <string name="owner_information">Information sur le propriétaire</string>
+    <string name="about_the_article">A propos de l\'article</string>
+    <string name="about_the_dish">A propos du plat</string>
+    <string name="about_the_pastry">A propos de la patisserie</string>
+    <string name="state">Etat</string>
+    <string name="other_store_of_the_same_seller">D\'autres boutiques du même vendeur</string>
+    <string name="joined_miioky">A rejoint Miioky</string>
+    <string name="announces_on">annonces sur</string>
+    <string name="announce_on">annonce sur</string>
+    <string name="announces">annonces</string>
+    <string name="announce">annonce</string>
+    <string name="catalog">Catalogue</string>
+    <string name="stores">Boutiques</string>
+    <string name="your_stores">Vos boutiques</string>
+    <string name="stores_you_manage">Boutiques que ous gérez</string>
+    <string name="sell">Vendre</string>
+    <string name="sell_in">Vendre dans:</string>
+    <string name="stores_you_follow">Boutiques que vous suivez</string>
+    <string name="min">min</string>
+    <string name="max">max</string>
+    <string name="filter">Filtre</string>
+    <string name="product_condition">Etat du produit</string>
+    <string name="neighborhood_optional">Quartier (Facultatif)</string>
+    <string name="update_data">Modifier les données</string>
+    <string name="delete_announce">Supprimer l\'annonce</string>
+    <string name="delete_store">Supprimer la boutique</string>
+    <string name="discuss_with_seller">Discuter avec le vendeur</string>
+    <string name="are_you_sure_you_want_to_delete_this_announce">Voulez-vous vraiment supprimer cet annonce ?</string>
+    <string name="be_careful_you_are_about_to_delete_this_store">Attention! vous êtes sur le point de supprimer votre boutique. Elle sera également supprimé chez tous ses abonnés. Cette action est irreversible.</string>
+    <string name="select_country">Selectionez un pays</string>
+    <string name="account_scope">Portée du compte</string>
+    <string name="you_can_always_change_this_information_later">Vous pourrez toujours modifier ces informations plus tard.</string>
+    <string name="try_again">Réessayer</string>
+    <string name="connexion_failed">La connexion a échoué. Veuillez vérifier l\'état de votre réseau et réessayer.</string>
+    <string name="impossible_to_connect">Impossible de se connecter</string>
+    <string name="establishments">Etablissements</string>
+    <string name="schools">Ecoles</string>
+    <string name="add_a_school">Ajouter une école</string>
+    <string name="universities">Universités</string>
+    <string name="add_a_university">Ajouter une université</string>
+    <string name="add_workplace">Ajouter un lieu de travail</string>
+    <string name="workplace">Lieu de travail</string>
+    <string name="professional_experience">Experience professionnelle</string>
+    <string name="name_and_bio">Nom et bio</string>
+    <string name="relationship_status">Situation amoureuse</string>
+    <string name="single">Célibataire</string>
+    <string name="gender">Genre</string>
+    <string name="man">homme</string>
+    <string name="married">Marié(e)</string>
+    <string name="in_a_relationship_with">En couple</string>
+    <string name="other">Autre</string>
+    <string name="women">femme</string>
+    <string name="binary_name">nom binaire</string>
+    <string name="add_college">Ajouter un collège</string>
+    <string name="school_high_school_college">Ecole, Lycée, Collège</string>
+    <string name="school_name">Nom de l\'école</string>
+    <string name="school">Ecole</string>
+    <string name="university">Université</string>
+    <string name="add_university">Ajouter une université</string>
+    <string name="establishment_name">Nom de l\'établissement</string>
+    <string name="work_at">Travail(le) chez</string>
+    <string name="native_country">Pays d\'origine</string>
+    <string name="hometown">Ville d\'origine</string>
+    <string name="is_from">Est de</string>
+    <string name="live_in">Habite à</string>
+    <string name="studied_at">A étudié à</string>
+    <string name="see_the_about_me_section">Voir la section à propos de moi</string>
+    <string name="see_the_section_about">Voir la section à propos de</string>
+    <string name="schooling">Scolarité</string>
+    <string name="job">Emploi</string>
+    <string name="place_of_residence">Lieu de résidence</string>
+    <string name="no_school_to_display">Aucune école à afficher</string>
+    <string name="no_university_to_display">Aucune université à afficher</string>
+    <string name="no_workplace_to_display">Aucun lieu de travail à afficher</string>
+    <string name="no_marital_status_to_display">Aucune information sur la situation amoureuse</string>
+    <string name="current_city">Ville actuelle</string>
+    <string name="current_country">Pays actuelle</string>
+    <string name="divorced">Divorcé(e)</string>
+    <string name="separated">Séparé(e)</string>
+    <string name="private_count">Compte privé</string>
+    <string name="public_count">Compte publique</string>
+    <string name="this_account_is_private">Ce compte est privé !</string>
+    <string name="anyone_who_wants_to_follow_yours_news_will_need_your_approval">Toute personne qui voudra suivre votre actualité aura besoin de votre approbation</string>
+    <string name="yours_news_feed_will_be_visible_to_everyone">Votre fill d\'actualité sera visible par tout le monde.</string>
+    <string name="add_a_title">Ajoutez un titre</string>
+    <string name="invite_like_friend">Inviter comme ami(e)</string>
+    <string name="friends">Ami(e)s</string>
+    <string name="friend">Ami(e)</string>
+    <string name="friend_request">Demande d\'amitié</string>
+    <string name="friendship_suggestion">Suggestion d\'amitié(e)</string>
+    <string name="your_friends">Vos ami(e)s</string>
+    <string name="all_friends">Tou(te)s les ami(e)s</string>
+    <string name="hide">Masquer</string>
+    <string name="confirm">Confirmer</string>
+    <string name="delete_invitation">Supprimer l\'invitation ?</string>
+    <string name="do_you_really_want_to_delete_this_invitation">Voulez-vous vraiment supprimer cette invitation ?</string>
+    <string name="accept_the_invitation">Accepter l\'invitation</string>
+    <string name="you_will_now_be_able_to_view_your_publications_together">Vous pourrez désormais ensemble voir vos publications.</string>
+    <string name="will_see_yours_and_you_his">Verra les vôtres et vous les siennes</string>
+    <string name="mutual_friend">ami(e) en commun</string>
+    <string name="mutual_friends">ami(e)s en commun</string>
+    <string name="friends_from">Amis depuis</string>
+    <string name="send_a_message_to">Envoyer un message à</string>
+    <string name="you_will_not_longer_see_the_publication_but_will_remain_friends">Vous ne verrez plus les publications mais resterez amis</string>
+    <string name="unsubscribe_from">Se désabonner de</string>
+    <string name="resubscribe_to">Se réabonner à</string>
+    <string name="resubscribe">Se réabonner</string>
+    <string name="do_you_really_want_to_unsubscribe_in">Voulez-vous vraiment vous désabonner de</string>
+    <string name="you_will_see_the_posts_again">Vous verrez à nouveau les publications</string>
+    <string name="you_are_about_to_subscribe_to">Vous êtes sur le point de vous réabonner à</string>
+    <string name="from_friends">des amis</string>
+    <string name="from_your_friends">de vos amis</string>
+    <string name="remove_from_friends">Retire des amis ?</string>
+    <string name="you_are_about_to_remove">Vous êtes sur le point de retirer</string>
+    <string name="has_unfriend_you">vous a retiré de ses amis vous ne pourrez plus voir ses publications sur votre fil d\'actualité.</string>
+    <string name="accepted_your_friend_request">a acepté votre demande d\'amitié. Vous pouvez désormais ensemble voir vos publications.</string>
+    <string name="accepted_your_subscription_request">a acepté votre demande d\'abonnement. Vous pouvez désormais voir ses publications.</string>
+    <string name="see_all_his_friends">Voir tous ses amis</string>
+    <string name="all">Tous</string>
+    <string name="common">Communs</string>
+    <string name="suggestions">Suggestions</string>
+    <string name="subscription_request">Demande d\'abonnement</string>
+    <string name="your_subscribers">Vos abonnés</string>
+    <string name="subscriber">abonné(e)</string>
+    <string name="subscribers">abonné(e)s</string>
+    <string name="subscription_suggestions">Suggestions d\'abonnements</string>
+    <string name="request">Demande</string>
+    <string name="delete_the_request">Supprimer la demande</string>
+    <string name="do_you_really_want_to_delet_this_subscription_request">Voulez-vous vraiment supprimer cette demande d\abonnement ?</string>
+    <string name="accept_subscription_request">Accepter la demande d\'abonnement</string>
+    <string name="will_now_be_able_to_see_your_publications">pourra désormais voir vos publications</string>
+    <string name="would_you_like_to_stop_following">Voulez-vous arrêter de suivre</string>
+    <string name="say_something_about_the_post">Dites quelque chose à propos de la publication…</string>
+    <string name="likes_mentions">Mentions j\'aime</string>
+    <string name="favorites_mentions">Mentions coups de coeur</string>
+    <string name="person">personne</string>
+    <string name="people">personnes</string>
+    <string name="see_the_post">Voir la publication</string>
+    <string name="tell_a_little_about_your_group">Parlez un peu de votre groupe…</string>
+    <string name="choose_the_group_theme">Choisir le thème du groupe</string>
+    <string name="your_group_has_been_created">Votre groupe a été crée</string>
+    <string name="bring_together_peaple_who_share_the_same_interest_by_inviting_them">Rassemblez les personnes qui partagent les mêmes centres d\'intérêt en invitant vos followers dans votre groupe.</string>
+    <string name="to_examine">A examiner</string>
+    <string name="search_for_groups">Rechercher des groupes</string>
+    <string name="write_your_own_rules">Ecrivez vos prores règles</string>
+    <string name="create_a_rule">Créer une règle</string>
+    <string name="you_can_check_it_before_publishing_it">Vous pourrez la vérifier avant de la publier.</string>
+    <string name="write_the_rule">Ecrivez la règle…</string>
+    <string name="add_the_details">Ajoutez les détails</string>
+    <string name="five_hundred">500</string>
+    <string name="update_the_rules">Modifier les règles</string>
+    <string name="check">Vérifier</string>
+    <string name="create_another_rule">Créer une autre règle</string>
+    <string name="comment_frequency">Fréquence de commentaires</string>
+    <string name="posts_frequency">Fréquence de publications</string>
+    <string name="limited_activity">Activité limité</string>
+    <string name="no_post_report">Aucune publication signalée</string>
+    <string name="no_membership_request">Aucune demande d\'adhésion</string>
+    <string name="no_publication_awaiting_approval">Aucune publication en attente d\'approbation</string>
+    <string name="change_group_profile_picture">Changer la photo de profil du group</string>
+    <string name="send_a_message">Envoyer un message</string>
+    <string name="add_as_moderator">Ajouter en tant que modérateur</string>
+    <string name="invite_as_admin">Inviter en tant qu\'admin</string>
+    <string name="ban_from_the_group">Banir du groupe</string>
+    <string name="limit_how_often_this_member_can_post">Limiter la fréquence à laquelle ce membre peut publier</string>
+    <string name="limit_activity">Limiter l\'activité</string>
+    <string name="letter_i">i</string>
+    <string name="fifty">50</string>
+    <string name="administrators_with_two_points">Administrateurs:</string>
+    <string name="post_in_the_group">Publications dans le groupe</string>
+    <string name="the_list_is_empty">La liste est vide</string>
+    <string name="add_rules_in_the_group">Ajouter des règles dans le groupe</string>
+    <string name="from">depuis</string>
+    <string name="chat">Chat</string>
+    <string name="contacts">Contacts</string>
+    <string name="market">Marché</string>
+    <string name="to_rent_out">Louer</string>
+    <string name="for_rent">à louer</string>
+    <string name="send_a_message_to_the_seller">Envoyer un message au vendeur</string>
+    <string name="other_product_from_the_same_owner">Autres produits du même propriétaire</string>
+    <string name="products_you_offer">Produits que vous proposez</string>
+    <string name="fact_search_based_on_the_city">La recherche s\'effectue en fonction de la ville dans laquelle vous vivez. Si vous avez changé de ville modifiez vos paramètres.</string>
+    <string name="no_results">Aucun résultats !</string>
+    <string name="modify_the_parameters">Modifier les paramètres</string>
+    <string name="my_status">Mon statut</string>
+    <string name="tap_to_add_status">Appuyer pour ajouter un statut</string>
+    <string name="recent_update">Mises à jour recentes</string>
+    <string name="view_profile_picture">Voir la photo de profile</string>
+    <string name="change_profile_photo">Mofifier la photo de profile</string>
+    <string name="publish_as_story">Publier en tant que story</string>
+    <string name="do_you_want_to_post_your_profile_picture_as_tory">Voulez-vous publier votre photo de profil comme story ?</string>
+    <string name="no_challenge_at_the_moment">Aucun challenge pour le moment.</string>
+    <string name="launches_a_challenge_to_your_subscribers">Défiez vos abonné(e)s</string>
+    <string name="no_suggestions_at_the_moment">Aucune suggestion pour le moment</string>
+    <string name="no_friends">Aucun(e) ami(e)</string>
+    <string name="no_friends_in_common">Aucun(e) ami(e) en commun</string>
+    <string name="start_the_conversation">Commencez la discussion</string>
+    <string name="participate_in_this_challenge">Participer à ce challenge</string>
+    <string name="see_my_challenges">Voir mes challenges</string>
+    <string name="thought">Pensée</string>
+    <string name="establishment">Etablissement</string>
+    <string name="your_have_not_yet_created_a_challenge">Vous n\'avez pas encore créé de challenge</string>
+    <string name="no_challenge_accepted">Aucun challenge accepté</string>
+    <string name="write_the_name">Ecrivez le nom</string>
+    <string name="everyone_can_answer_this_challenge">Tout le monde peut répondre à ce challenge.</string>
+    <string name="do_you_want_to_leave_this_group">Voulez-vous quitter ce groupe ?</string>
+    <string name="you_watched_everything">Vous avez tout regardé</string>
+    <string name="your_request_is_in_progress">Votre requête est en cours…</string>
+    <string name="this_post_has_been_deleted">Cette publication a été supprimée !</string>
+    <string name="this_group_has_been_deleted">Ce groupe a été supprimée</string>
+    <string name="sold">Vendu !</string>
+    <string name="this_comment_has_been_deleted">Ce commentaire a été supprimé !</string>
+    <string name="this_message_has_been_deleted">Ce message a été supprimé !</string>
+    <string name="do_you_want_to_delete_this_comment">Voulez-vous supprimer ce commentaire ?</string>
+    <string name="guests">Invité(e)s</string>
+    <string name="search_members">Rechercher des membres</string>
+    <string name="when_new_members_join_the_group_they_are_visible_here">Lorsque de nouveaux membres rejoignent votre groupe ils sont visibles ici.</string>
+    <string name="choose_a_group">Choisir un groupe</string>
+    <string name="delete_account">Supprimer le compte</string>
+    <string name="show_password">Afficher le mot de passe</string>
+    <string name="hide_password">Masquer le mot de passe</string>
+    <string name="accepted">Acceptés</string>
+    <string name="my_responses">Mes réponses</string>
+    <string name="published_challenges">Challenges publiés</string>
+    <string name="how_to_proceed">Comment procéder ?</string>
+    <string name="create_store_msg">Créez simplement votre Boutique vous allez ajouter les produits à vendre plus tard en cliquant sur le bouton \"Vendre\".</string>
+    <string name="create_bakery_msg">Créez simplement votre Boulangerie vous allez ajouter les produits à vendre plus tard en cliquant sur le bouton \"Vendre\".</string>
+    <string name="create_restaurant_msg">Créez simplement votre Restaurant vous allez ajouter les produits à vendre plus tard en cliquant sur le bouton \"Vendre\".</string>
+    <string name="people_who_visited_your_profile">Personnes ayant visité votre profil</string>
+    <string name="visitor">Visiteur</string>
+    <string name="visitors">Visiteurs</string>
+
+    <!-- categories challenge can be translate -->
+    <string name="answer_my_challenge">Accepte mon challenge</string>
+    <string name="category">Catégorie…</string>
+    <string name="love">Amour</string>
+    <string name="beauty">Beauté</string>
+    <string name="acapella">Acapella</string>
+    <string name="dance">Danse</string>
+    <string name="comedy">Comédie</string>
+    <string name="swag">Swag</string>
+    <string name="decoration">Décoration</string>
+    <string name="couple">Couple</string>
+    <string name="cinema">Cinema</string>
+    <string name="emotions">Emotions</string>
+    <string name="art">Art</string>
+    <string name="sport">Sport</string>
+    <string name="games">Jeux</string>
+    <string name="vehicle">Véhicule</string>
+    <string name="accessories">Accessoires</string>
+    <string name="kitchen">Cuisine</string>
+    <string name="interior_decoration">Décoration d\'intérieur</string>
+    <string name="accommodation">Logement</string>
+    <string name="restoration">Restauration</string>
+    <string name="journey">Voyage</string>
+    <string name="animals">Animaux</string>
+    <string name="entertainment">Divertissement</string>
+    <string name="event">Evènementiel</string>
+
+    <!-- time and like -->
+    <string name="like">like</string>
+    <string name="likes">likes</string>
+    <string name="hours_ago">h</string>
+    <string name="minutes_ago">mins</string>
+    <string name="an_hour_ago">il y\'a une heure</string>
+    <string name="yesterday">hier</string>
+    <string name="just_now">à l\'instant</string>
+    <string name="liked_by_you_and">aimé par vous et</string>
+    <string name="liked_by">aimé par</string>
+    <string name="you">vous</string>
+    <string name="and">et</string>
+    <string name="other_users">autres personnes</string>
+
+    <!-- Bundle arg names -->
+    <string name="user_account_settings">user_account_settings</string>
+    <!-- ViewComment activity -->
+    <string name="empty_field">le champ est vide</string>
+    <string name="in_response_to">En réponse à @</string>
+    <string name="answer">Répondre</string>
+    <string name="answer_to">Répondre à</string>
+    <string name="see_more">Voir plus</string>
+    <string name="add_legend">ajoutez une légende…</string>
+
+    <!-- Firebase database fields -->
+    <!-- nodes -->
+    <string name="dbname_users">Users</string>
+    <string name="dbname_user_account_settings">User_account_settings</string>
+    <string name="dbname_following">Following</string>
+    <string name="dbname_followers">Followers</string>
+    <string name="dbname_battle">Battle</string>
+    <string name="dbname_battle_response_challenge">Battle_response_challenge</string>
+    <string name="dbname_battle_media">Battle_media</string>
+    <string name="dbname_battle_media_share">Battle_media_share</string>
+    <string name="dbname_fun">Fun</string>
+    <string name="dbname_videos">Fun_videos</string>
+    <string name="dbname_complet_profile">Complet_profile</string>
+    <string name="dbname_user_photos_videos">User_photos_videos</string>
+    <string name="dbname_story">Story</string>
+    <string name="dbname_invite_battle">Invitation_challenge</string>
+    <string name="dbname_invite_battle_media">Invitation_challenge_media</string>
+    <string name="dbname_already_response_challenge">Already_response_challenge</string>
+    <string name="dbname_save_publication">Save_publication</string>
+    <string name="dbname_save_file_in_gallery">Save_file_in_gallery</string>
+    <string name="dbname_share_video">Share_video</string>
+    <string name="dbname_response_of_user_challenges">IResponse_of_user_challenges</string>
+    <string name="dbname_story_spotlight">Story_spotlight</string>
+    <string name="dbname_story_spotlight_cover">Story_spotlight_cover</string>
+    <string name="dbname_chat">Chats</string>
+    <string name="dbname_notification">Notification</string>
+    <string name="dbname_presence">Presence</string>
+    <string name="dbname_new_story">New_story</string>
+    <string name="dbname_remove_Suggestion">Remove_Suggestion</string>
+    <!-- group -->
+    <string name="dbname_group_invitation_challenge">Group_invitation_challenge</string>
+    <string name="dbname_group">Group</string>
+    <string name="dbname_group_response_challenge">Group_response_challenge</string>
+    <string name="dbname_group_media">Group_Media</string>
+    <string name="dbname_group_waiting_for_approval">Group_Waiting_for_approval</string>
+    <string name="dbname_group_report_post">Group_Report_post</string>
+    <string name="dbname_group_report_post_number_and_reason">Group_Report_post_number_and_reason</string>
+    <string name="dbname_group_Media_waiting_for_approval">Group_Media_Waiting_for_approval</string>
+    <string name="dbname_group_media_share">Group_Media_share</string>
+    <string name="dbname_group_Media_Waiting_for_approval_share">Group_Media_Waiting_for_approval_share</string>
+    <string name="dbname_group_Membership_request_follower">Group_Membership_request_follower</string>
+    <string name="dbname_group_Membership_request_following">Group_Membership_request_following</string>
+    <string name="dbname_group_following">Group_Following</string>
+    <string name="dbname_group_followers">Group_Followers</string>
+    <string name="dbname_group_list_of_person_invited_in_group">Group_list_of_person_invited_in_group</string>
+    <string name="dbname_invitation_friend_following">Invitation_friend_Following</string>
+    <string name="dbname_invitation_friend_follower">Invitation_friend_Follower</string>
+    <string name="dbname_friend_following">Friend_Following</string>
+    <string name="dbname_friend_follower">Friend_Follower</string>
+    <string name="dbname_subscription_request_following">Subscription_request_Following</string>
+    <string name="dbname_subscription_request_follower">Subscription_request_Follower</string>
+    <!-- market -->
+    <string name="dbname_market">Market</string>
+    <string name="dbname_market_media">Market_media</string>
+    <string name="dbname_user_stores">User_Stores</string>
+    <string name="dbname_user_stores_media">User_Stores_media</string>
+    <string name="dbname_store_following">Store_following</string>
+    <string name="dbname_store_followers">Store_Followers</string>
+    <string name="dbname_user_group">User_Group</string>
+    <!-- node badge notification number -->
+    <string name="dbname_badge_notification_number">Badge_notification_number</string>
+    <string name="dbname_badge_market_number">Badge_market_number</string>
+    <string name="dbname_badge_follow_number">Badge_follow_number</string>
+    <string name="dbname_badge_friend_confirmation_number">Badge_friend_confirmation_number</string>
+    <string name="dbname_badge_follow_approbation_number">Badge_follow_approbation_number</string>
+    <string name="dbname_badge_challenge_invitation_number">Badge_challenge_invitation_number</string>
+    <string name="dbname_badge_message_number">Badge_message_number</string>
+    <string name="dbname_visit_profile">Visit_profile</string>
+    <!-- field badge notification number -->
+
+    <!-- fields -->
+    <string name="field_suppressed">suppressed</string>
+    <string name="field_post_identity">post_identity</string>
+    <string name="field_recycler_story">recycler_story</string>
+    <string name="field_friends_suggestion_one">friends_suggestion_one</string>
+    <string name="field_friends_suggestion_two">friends_suggestion_two</string>
+    <string name="field_friends_suggestion_three">friends_suggestion_three</string>
+    <string name="field_friends_suggestion_four">friends_suggestion_four</string>
+    <string name="field_friends_suggestion_five">friends_suggestion_five</string>
+    <string name="field_groups_suggestion_one">groups_suggestion_one</string>
+    <string name="field_groups_suggestion_two">groups_suggestion_two</string>
+    <string name="field_groups_suggestion_three">groups_suggestion_three</string>
+    <string name="field_groups_suggestion_four">groups_suggestion_four</string>
+    <string name="field_groups_suggestion_five">groups_suggestion_five</string>
+    <string name="field_videos_suggestion_one">videos_suggestion_one</string>
+    <string name="field_videos_suggestion_two">videos_suggestion_two</string>
+    <string name="field_videos_suggestion_three">videos_suggestion_three</string>
+    <string name="field_videos_suggestion_four">videos_suggestion_four</string>
+    <string name="field_videos_suggestion_five">videos_suggestion_five</string>
+    <string name="field_everyone_can_answer_this_challenge">everyone_can_answer_this_challenge</string>
+
+    <string name="field_user_id">user_id</string>
+    <string name="field_fullName">fullName</string>
+    <string name="field_username">username</string>
+    <string name="field_bio">bio</string>
+    <string name="field_status">status</string>
+    <string name="field_scope">scope</string>
+    <string name="field_timestart">timestart</string>
+    <string name="field_timeend">timeend</string>
+    <string name="field_birthDay">birthDay</string>
+    <string name="field_allReadyFollow">allReadyFollow</string>
+    <string name="field_dontSuggestAnymore">dontSuggestAnymore</string>
+    <string name="field_profileUrl">profileUrl</string>
+    <string name="field_full_profileUrl">full_profileUrl</string>
+    <string name="field_phoneNumber">phoneNumber</string>
+    <string name="field_user_work_at">user_work_at</string>
+    <string name="field_user_school_attended">user_school_attended</string>
+    <string name="field_user_establishment">user_establishment</string>
+    <string name="field_school_attended">school_attended</string>
+    <string name="field_user_school_attended_header">user_school_attended_header</string>
+    <string name="field_user_establishment_header">user_establishment_header</string>
+    <string name="field_user_work_at_header">user_work_at_header</string>
+    <string name="field_recyclerItem">recyclerItem</string>
+    <string name="field_imageUne">imageUne</string>
+    <string name="field_videoUne">videoUne</string>
+    <string name="field_imageDouble">imageDouble</string>
+    <string name="field_videoDouble">videoDouble</string>
+    <string name="field_reponseImageDouble">reponseImageDouble</string>
+    <string name="field_reponseVideoDouble">reponseVideoDouble</string>
+    <string name="field_gridRecyclerImage">gridRecyclerImage</string>
+    <string name="field_gridRecyclerVideo">gridRecyclerVideo</string>
+    <string name="field_recyclerItem_shared">recyclerItem_shared</string>
+    <string name="field_imageUne_shared">imageUne_shared</string>
+    <string name="field_videoUne_shared">videoUne_shared</string>
+    <string name="field_imageDouble_shared">imageDouble_shared</string>
+    <string name="field_videoDouble_shared">videoDouble_shared</string>
+    <string name="field_reponseImageDouble_shared">reponseImageDouble_shared</string>
+    <string name="field_reponseVideoDouble_shared">reponseVideoDouble_shared</string>
+    <string name="field_user_id_sharing">user_id_sharing</string>
+    <string name="field_user_id_shared">user_id_shared</string>
+    <string name="field_invite_url">invite_url</string>
+    <string name="field_invite_photoID">invite_photoID</string>
+    <string name="field_invite_profile_photo">invite_profile_photo</string>
+    <string name="field_invite_username">invite_username</string>
+    <string name="field_invite_userID">invite_userID</string>
+    <string name="field_invite_caption">invite_caption</string>
+    <string name="field_invite_category">invite_category</string>
+    <string name="field_invite_category_status">invite_category_status</string>
+    <string name="field_invite_tag">invite_tag</string>
+    <string name="field_response_url">reponse_url</string>
+    <string name="field_response_photoID">reponse_photoID</string>
+    <string name="field_response_caption">reponse_caption</string>
+    <string name="field_response_tag">reponse_tag</string>
+    <string name="field_response_user_id">reponse_user_id</string>
+    <string name="field_invite_country_name">invite_country_name</string>
+    <string name="field_invite_countryID">invite_countryID</string>
+    <string name="field_index_i">index_i</string>
+    <string name="field_index_ii">index_ii</string>
+    <string name="field_index_iii">index_iii</string>
+    <string name="field_index_iv">index_iv</string>
+    <string name="field_index_v">index_v</string>
+    <string name="field_index_vi">index_vi</string>
+    <string name="field_index_vii">index_vii</string>
+    <string name="field_index_viii">index_viii</string>
+    <string name="field_index_ix">index_ix</string>
+    <string name="field_index_x">index_x</string>
+    <string name="field_video">video</string>
+    <string name="field_image">image</string>
+    <string name="field_group_video">group_video</string>
+    <string name="field_group_image">group_image</string>
+    <string name="field_reponse_country_name">reponse_country_name</string>
+    <string name="field_reponse_countryID">reponse_countryID</string>
+    <string name="field_country_name">country_name</string>
+    <string name="field_countryID">countryID</string>
+    <string name="field_category">category</string>
+    <string name="field_caption">caption</string>
+    <string name="field_sharing_caption">sharing_caption</string>
+    <string name="field_captionUn">captionUn</string>
+    <string name="field_tags">tags</string>
+    <string name="field_tagsUn">tagsUn</string>
+    <string name="field_tagsDeux">tagsDeux</string>
+    <string name="field_date_created">date_created</string>
+    <string name="field_date_shared">date_shared</string>
+    <string name="field_date_last_profile_visit">date_last_profile_visit</string>
+    <string name="field_user_profile_photo">user_profile_photo</string>
+    <string name="field_user_full_profile_photo">user_full_profile_photo</string>
+    <string name="field_photo_id">photo_id</string>
+    <string name="field_url">url</string>
+    <string name="field_thumbnail">thumbnail</string>
+    <string name="field_thumbnail_invite">thumbnail_invite</string>
+    <string name="field_thumbnail_response">thumbnail_response</string>
+    <string name="field_thumbnail_un">thumbnail_un</string>
+    <string name="field_thumbnail_deux">thumbnail_deux</string>
+    <string name="field_urlUn">urlUn</string>
+    <string name="field_urlDeux">urlDeux</string>
+    <string name="field_urli">urli</string>
+    <string name="field_urlii">urlii</string>
+    <string name="field_urliii">urliii</string>
+    <string name="field_urliv">urliv</string>
+    <string name="field_urlv">urlv</string>
+    <string name="field_urlvi">urlvi</string>
+    <string name="field_urlvii">urlvii</string>
+    <string name="field_urlviii">urlviii</string>
+    <string name="field_urlix">urlix</string>
+    <string name="field_urlx">urlx</string>
+    <string name="field_urlxi">urlxi</string>
+    <string name="field_urlxii">urlxii</string>
+    <string name="field_urlxiii">urlxiii</string>
+    <string name="field_urlxiv">urlxiv</string>
+    <string name="field_urlxv">urlxv</string>
+    <string name="field_urlxvi">urlxvi</string>
+    <string name="field_urlxvii">urlxvii</string>
+    <string name="field_photoi_id">photoi_id</string>
+    <string name="field_photoii_id">photoii_id</string>
+    <string name="field_photoiii_id">photoiii_id</string>
+    <string name="field_photoiv_id">photoiv_id</string>
+    <string name="field_photov_id">photov_id</string>
+    <string name="field_photovi_id">photovi_id</string>
+    <string name="field_photovii_id">photovii_id</string>
+    <string name="field_photoviii_id">photoviii_id</string>
+    <string name="field_photoix_id">photoix_id</string>
+    <string name="field_photox_id">photox_id</string>
+    <string name="field_photoxi_id">photoxi_id</string>
+    <string name="field_photoxii_id">photoxii_id</string>
+    <string name="field_photoxiii_id">photoxiii_id</string>
+    <string name="field_photoxiv_id">photoxiv_id</string>
+    <string name="field_photoxv_id">photoxv_id</string>
+    <string name="field_photoxvi_id">photoxvi_id</string>
+    <string name="field_photoxvii_id">photoxvii_id</string>
+    <string name="field_main_photo">main_photo</string>
+    <string name="field_main_photo_id">main_photo_id</string>
+    <string name="field_sell">sell</string>
+    <string name="field_location_period">location_period</string>
+    <string name="field_photo_id_un">photo_id_un</string>
+    <string name="field_photo_id_deux">photo_id_deux</string>
+    <string name="field_likes">likes</string>
+    <string name="field_child_likes">child_likes</string>
+    <string name="field_likes_un">likes_un</string>
+    <string name="field_likes_deux">likes_deux</string>
+    <string name="field_likes_i">likes_i</string>
+    <string name="field_likes_ii">likes_ii</string>
+    <string name="field_likes_iii">likes_iii</string>
+    <string name="field_likes_iv">likes_iv</string>
+    <string name="field_likes_v">likes_v</string>
+    <string name="field_likes_vi">likes_vi</string>
+    <string name="field_likes_vii">likes_vii</string>
+    <string name="field_likes_viii">likes_viii</string>
+    <string name="field_likes_ix">likes_ix</string>
+    <string name="field_likes_x">likes_x</string>
+    <string name="field_likes_xi">likes_xi</string>
+    <string name="field_likes_xii">likes_xii</string>
+    <string name="field_likes_xiii">likes_xiii</string>
+    <string name="field_likes_xiv">likes_xiv</string>
+    <string name="field_likes_xv">likes_xv</string>
+    <string name="field_likes_xvi">likes_xvi</string>
+    <string name="field_likes_xvii">likes_xvii</string>
+    <string name="field_caption_i">caption_i</string>
+    <string name="field_caption_ii">caption_ii</string>
+    <string name="field_caption_iii">caption_iii</string>
+    <string name="field_caption_iv">caption_iv</string>
+    <string name="field_caption_v">caption_v</string>
+    <string name="field_caption_vi">caption_vi</string>
+    <string name="field_caption_vii">caption_vii</string>
+    <string name="field_caption_viii">caption_viii</string>
+    <string name="field_caption_ix">caption_ix</string>
+    <string name="field_caption_x">caption_x</string>
+    <string name="field_caption_xi">caption_xi</string>
+    <string name="field_caption_xii">caption_xii</string>
+    <string name="field_caption_xiii">caption_xiii</string>
+    <string name="field_caption_xiv">caption_xiv</string>
+    <string name="field_caption_xv">caption_xv</string>
+    <string name="field_caption_xvi">caption_xvi</string>
+    <string name="field_caption_xvii">caption_xvii</string>
+    <string name="field_crush">crush</string>
+    <string name="field_crush_un">crush_un</string>
+    <string name="field_crush_deux">crush_deux</string>
+    <string name="field_comments">comments</string>
+    <string name="field_child_comments">child_comments</string>
+    <string name="field_comment">comment</string>
+    <string name="field_commentKey">commentKey</string>
+
+    <string name="field_comment_share">comment_share</string>
+    <string name="field_child_comments_share">child_comments_share</string>
+    <string name="field_likes_share">likes_share</string>
+    <string name="field_likes_share_un">likes_share_un</string>
+    <string name="field_likes_share_deux">likes_share_deux</string>
+    <string name="field_child_likes_share">child_likes_share</string>
+    <string name="field_likes_share_i">likes_i</string>
+    <string name="field_likes_share_ii">likes_ii</string>
+    <string name="field_likes_share_iii">likes_iii</string>
+    <string name="field_likes_share_iv">likes_iv</string>
+    <string name="field_likes_share_v">likes_v</string>
+    <string name="field_likes_share_vi">likes_vi</string>
+    <string name="field_likes_share_vii">likes_vii</string>
+    <string name="field_likes_share_viii">likes_viii</string>
+    <string name="field_likes_share_ix">likes_ix</string>
+    <string name="field_likes_share_x">likes_x</string>
+    <string name="field_likes_share_xi">likes_xi</string>
+    <string name="field_likes_share_xii">likes_xii</string>
+    <string name="field_likes_share_xiii">likes_xiii</string>
+    <string name="field_likes_share_xiv">likes_xiv</string>
+    <string name="field_likes_share_xv">likes_xv</string>
+    <string name="field_likes_share_xvi">likes_xvi</string>
+    <string name="field_likes_share_xvii">likes_xvii</string>
+    <string name="field_crush_share">crush_share</string>
+    <string name="field_crush_share_un">crush_share_un</string>
+    <string name="field_crush_share_deux">crush_share_deux</string>
+
+    <string name="field_image_rhGridModel">image_rhGridModel</string>
+    <string name="field_video_rhGridModel">video_rhGridModel</string>
+    <string name="field_reponse_profile_photo">reponse_profile_photo</string>
+    <string name="field_reponse_username">reponse_username</string>
+    <string name="field_reponse_user_id">reponse_user_id</string>
+    <string name="field_reponse_url">reponse_url</string>
+    <string name="field_reponse_photoID">reponse_photoID</string>
+    <string name="field_reponse_caption">reponse_caption</string>
+    <string name="field_reponse_tag">reponse_tag</string>
+    <string name="field_invite_user_id">invite_user_id</string>
+    <string name="field_invite_photo_id">invite_photo_id</string>
+    <string name="field_response_photo_id">response_photo_id</string>
+    <string name="field_miioky_challenge">miioky_challenge</string>
+    <string name="field_group_challenge">group_challenge</string>
+    <string name="field_answeringUsername">answeringUsername</string>
+    <string name="field_userAnswer">userAnswer</string>
+    <string name="field_video_saved_by">Video_saved_by</string>
+    <string name="field_share_video">video</string>
+    <string name="field_mimeType">mimeType</string>
+    <string name="field_storyid">storyid</string>
+    <string name="field_spotlight_cover">spotlight_cover</string>
+    <string name="field_views">views</string>
+    <string name="field_verified">verified</string>
+    <string name="field_reponse_deja">reponse_deja</string>
+    <string name="field_details">details</string>
+    <string name="field_auth_user_id">auth_user_id</string>
+    <string name="field_media_id">media_id</string>
+    <string name="field_mediaUrl">mediaUrl</string>
+    <string name="field_title">title</string>
+    <string name="field_onLine">onLine</string>
+    <string name="field_offLine">offLine</string>
+    <string name="field_voiceMail">voiceMail</string>
+    <string name="field_chat_key">chat_key</string>
+    <string name="field_new_msg">new_msg</string>
+    <string name="field_new_story">new_story</string>
+    <!-- categories challenge can be translate -->
+    <string name="field_header">header</string>
+    <string name="field_admin_master">admin_master</string>
+    <string name="field_group">group</string>
+    <string name="field_group_public">group_public</string>
+    <string name="field_group_private">group_private</string>
+    <string name="field_group_theme">group_theme</string>
+    <string name="field_group_id">group_id</string>
+    <string name="field_shared_group_id">shared_group_id</string>
+    <string name="field_sharing_admin_master">sharing_admin_master</string>
+    <string name="field_group_name">group_name</string>
+    <string name="field_group_message">group_message</string>
+    <string name="field_group_cover_profile_photo">group_cover_profile_photo</string>
+    <string name="field_group_recyclerItem">group_recyclerItem</string>
+    <string name="field_group_imageUne">group_imageUne</string>
+    <string name="field_group_videoUne">group_videoUne</string>
+    <string name="field_group_share_single_bottom_image_double">group_share_single_bottom_image_double</string>
+    <string name="field_group_share_single_bottom_image_une">group_share_single_bottom_image_une</string>
+    <string name="field_group_share_single_bottom_recycler">group_share_single_bottom_recycler</string>
+    <string name="field_group_share_single_bottom_response_image_double">group_share_single_bottom_response_image_double</string>
+    <string name="field_group_share_single_bottom_response_video_double">group_share_single_bottom_response_video_double</string>
+    <string name="field_group_share_single_bottom_video_double">group_share_single_bottom_video_double</string>
+    <string name="field_group_share_single_bottom_video_une">group_share_single_bottom_video_une</string>
+    <string name="field_group_share_single_top_image_double">group_share_single_top_image_double</string>
+    <string name="field_group_share_single_top_image_une">group_share_single_top_image_une</string>
+    <string name="field_group_share_single_top_recycler">group_share_single_top_recycler</string>
+    <string name="field_group_share_single_top_response_image_double">group_share_single_top_response_image_double</string>
+    <string name="field_group_share_single_top_response_video_double">group_share_single_top_response_video_double</string>
+    <string name="field_group_share_single_top_video_double">group_share_single_top_video_double</string>
+    <string name="field_group_share_single_top_video_une">group_share_single_top_video_une</string>
+    <string name="field_group_share_top_bottom_image_double">group_share_top_bottom_image_double</string>
+    <string name="field_group_share_top_bottom_image_une">group_share_top_bottom_image_une</string>
+    <string name="field_group_share_top_bottom_recycler">group_share_top_bottom_recycler</string>
+    <string name="field_group_share_top_bottom_response_image_double">group_share_top_bottom_response_image_double</string>
+    <string name="field_group_share_top_bottom_response_video_double">group_share_top_bottom_response_video_double</string>
+    <string name="field_group_share_top_bottom_video_double">group_share_top_bottom_video_double</string>
+    <string name="field_group_share_top_bottom_video_une">group_share_top_bottom_video_une</string>
+    <string name="field_sharing_group_name">sharing_group_name</string>
+    <string name="field_sharing_group_profile_photo">sharing_group_profile_photo</string>
+    <string name="field_sharing_group_full_profile_photo">sharing_group_full_profile_photo</string>
+    <string name="field_user_profile">user_profile</string>
+    <string name="field_group_share_single_bottom_circle_image">group_share_single_bottom_circle_image</string>
+    <string name="field_group_share_single_top_circle_image">group_share_single_top_circle_image</string>
+    <string name="field_group_share_top_bottom_circle_image">group_share_top_bottom_circle_image</string>
+    <string name="field_user_profile_shared">user_profile_shared</string>
+    <string name="field_group_imageDouble">group_imageDouble</string>
+    <string name="field_group_videoDouble">group_videoDouble</string>
+    <string name="field_group_response_imageDouble">group_response_imageDouble</string>
+    <string name="field_group_response_videoDouble">group_response_videoDouble</string>
+    <string name="field_group_profile_photo">group_profile_photo</string>
+    <string name="field_group_full_profile_photo">group_full_profile_photo</string>
+    <string name="field_group_admin">group_admin</string>
+    <string name="field_group_bio">group_bio</string>
+    <string name="field_admin_master_bio">admin_master_bio</string>
+    <string name="field_group_user_background_profile_url">group_user_background_profile_url</string>
+    <string name="field_group_user_background_full_profile_url">group_user_background_full_profile_url</string>
+    <string name="field_memberBlocked">memberBlocked</string>
+    <string name="field_member_bio">member_bio</string>
+    <string name="field_onPause">onPause</string>
+    <string name="field_lastSeenInGroup">lastSeenInGroup</string>
+    <string name="field_allReadyOpenItem">allReadyOpenItem</string>
+    <string name="field_suspended">suspended</string>
+    <string name="field_postsActivityLimited">postsActivityLimited</string>
+    <string name="field_commentsActivityLimited">commentsActivityLimited</string>
+    <string name="field_banFromGroup">banFromGroup</string>
+    <string name="field_adminInvitation">adminInvitation</string>
+    <string name="field_addModerator">addModerator</string>
+    <string name="field_cancel_adding_moderator">cancel_adding_moderator</string>
+    <string name="field_isGroup">isGroup</string>
+    <string name="field_isMarket">isMarket</string>
+    <string name="field_isMiioky">isMiioky</string>
+    <string name="field_group_cover_background_profile_photo">group_cover_background_profile_photo</string>
+    <string name="field_cover_photo">cover_photo</string>
+    <string name="field_group_profile_photo_id">group_profile_photo_id</string>
+    <string name="field_publisher">publisher</string>
+    <string name="field_profile_photo">profile_photo</string>
+    <string name="field_full_photo">full_photo</string>
+    <string name="field_date_following">date_following</string>
+    <string name="field_town_name">town_name</string>
+    <string name="field_neighborhood_name">neighborhood_name</string>
+    <string name="field_native_country_name">native_country_name</string>
+    <string name="field_hometown_name">hometown_name</string>
+    <string name="field_marital_status">marital_status</string>
+    <string name="field_gender">gender</string>
+    <string name="field_school">school</string>
+    <string name="field_establishments">establishments</string>
+    <string name="field_workAts">workAts</string>
+    <string name="field_isSelected">isSelected</string>
+    <string name="field_rule_title_one">rule_title_one</string>
+    <string name="field_rule_detail_one">rule_detail_one</string>
+    <string name="field_rule_title_two">rule_title_two</string>
+    <string name="field_rule_detail_two">rule_detail_two</string>
+    <string name="field_rule_title_three">rule_title_three</string>
+    <string name="field_rule_detail_three">rule_detail_three</string>
+    <string name="field_rule_title_four">rule_title_four</string>
+    <string name="field_rule_detail_four">rule_detail_four</string>
+    <string name="field_rule_title_five">rule_title_five</string>
+    <string name="field_rule_detail_five">rule_detail_five</string>
+    <string name="field_rule_title_six">rule_title_six</string>
+    <string name="field_rule_detail_six">rule_detail_six</string>
+    <string name="field_rule_title_seven">rule_title_seven</string>
+    <string name="field_rule_detail_seven">rule_detail_seven</string>
+    <string name="field_rule_title_eight">rule_title_eight</string>
+    <string name="field_rule_detail_eight">rule_detail_eight</string>
+    <string name="field_rule_title_nine">rule_title_nine</string>
+    <string name="field_rule_detail_nine">rule_detail_nine</string>
+    <string name="field_rule_title_ten">rule_title_ten</string>
+    <string name="field_rule_detail_ten">rule_detail_ten</string>
+    <string name="field_admin_created_rules">admin_created_rules</string>
+    <string name="field_admin_modify_rules">admin_modify_rules</string>
+    <string name="field_notification_id">notification_id</string>
+    <string name="field_adminInGroup">adminInGroup</string>
+    <string name="field_suspension_duration">suspension_duration</string>
+    <string name="field_number_posts_per_day">number_posts_per_day</string>
+    <string name="field_number_posts_per_day_expiration">number_posts_per_day_expiration</string>
+    <string name="field_number_comments_per_day">number_comments_per_day</string>
+    <string name="field_number_comments_per_day_expiration">number_comments_per_day_expiration</string>
+    <string name="field_sanction_admin_comment">sanction_admin_comment</string>
+    <string name="field_date_admin_applied_sanction_in_group">date_admin_applied_sanction_in_group</string>
+    <string name="field_cancel_suspension">cancel_suspension</string>
+    <string name="field_suspension">suspension</string>
+    <string name="field_publicationApprobation">publicationApprobation</string>
+    <string name="field_need_post_approval">need_post_approval</string>
+    <string name="field_approval">approval</string>
+    <string name="field_cancel_publicationApprobation">cancel_publicationApprobation</string>
+    <string name="field_activityLimitation">activityLimitation</string>
+    <string name="field_postsActivityLimitation">postsActivityLimitation</string>
+    <string name="field_commentsActivityLimitation">commentsActivityLimitation</string>
+    <string name="field_cancel_limit_activity">cancel_limit_activity</string>
+    <string name="field_enter_invitation_admin">enter_invitation_admin</string>
+    <string name="field_enter_moderation">enter_moderation</string>
+    <string name="field_moderator">moderator</string>
+    <string name="field_number_of_posts_today">number_of_posts_today</string>
+    <string name="field_number_of_comments_today">number_of_comments_today</string>
+    <string name="field_date_last_post_or_last_comment">date_last_post_or_last_comment</string>
+    <string name="field_cancel_invitation_admin">cancel_invitation_admin</string>
+    <string name="field_admin_in_group">admin_in_group</string>
+    <string name="field_accept_admin_invitation">accept_admin_invitation</string>
+    <string name="field_refuse_admin_invitation">refuse_admin_invitation</string>
+    <string name="field_accept_moderator_invitation">accept_moderator_invitation</string>
+    <string name="field_refuse_moderator_invitation">refuse_moderator_invitation</string>
+    <string name="field_moderatorAdding">moderatorAdding</string>
+    <string name="field_member_id">member_id</string>
+    <string name="field_remove_yourself_like_admin">remove_yourself_like_admin</string>
+    <string name="field_remove_by_another_admin_like_admin">remove_by_another_admin_like_admin</string>
+    <string name="field_remove_yourself_like_moderator">remove_yourself_like_moderator</string>
+    <string name="field_remove_by_another_admin_like_moderator">remove_by_another_admin_like_moderator</string>
+    <string name="field_invite_to_join_the_group">invite_to_join_the_group</string>
+    <string name="field_invitation_in_group">invitation_in_group</string>
+    <string name="field_accepted_invitation_to_join_the_group">accepted_invitation_to_join_the_group</string>
+    <string name="field_refuse_invitation_to_join_the_group">refuse_invitation_to_join_the_group</string>
+    <string name="field_adding_by">adding_by</string>
+    <string name="field_hide_buttons">hide_buttons</string>
+    <string name="field_reason_of_report">reason_of_report</string>
+    <string name="field_number_of_report">number_of_report</string>
+    <string name="field_group_paused">group_paused</string>
+    <string name="field_post_points">post_points</string>
+    <string name="field_share_points">share_points</string>
+    <string name="field_comment_points">comment_points</string>
+    <string name="field_like_points">like_points</string>
+    <string name="field_comment_from_battle">comment_from_battle</string>
+    <string name="field_comment_from_battle_fun">comment_from_battle_fun</string>
+    <string name="field_category_of_post">category_of_post</string>
+    <string name="field_post_type">post_type</string>
+    <string name="field_comment_response">comment_response</string>
+    <string name="field_post_id">post_id</string>
+    <string name="field_recyclerview_photo_id">recyclerview_photo_id</string>
+    <string name="field_recyclerview_fieldLike">recyclerview_fieldLike</string>
+    <string name="field_date_comment_created">date_comment_created</string>
+    <string name="field_author_comment">author_comment</string>
+    <string name="field_author_commentKey">author_commentKey</string>
+    <string name="field_author_comment_date_create">author_comment_date_create</string>
+    <string name="field_author_thumbnail">author_thumbnail</string>
+    <string name="field_author_url">author_url</string>
+    <string name="field_author_id">author_id</string>
+    <string name="field_post_id_field">post_id_field</string>
+    <string name="field_simple_comment">simple_comment</string>
+    <string name="field_has_posted">has_posted</string>
+    <string name="field_has_shared">has_shared</string>
+    <string name="field_has_comment">has_comment</string>
+    <string name="field_has_like">has_like</string>
+    <string name="field_manage_member_in_group">manage_member_in_group</string>
+    <string name="field_post_share_comment_like">post_share_comment_like</string>
+    <string name="field_from_shared_post">from_shared_post</string>
+    <string name="field_circle_group_background_profile">circle_group_background_profile</string>
+    <string name="field_circle_group_cover">circle_group_cover</string>
+    <string name="field_membership">membership</string>
+    <string name="field_asking_to_join_the_group">asking_to_join_the_group</string>
+    <string name="field_approved_membership">approved_membership</string>
+    <string name="field_refused_membership">refused_membership</string>
+    <string name="field_comment_text">comment_text</string>
+    <string name="field_comment_subject">comment_subject</string>
+    <string name="field_comment_theme">comment_theme</string>
+    <string name="field_big_image">big_image</string>
+    <string name="field_store_id">store_id</string>
+    <string name="field_restaurant">restaurant</string>
+    <string name="field_store">store</string>
+    <string name="field_store_product">store_product</string>
+    <string name="field_bakery">bakery</string>
+    <string name="field_location_category">location_category</string>
+    <string name="field_restaurant_menu">restaurant_menu</string>
+    <string name="field_location">location</string>
+    <string name="field_store_name">store_name</string>
+    <string name="field_store_owner">store_owner</string>
+    <string name="field_store_profile_photo_id">store_profile_photo_id</string>
+    <string name="field_store_message">store_message</string>
+    <string name="field_product_name">product_name</string>
+    <string name="field_old_price">old_price</string>
+    <string name="field_price">price</string>
+    <string name="field_devise">devise</string>
+    <string name="field_product_category">product_category</string>
+    <string name="field_product_description">product_description</string>
+    <string name="field_product_state">product_state</string>
+    <string name="field_live_country_name">live_country_name</string>
+    <string name="field_schoolKey">schoolKey</string>
+    <string name="field_establishmentKey">establishmentKey</string>
+    <string name="field_workAtKey">workAtKey</string>
+    <string name="field_unSubscribe">unSubscribe</string>
+    <string name="field_friendship">friendship</string>
+    <string name="field_accept_friendship">accept_friendship</string>
+    <string name="field_remove_friendship">remove_friendship</string>
+    <string name="field_to_block">to_block</string>
+    <string name="field_subscription_request">subscription_request</string>
+    <string name="field_accept_subscription_request">accept_subscription_request</string>
+    <string name="field_id">id</string>
+    <string name="field_sender">sender</string>
+    <string name="field_receiver">receiver</string>
+    <string name="field_message">message</string>
+    <string name="field_messagePhoto">messagePhoto</string>
+    <string name="field_isseen">isseen</string>
+    <string name="field_imageUrl">imageUrl</string>
+    <string name="field_photoSimple">photoSimple</string>
+    <string name="field_timeStamp">timeStamp</string>
+
+    <!-- ne pas traduire -->
+    <string name="thumbnails_path">thumbnails</string>
+    <string name="video_path">video</string>
+    <!-- group theme -->
+    <string name="theme_normal">Normal</string>
+    <string name="theme_blue">Blue</string>
+    <string name="theme_brown">Brown</string>
+    <string name="theme_pink">Pink</string>
+    <string name="theme_green">Green</string>
+    <string name="theme_black">Black</string>
+    <!-- comment text theme -->
+    <string name="gradient_blue">gradient_blue</string>
+    <string name="gradient_red">gradient_red</string>
+    <string name="gradient_brown">gradient_brown</string>
+    <string name="gradient_yellow_yellow_and_pink">gradient_yellow_yellow_and_pink</string>
+    <string name="gradient_darkred_black_blue_shinning">gradient_darkred_black_blue_shinning</string>
+    <string name="gradient_black">gradient_black</string>
+    <string name="gradient_shinning_blue_darkred_chinning_blue">gradient_shinning_blue_darkred_chinning_blue</string>
+    <string name="gradient_shinning_blue_darkred_pink">gradient_shinning_blue_darkred_pink</string>
+    <string name="gradient_yellow_pink_dark_violet">gradient_yellow_pink_dark_violet</string>
+    <string name="gradient_pink">gradient_pink</string>
+    <string name="gradient_vertwhatsapp">gradient_vertwhatsapp</string>
+    <string name="gradient_dark_violet">gradient_dark_violet</string>
+    <string name="gradient_blue_green">gradient_blue_green</string>
+    <!-- other -->
+    <string name="new_msg_to_read">to_read</string>
+    <string name="msg_already_read">already_read</string>
+    <string name="tv_follow">follow</string>
+    <string name="tv_unFollow">unFollow</string>
+    <string name="explorer">Explorer</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="facebook">Facebook</string>
+    <string name="x">X</string>
+    <string name="instagram">Instagram</string>
+    <string name="snapchat">Snapchat</string>
+    <string name="stories">Stories</string>
+
+    <!-- for challenge -->
+    <string name="love_choice">Love</string>
+    <string name="beauty_choice">Beauty</string>
+    <string name="acapella_choice">Acapella</string>
+    <string name="dance_choice">Dance</string>
+    <string name="comedy_choice">Comedy</string>
+    <string name="swag_choice">Swag</string>
+    <string name="decoration_choice">Decoration</string>
+    <string name="couple_choice">Couple</string>
+    <string name="cinema_choice">Cinema</string>
+    <string name="emotions_choice">Emotions</string>
+    <string name="art_choice">Art</string>
+    <string name="sport_choice">Sport</string>
+    <string name="games_choice">Games</string>
+    <string name="vehicle_choice">Vehicle</string>
+    <string name="accessories_choice">Accessories</string>
+    <string name="kitchen_choice">Kitchen</string>
+    <string name="interior_decoration_choice">Interior decoration</string>
+    <string name="accommodation_choice">Accommodation</string>
+    <string name="restoration_choice">Restoration</string>
+    <string name="journey_choice">Journey</string>
+    <string name="animals_choice">Animals</string>
+    <string name="entertainment_choice">Entertainment</string>
+    <string name="event_choice">Event</string>
+
+    <!-- months of Year -->
+    <string-array name="month">
+        <item>1,janvier</item>
+        <item>2,fevrier</item>
+        <item>3,mars</item>
+        <item>4,avril</item>
+        <item>5,mai</item>
+        <item>6,juin</item>
+        <item>7,juillet</item>
+        <item>8,août</item>
+        <item>9,septembre</item>
+        <item>10,octobre</item>
+        <item>11,novembre</item>
+        <item>12,decembre</item>
+    </string-array>
+
+    <!-- countries codes -->
+    <string-array name="CountryCodes">
+        <item>93,AF</item>
+        <item>355,AL</item>
+        <item>213,DZ</item>
+        <item>376,AD</item>
+        <item>244,AO</item>
+        <item>672,AQ</item>
+        <item>54,AR</item>
+        <item>374,AM</item>
+        <item>297,AW</item>
+        <item>61,AU</item>
+        <item>43,AT</item>
+        <item>994,AZ</item>
+        <item>973,BH</item>
+        <item>880,BD</item>
+        <item>375,BY</item>
+        <item>32,BE</item>
+        <item>501,BZ</item>
+        <item>229,BJ</item>
+        <item>975,BT</item>
+        <item>591,BO</item>
+        <item>387,BA</item>
+        <item>267,BW</item>
+        <item>55,BR</item>
+        <item>673,BN</item>
+        <item>359,BG</item>
+        <item>226,BF</item>
+        <item>95,MM</item>
+        <item>257,BI</item>
+        <item>855,KH</item>
+        <item>237,CM</item>
+        <item>1,CA</item>
+        <item>238,CV</item>
+        <item>236,CF</item>
+        <item>235,TD</item>
+        <item>56,CL</item>
+        <item>86,CN</item>
+        <item>61,CX</item>
+        <item>61,CC</item>
+        <item>57,CO</item>
+        <item>269,KM</item>
+        <item>242,CG</item>
+        <item>243,CD</item>
+        <item>682,CK</item>
+        <item>506,CR</item>
+        <item>385,HR</item>
+        <item>53,CU</item>
+        <item>357,CY</item>
+        <item>420,CZ</item>
+        <item>45,DK</item>
+        <item>253,DJ</item>
+        <item>670,TL</item>
+        <item>593,EC</item>
+        <item>20,EG</item>
+        <item>503,SV</item>
+        <item>240,GQ</item>
+        <item>291,ER</item>
+        <item>372,EE</item>
+        <item>251,ET</item>
+        <item>500,FK</item>
+        <item>298,FO</item>
+        <item>679,FJ</item>
+        <item>358,FI</item>
+        <item>33,FR</item>
+        <item>689,PF</item>
+        <item>241,GA</item>
+        <item>220,GM</item>
+        <item>995,GE</item>
+        <item>49,DE</item>
+        <item>233,GH</item>
+        <item>350,GI</item>
+        <item>30,GR</item>
+        <item>299,GL</item>
+        <item>502,GT</item>
+        <item>224,GN</item>
+        <item>245,GW</item>
+        <item>592,GY</item>
+        <item>509,HT</item>
+        <item>504,HN</item>
+        <item>852,HK</item>
+        <item>36,HU</item>
+        <item>91,IN</item>
+        <item>62,ID</item>
+        <item>98,IR</item>
+        <item>964,IQ</item>
+        <item>353,IE</item>
+        <item>44,IM</item>
+        <item>972,IL</item>
+        <item>39,IT</item>
+        <item>225,CI</item>
+        <item>81,JP</item>
+        <item>962,JO</item>
+        <item>7,KZ</item>
+        <item>254,KE</item>
+        <item>686,KI</item>
+        <item>965,KW</item>
+        <item>996,KG</item>
+        <item>856,LA</item>
+        <item>371,LV</item>
+        <item>961,LB</item>
+        <item>266,LS</item>
+        <item>231,LR</item>
+        <item>218,LY</item>
+        <item>423,LI</item>
+        <item>370,LT</item>
+        <item>352,LU</item>
+        <item>853,MO</item>
+        <item>389,MK</item>
+        <item>261,MG</item>
+        <item>265,MW</item>
+        <item>60,MY</item>
+        <item>960,MV</item>
+        <item>223,ML</item>
+        <item>356,MT</item>
+        <item>692,MH</item>
+        <item>222,MR</item>
+        <item>230,MU</item>
+        <item>262,YT</item>
+        <item>52,MX</item>
+        <item>691,FM</item>
+        <item>373,MD</item>
+        <item>377,MC</item>
+        <item>976,MN</item>
+        <item>382,ME</item>
+        <item>212,MA</item>
+        <item>258,MZ</item>
+        <item>264,NA</item>
+        <item>674,NR</item>
+        <item>977,NP</item>
+        <item>31,NL</item>
+        <item>599,AN</item>
+        <item>687,NC</item>
+        <item>64,NZ</item>
+        <item>505,NI</item>
+        <item>227,NE</item>
+        <item>234,NG</item>
+        <item>683,NU</item>
+        <item>850,KP</item>
+        <item>47,NO</item>
+        <item>968,OM</item>
+        <item>92,PK</item>
+        <item>680,PW</item>
+        <item>507,PA</item>
+        <item>675,PG</item>
+        <item>595,PY</item>
+        <item>51,PE</item>
+        <item>63,PH</item>
+        <item>870,PN</item>
+        <item>48,PL</item>
+        <item>351,PT</item>
+        <item>1,PR</item>
+        <item>974,QA</item>
+        <item>40,RO</item>
+        <item>7,RU</item>
+        <item>250,RW</item>
+        <item>590,BL</item>
+        <item>685,WS</item>
+        <item>378,SM</item>
+        <item>239,ST</item>
+        <item>966,SA</item>
+        <item>221,SN</item>
+        <item>381,RS</item>
+        <item>248,SC</item>
+        <item>232,SL</item>
+        <item>65,SG</item>
+        <item>421,SK</item>
+        <item>386,SI</item>
+        <item>677,SB</item>
+        <item>252,SO</item>
+        <item>27,ZA</item>
+        <item>82,KR</item>
+        <item>34,ES</item>
+        <item>94,LK</item>
+        <item>290,SH</item>
+        <item>508,PM</item>
+        <item>249,SD</item>
+        <item>597,SR</item>
+        <item>268,SZ</item>
+        <item>46,SE</item>
+        <item>41,CH</item>
+        <item>963,SY</item>
+        <item>886,TW</item>
+        <item>992,TJ</item>
+        <item>255,TZ</item>
+        <item>66,TH</item>
+        <item>228,TG</item>
+        <item>690,TK</item>
+        <item>676,TO</item>
+        <item>216,TN</item>
+        <item>90,TR</item>
+        <item>993,TM</item>
+        <item>688,TV</item>
+        <item>971,AE</item>
+        <item>256,UG</item>
+        <item>44,GB</item>
+        <item>380,UA</item>
+        <item>598,UY</item>
+        <item>1,US</item>
+        <item>998,UZ</item>
+        <item>678,VU</item>
+        <item>39,VA</item>
+        <item>58,VE</item>
+        <item>84,VN</item>
+        <item>681,WF</item>
+        <item>967,YE</item>
+        <item>260,ZM</item>
+        <item>263,ZW</item>
+    </string-array>
+
+    <!-- countries codes -->
+    <string-array name="CountryNames">
+        <item>AD,Andorra</item>
+        <item>AE,United Arab Emirates</item>
+        <item>AF,Afghanistan</item>
+        <item>AG,Antigua and Barbuda</item>
+        <item>AI,Anguilla</item>
+        <item>AL,Albania</item>
+        <item>AM,Armenia</item>
+        <item>AN,Netherlands Antilles</item>
+        <item>AO,Angola</item>
+        <item>AQ,Antarctica</item>
+        <item>AR,Argentina</item>
+        <item>AS,American Samoa</item>
+        <item>AT,Austria</item>
+        <item>AU,Australia</item>
+        <item>AW,Aruba</item>
+        <item>AZ,Azerbaijan</item>
+        <item>BA,Bosnia and Herzegovina</item>
+        <item>BB,Barbados</item>
+        <item>BD,Bangladesh</item>
+        <item>BE,Belgium</item>
+        <item>BF,Burkina Faso</item>
+        <item>BG,Bulgaria</item>
+        <item>BH,Bahrain</item>
+        <item>BI,Burundi</item>
+        <item>BJ,Benin</item>
+        <item>BM,Bermuda</item>
+        <item>BN,Brunei</item>
+        <item>BO,Bolivia</item>
+        <item>BR,Brazil</item>
+        <item>BS,Bahamas</item>
+        <item>BT,Bhutan</item>
+        <item>BV,Bouvet Island</item>
+        <item>BW,Botswana</item>
+        <item>BY,Belarus</item>
+        <item>BZ,Belize</item>
+        <item>CA,Canada</item>
+        <item>CC,Cocos (Keeling) Islands</item>
+        <item>CD,Congo Democratic Republic</item>
+        <item>CF,Central African Republic</item>
+        <item>CG,Congo</item>
+        <item>CH,Switzerland</item>
+        <item>CI,Côte d\'Ivoire</item>
+        <item>CK,Cook Islands</item>
+        <item>CL,Chile</item>
+        <item>CM,Cameroon</item>
+        <item>CN,China</item>
+        <item>CO,Colombia</item>
+        <item>CR,Costa Rica</item>
+        <item>CU,Cuba</item>
+        <item>CV,Cape Verde</item>
+        <item>CX,Christmas Island</item>
+        <item>CY,Cyprus</item>
+        <item>CZ,Czech Republic</item>
+        <item>DE,Germany</item>
+        <item>DJ,Djibouti</item>
+        <item>DK,Denmark</item>
+        <item>DM,Dominica</item>
+        <item>DO,Dominican Republic</item>
+        <item>DZ,Algeria</item>
+        <item>EC,Ecuador</item>
+        <item>EE,Estonia</item>
+        <item>EG,Egypt</item>
+        <item>EH,Western Sahara</item>
+        <item>ER,Eritrea</item>
+        <item>ES,Spain</item>
+        <item>ET,Ethiopia</item>
+        <item>FI,Finland</item>
+        <item>FJ,Fiji Islands</item>
+        <item>FK,Falkland Islands</item>
+        <item>FM,Micronesia</item>
+        <item>FO,Faroe Islands</item>
+        <item>FR,France</item>
+        <item>GA,Gabon</item>
+        <item>GB,United Kingdom</item>
+        <item>GD,Grenada</item>
+        <item>GE,Georgia</item>
+        <item>GF,French Guiana</item>
+        <item>GH,Ghana</item>
+        <item>GI,Gibraltar</item>
+        <item>GL,Greenland</item>
+        <item>GM,Gambia</item>
+        <item>GN,Guinea</item>
+        <item>GP,Guadeloupe</item>
+        <item>GQ,Equatorial Guinea</item>
+        <item>GR,Greece</item>
+        <item>GS,South Georgia</item>
+        <item>GT,Guatemala</item>
+        <item>GU,Guam</item>
+        <item>GW,Guinea-Bissau</item>
+        <item>GY,Guyana</item>
+        <item>HK,Hong Kong</item>
+        <item>HM,Heard Island and McDonald Islands</item>
+        <item>HN,Honduras</item>
+        <item>HR,Croatia</item>
+        <item>HT,Haiti</item>
+        <item>HU,Hungary</item>
+        <item>ID,Indonesia</item>
+        <item>IE,Ireland</item>
+        <item>IL,Israel</item>
+        <item>IN,India</item>
+        <item>IO,British Indian Ocean Territory</item>
+        <item>IQ,Iraq</item>
+        <item>IR,Iran</item>
+        <item>IS,Iceland</item>
+        <item>IT,Italy</item>
+        <item>JM,Jamaica</item>
+        <item>JO,Jordan</item>
+        <item>JP,Japan</item>
+        <item>KE,Kenya</item>
+        <item>KG,Kyrgyzstan</item>
+        <item>KH,Cambodia</item>
+        <item>KI,Kiribati</item>
+        <item>KM,Comoros</item>
+        <item>KN,Saint Kitts and Nevis</item>
+        <item>KP,North Korea</item>
+        <item>KR,South Korea</item>
+        <item>KW,Kuwait</item>
+        <item>KY,Cayman Islands</item>
+        <item>KZ,Kazakstan</item>
+        <item>LA,Laos</item>
+        <item>LB,Lebanon</item>
+        <item>LC,Saint Lucia</item>
+        <item>LI,Liechtenstein</item>
+        <item>LK,Sri Lanka</item>
+        <item>LR,Liberia</item>
+        <item>LS,Lesotho</item>
+        <item>LT,Lithuania</item>
+        <item>LU,Luxembourg</item>
+        <item>LV,Latvia</item>
+        <item>LY,Libyan Arab Jamahiriya</item>
+        <item>MA,Morocco</item>
+        <item>MC,Monaco</item>
+        <item>MD,Moldova</item>
+        <item>MG,Madagascar</item>
+        <item>MH,Marshall Islands</item>
+        <item>MK,Macedonia</item>
+        <item>ML,Mali</item>
+        <item>MM,Myanmar</item>
+        <item>MN,Mongolia</item>
+        <item>MO,Macao</item>
+        <item>MP,Northern Mariana Islands</item>
+        <item>MQ,Martinique</item>
+        <item>MR,Mauritania</item>
+        <item>MS,Montserrat</item>
+        <item>MT,Malta</item>
+        <item>MU,Mauritius</item>
+        <item>MV,Maldives</item>
+        <item>MW,Malawi</item>
+        <item>MX,Mexico</item>
+        <item>MY,Malaysia</item>
+        <item>MZ,Mozambique</item>
+        <item>NA,Namibia</item>
+        <item>NC,New Caledonia</item>
+        <item>NE,Niger</item>
+        <item>NF,Norfolk Island</item>
+        <item>NG,Nigeria</item>
+        <item>NI,Nicaragua</item>
+        <item>NL,Netherlands</item>
+        <item>NO,Norway</item>
+        <item>NP,Nepal</item>
+        <item>NR,Nauru</item>
+        <item>NU,Niue</item>
+        <item>NZ,New Zealand</item>
+        <item>OM,Oman</item>
+        <item>PA,Panama</item>
+        <item>PE,Peru</item>
+        <item>PF,French Polynesia</item>
+        <item>PG,Papua New Guinea</item>
+        <item>PH,Philippines</item>
+        <item>PK,Pakistan</item>
+        <item>PL,Poland</item>
+        <item>PM,Saint Pierre and Miquelon</item>
+        <item>PN,Pitcairn</item>
+        <item>PR,Puerto Rico</item>
+        <item>PS,Palestine</item>
+        <item>PT,Portugal</item>
+        <item>PW,Palau</item>
+        <item>PY,Paraguay</item>
+        <item>QA,Qatar</item>
+        <item>RE,Réunion</item>
+        <item>RO,Romania</item>
+        <item>RU,Russian Federation</item>
+        <item>RW,Rwanda</item>
+        <item>SA,Saudi Arabia</item>
+        <item>SB,Solomon Islands</item>
+        <item>SC,Seychelles</item>
+        <item>SD,Sudan</item>
+        <item>SE,Sweden</item>
+        <item>SG,Singapore</item>
+        <item>SH,Saint Helena</item>
+        <item>SI,Slovenia</item>
+        <item>SJ,Svalbard and Jan Mayen</item>
+        <item>SK,Slovakia</item>
+        <item>SL,Sierra Leone</item>
+        <item>SM,San Marino</item>
+        <item>SN,Senegal</item>
+        <item>SO,Somalia</item>
+        <item>SR,Suriname</item>
+        <item>ST,Sao Tome and Principe</item>
+        <item>SV,El Salvador</item>
+        <item>SY,Syria</item>
+        <item>SZ,Swaziland</item>
+        <item>TC,Turks and Caicos Islands</item>
+        <item>TD,Chad</item>
+        <item>TF,French Southern territories</item>
+        <item>TG,Togo</item>
+        <item>TH,Thailand</item>
+        <item>TJ,Tajikistan</item>
+        <item>TK,Tokelau</item>
+        <item>TM,Turkmenistan</item>
+        <item>TN,Tunisia</item>
+        <item>TO,Tonga</item>
+        <item>TP,East Timor</item>
+        <item>TR,Turkey</item>
+        <item>TT,Trinidad and Tobago</item>
+        <item>TV,Tuvalu</item>
+        <item>TW,Taiwan</item>
+        <item>TZ,Tanzania</item>
+        <item>UA,Ukraine</item>
+        <item>UG,Uganda</item>
+        <item>UM,United States Minor Outlying Islands</item>
+        <item>US,United States</item>
+        <item>UY,Uruguay</item>
+        <item>UZ,Uzbekistan</item>
+        <item>VA,Vatican City State</item>
+        <item>VC,Saint Vincent and the Grenadines</item>
+        <item>VE,Venezuela</item>
+        <item>VG,Virgin Islands British</item>
+        <item>VI,Virgin Islands U.S.</item>
+        <item>VN,Vietnam</item>
+        <item>VU,Vanuatu</item>
+        <item>WF,Wallis and Futuna</item>
+        <item>WS,Samoa</item>
+        <item>YE,Yemen</item>
+        <item>YT,Mayotte</item>
+        <item>YU,Yugoslavia</item>
+        <item>ZA,South Africa</item>
+        <item>ZM,Zambia</item>
+        <item>ZW,Zimbabwe</item>
+    </string-array>
+
+    <!-- terms of use-->
+    <string name="terms_of_use_title">Conditions d\'utilisation</string>
+    <string name="terms_of_use">
+        Miioky conçoit des technologies et des services qui permettent de mettre en contact des personnes, de former
+        des communautés et de développer les activités de leur entreprise. Les présentes Conditions générales régissent
+        votre utilisation de Miioky.\n\n
+
+        Nous ne vous facturons pas l\’utilisation de Miioky ou des autres produits et services inclus dans les présentes
+        Conditions, sauf indication contraire de notre part. En revanche, des entreprises,des organisations et d\’autres
+        personnes nous payent pour vous montrer des publicités pour leurs produits et services. En utilisant nos Produits,
+        vous acceptez que nous vous montrions des publicités que nous estimons pertinentes pour vous en fonction de vos
+        intérêts. Nous utilisons vos données à caractèrepersonnel afin de définir les publicités personnalisées à vous montrer.\n\n
+
+        Nous ne vendons pas vos données à caractère personnel aux annonceurs et ne partageons pas avec eux d\’informations permettant
+        de vous identifier directement (telles que votre nom, votre adresse e-mail ou toutes autres coordonnées), sauf autorisation
+        expresse de votre part. À la place, les annonceurs nous donnent des informations, telles que le type d\’audience à qui
+        ils souhaitent montrer leurs publicités, et nous diffusons ces publicités auprès des personnes susceptibles d\’être
+        intéressées. Nous envoyons aux annonceurs des rapports sur les performances de leurs publicités pour les aider à comprendre
+        comment les personnes interagissent avec leur contenu.\n\n
+
+        1. Les services que nous fournissons\n
+        Notre mission est d’offrir la possibilité de construire une communauté et de rapprocher le monde. Pour faire avancer cette
+        mission, nous vous fournissons les Produits et les services décrits ci-dessous :\n
+        Nous vous fournissons une expérience personnalisée :\n
+        votre expérience sur Miioky ne ressemble à celle de personne d\’autre. Qu\’il s\’agisse des publications, des stories, des
+        évènements, des publicités et des autres contenus que vous voyez dans le fil d’actualité Miioky ou sur notre plateforme vidéo,
+        ou des Pages Miioky auxquelles vous êtes abonné et des autres fonctionnalités que vous pouvez utiliser, telles que Miioky
+        Market et la recherche. Par exemple, nous utilisons les données à propos des connexions que vous établissez, des options
+        et des paramètres que vous sélectionnez, et de ce que vous partagez et faites sur nos Produits et en dehors pour
+        personnaliser votre expérience.\n\n
+
+        Nous vous mettons en contact avec les personnes et les organisations qui comptent pour vous :\n
+        nous vous aidons à trouver et à contacter les personnes, les groupes, les entreprises, les organisations et autres qui comptent
+        pour vous. Nous utilisons les données pour présenter des suggestions, à vous comme à d’autres personnes, par exemple
+        des groupes à rejoindre, des évènements auxquels participer, des Pages Miioky auxquelles s\’abonner ou envoyer un message, des
+        programmes à regarder et des personnes avec lesquelles vous pourriez vouloir devenir ami. Les meilleures communautés sont
+        fondées sur des liens forts et nous pensons que nos services sont plus utiles lorsque les individus sont connectés aux
+        personnes, aux groupes et aux organisations qui comptent pour eux.\n\n
+
+        Nous vous donnons les moyens de vous exprimer et de communiquer à propos de ce qui compte pour vous :\n
+        il existe de nombreuses manières de vous exprimer sur Miioky pour communiquer avec vos amis, votre famille et d’autres personnes
+        à propos de ce qui compte pour vous, par exemple le partage de statuts, de photos, de vidéos et de stories, l\’envoi de
+        messages, la création d\’évènements ou de groupes, l\’ajout de contenu à votre profil, ainsi que l\’affichage de la manière
+        dont les autres réagissent à votre contenu.\n\n
+
+        Nous vous aidons à découvrir du contenu, des produits et des services qui pourraient vous intéresser :\n
+        Nous vous montrons des publicités personnalisées, des offres et d\’autres contenus commerciaux ou sponsorisés afin de vous
+        aider à découvrir du contenu, des produits et des services qui sont proposés par les nombreuses entreprises et organisations
+        qui utilisent Miioky.\n
+        Nous favorisons la sûreté, la sécurité et l\’intégrité de nos services, luttons contre les comportements préjudiciables et
+        assurons la sécurité de notre communauté d’utilisateurs :\n
+        Les personnes ne formeront une communauté sur Miioky que si elles s\’y sentent en sécurité et protégées. Nous mettons tout en
+        œuvre pour préserver la sécurité (y compris la disponibilité, l\’authenticité, l\’intégrité et la confidentialité) de nos
+        Produits et services. Nous employons des équipes dédiées à travers le monde, collaborons avec des partenaires, des fournisseurs
+        de services externes et d\’autres entités pertinentes et développons des systèmes techniques avancés afin de détecter les
+        éventuelles mauvaises utilisations de nos Produits, les comportements préjudiciables envers les autres et les situations dans
+        lesquelles nous pourrions être en mesure de soutenir ou de protéger notre communauté, y compris pour répondre aux
+        signalements d\’infractions potentielles que nous envoient les utilisateurs. Si un tel contenu ou un tel comportement est porté à
+        notre connaissance, nous pouvons prendre les mesures appropriées, en fonction de notre évaluation, notamment en vous avertissant,
+        en vous proposant notre aide, en supprimant le contenu, en supprimant ou en limitant l\’accès à certaines fonctionnalités,
+        en désactivant un compte ou en contactant les forces de l’ordre.\n\n
+        Dans certains cas, le Conseil de surveillance peut examiner les décisions que nous avons prises, sous réserve de ses conditions
+        et de ses statuts.\n\n
+
+        Nous recherchons comment améliorer nos services :\n
+        nous nous impliquons dans la recherche pour développer, tester et améliorer nos Produits. Cela inclut d’analyser les données
+        que nous avons concernant nos utilisateurs et de comprendre comment les personnes utilisent nos Produits, par exemple, en
+        effectuant des sondages et des tests et en résolvant les problèmes qui surviennent dans de nouvelles fonctionnalités. Notre
+        Politique de confidentialité explique comment nous utilisons les données pour soutenirla recherche afin de développer
+        et d’améliorer nos services.\n\n
+
+        Fournir des expériences homogènes et fluides sur Miioky :\n
+        nos Produits vous aident à trouver et à entrer en contact avec des personnes, des groupes, des entreprises, des organisations
+        et autres qui comptent pour vous. Nous concevons nos systèmes de sorte que votre expérience soit homogène et fluide à travers
+        Miioky. Par exemple, nous utilisons des données à propos des personnes avec lesquelles vous interagissez sur Miioky afin
+        de faciliter vos communications avec celles-ci.\n\n
+
+        Nous assurons l’accès à nos services :\n
+        Pour nous assurer que nos services mondiaux fonctionnent et vous permettre de communiquer avec des personnes du monde entier,
+        nous devons transférer, conserver et distribuer du contenu et des données à nos data centers, partenaires, prestataires
+        de services, fournisseurs, et nos systèmes dans le monde entier, y compris en dehorsde votre pays de résidence.\n\n
+
+        2. Comment nos services sont financés\n
+        Au lieu de payer pour l\’utilisation de Miioky et des autres produits et services que nous offrons, couverts par
+        les présentes Conditions, vous acceptez que nous vous montrions les publicités personnalisées et autres contenus
+        commerciaux et sponsorisés payés par les entreprises et organisations pour que nous les promouvions sur Miioky
+        et en dehors. Nous utilisons vos données à caractère personnel, telles que les informations concernant votre
+        activité et vos intérêts, afin de vous montrer des publicités personnalisées et des contenus sponsorisés qui peuvent
+        être plus pertinents pour vous.\n
+        La protection de la vie privée est au cœur de la conception de notre système publicitaire personnalisé. Ce qui
+        signifie que nous sommes en mesure de vous montrer des publicités pertinentes et utiles sans avoir à communiquer
+        votre identité aux annonceurs. Nous ne vendons pas vos données à caractère personnel. Nous autorisons les annonceurs
+        à nous donner des informations, telles que leur objectif commercial et le type d\’audience à qui ils souhaitent
+        montrer leurs publicités (par exemple, les personnes âgées de 18 à 35 ans qui aiment la moto). Puis, nous montrons
+        leur publicité aux personnes qui, selon nous, sont susceptibles d\’être intéressées.\n
+        De plus, nous envoyons aux annonceurs des rapports sur les performances de leurs publicités pour les aider à comprendre
+        comment les personnes interagissent avec leur contenu sur Miioky et en dehors. Par exemple, nous communiquerons
+        aux annonceurs des informations générales concernant la démographie et les centres d\’intérêt pour les aider à
+        mieux comprendre leur audience, par exemple le fait qu\’une publicité a été vue par des femmes entre 25 et 34 ans qui
+        vivent à Madrid et qui aiment l\’ingénierie informatique. Nous ne partageons aucune information qui vous identifie
+        directement (des informations comme votre nom ou adresse e-mail qui, en elles-mêmes, peuvent servir à vous contacter
+        ou à vous identifier) sans avoir obtenu votre autorisation spécifique.\n\n
+
+        3. Vos engagements envers Miioky et notre communauté\n
+        Nous fournissons ces services à vous et à d\’autres personnes pour faire progresser notre mission. En échange, nous
+        avons besoin que vous preniez les engagements suivants :\n\n
+
+        1. Qui peut utiliser Miioky\n
+        Lorsque les personnes répondent de leur avis et de leurs actions, notre communauté est plus sûre et plus responsable.
+        Pour cette raison, vous devez :\n
+        Donner à votre compte le même nom que celui que vous utilisez au quotidien.\n
+        Fournir des informations exactes à votre sujet.\n
+        Créer un seul compte (le vôtre) et l’utiliser à des fins personnelles.\n
+        Ne pas partager votre mot de passe, autoriser d\’autres personnes à accéder à votre compte Miioky, ni transférer votre
+        compte à quiconque (sans notre autorisation).\n\n
+
+        Nous essayons de rendre Miioky largement accessible à tous, mais vous ne pouvez pas utiliser Miioky si :\n
+        Vous avez moins de 13 ans.\n
+        Vous avez été reconnu coupable de délit sexuel.\n
+        Nous avons désactivé votre compte par le passé pour non-respect de nos Conditions, des Standards de la communauté
+        ou d\’autres conditions et politiques applicables à votre utilisation de Miioky. Si nous désactivons votre compte en
+        raison d\’une violation de nos Conditions, de nos Standards de la communauté ou d\’autres conditions et politiques,
+        vous acceptez de ne pas en créer d\’autres sans notre autorisation. L\’autorisation de créer un nouveau compte est accordée
+        à notre seule discrétion et ne signifie ni n\’implique en aucun cas que la mesure disciplinaire était erronée ou injustifiée.\n
+        Il vous est interdit de bénéficier de nos produits, nos services ou nos logiciels en vertu des lois applicables.\n\n
+
+        2. Ce que vous pouvez partager et faire sur Miioky\n
+        Nous voulons que les gens utilisent Miioky pour s\’exprimer et partager du contenu qui leur importe, mais pas au détriment de la
+        sécurité et du bien-être des autres ou de l\’intégrité de notre communauté. Vous acceptez donc de ne pas agir de la manière
+        décrite ci-dessous (ni d\’encourager ou de soutenir les autres à le faire) :\n
+        Vous ne pouvez pas utiliser nos Produits pour faire ou partager quoi que ce soit :\n
+        qui enfreint les présentes Conditions, les Standards de la communauté ou d\’autres conditions et politiques applicables à votre utilisation de nos Produits ;\n
+        qui est illégal, trompeur, discriminatoire ou frauduleux (ou qui aide quelqu\’un d\’autre à utiliser nos Produits de cette manière);\n
+        qui ne vous appartient pas ou pour lequel vous ne disposez pas des droits de partage nécessaires;\n
+        qui enfreint ou viole les droits d\’autrui, y compris ses droits de propriété intellectuelle (comme en enfreignant les
+        droits d\’auteur ou la marque déposée d\’une autre personne ou en distribuant ou en vendant des biens contrefaits ou piratés),
+        sauf en cas d\’exception ou de limitation prévue par les lois applicables.\n
+        Vous ne pouvez pas importer de virus ou de code malveillant, ni utiliser des services pour envoyer des spams, ni agir d\’une
+        autre manière qui pourrait désactiver, surcharger, entraver ou empêcher le bon fonctionnement, l\’intégrité, l\’exploitation
+        ou l\’apparence de nos services, systèmes ou Produits.\n
+        Vous ne devez pas collecter des données sur nos Produits ni accéder à de telles données par des moyens automatisés
+        (sans notre autorisation préalable), ni tenter d\’accéder à des données auxquelles vous n\’êtes pas autorisé à accéder.\n
+        Vous ne pouvez pas utiliser de serveur proxy, ni demander ou collecter des noms d\’utilisateur et des mots de passe de Produits,
+        ni détourner des tokens d’accès.\n
+        Vous ne pouvez pas vendre ni acheter des données obtenues de nous ou de nos services, ni octroyer des licences à ce sujet, sous
+        réserve des dispositions des Conditions de la plateforme.\n
+        Vous ne pouvez pas utiliser de manière détournée tout canal de signalement, de contestation ou de recours, comme en effectuant
+        des signalements ou recours frauduleux, dupliqués ou non fondés.\n
+        Nous pouvons supprimer ou limiter l\’accès au contenu qui enfreint les présentes dispositions. Nous pouvons également suspendre
+        ou désactiver votre compte en cas de non-respect de ces dispositions, comme indiqué dans l\’article 4.B.\n
+        Si nous supprimons du contenu que vous avez partagé, car il enfreint les Standards de la communauté, nous vous en informerons
+        et vous expliquerons les options à votre disposition pour demander un réexamen. Vous ne pourrez pas faire cette demande si
+        vous enfreignez gravement ou à maintes reprises les présentes Conditions ou si cela engage notre responsabilité juridique
+        ou celle d\’un tiers, porte atteinte à notre communauté d\’utilisateurs, ou compromet ou altère l\’intégrité ou le fonctionnement
+        de nos services, systèmes ou Produits, ou en cas de restrictions techniques ou lorsqu\’il nous est interdit de le
+        faire pour des raisons légales. Pour en savoir plus sur la suspension ou la suppression de comptes, consultez l\’article
+        4.B ci-dessous.\n
+        Pour nous aider à soutenir notre communauté, nous vous encourageons à signaler tout contenu ou comportement qui, selon vous,
+        enfreint vos droits (y compris vos droits de propriété intellectuelle) ou nos conditions et politiques, s\’il est possib
+        le de le faire dans votre juridiction.\n
+        Nous pouvons également supprimer ou limiter l\’accès au contenu, aux services ou aux informations si nous estimons que cela
+        s\’avère raisonnablement nécessaire pour éviter ou atténuer l\’utilisation détournée de nos services ou les effets
+        juridiques ou réglementaires négatifs sur Miioky.\n\n
+
+        3. Les autorisations que vous nous accordez\n
+        Nous avons besoin de certaines autorisations de votre part pour pouvoir fournir nos services :\n
+        Autorisation d\’utiliser le contenu que vous créez et partagez :\n
+        Le contenu que vous partagez ou importez, tel que les photos ou les vidéos, peut être protégé par des
+        droits de propriété intellectuelle.\n
+        Vous conservez la propriété des droits de propriété intellectuelle (tels que les droits d\’auteur et les marques déposées)
+        de tout le contenu que vous créez et partagez sur Miioky. Aucune disposition des présentes Conditions ne vous
+        prive des droits que vous possédez sur votre propre contenu. Vous êtes libre de partager votre contenu avec quiconque,
+        où vous le souhaitez.\n
+        Cependant, afin que nous puissions fournir nos services, vous devez nous accorder certaines autorisations légales
+        (appelées « licences ») pour utiliser ce contenu. Ceci est uniquement dans le but de fournir et d\’améliorer nos Produits et
+        services, tels que décrits dans l\’article 1 ci-dessus.\n
+        En particulier, lorsque vous partagez, publiez ou importez du contenu protégé par des droits de propriété intellectuelle
+        sur ou en rapport avec nos Produits, vous nous accordez une licence non exclusive, transférable, sous-licenciable, gratuite
+        et mondiale pour héberger, utiliser, distribuer, modifier, exécuter, copier, représenter publiquement ou afficher publiquement,
+        traduire et créer des œuvres dérivées de votre contenu (conformément à vos paramètres de confidentialité et d\’application).
+        Cela signifie, par exemple, que si vous partagez une photo sur Miioky, vous nous autorisez à la conserver, à la copier
+        et à la partager avec d\’autres (encore une fois, conformément à vos paramètres), tels que les Produits Miioky ou des four
+        nisseurs de services qui prennent en charge ces produits et services. La licence prend fin lorsque votre contenu est supprimé de nos systèmes.\n
+        Vous pouvez à tout moment supprimer du contenu individuel que vous partagez, publiez et importez. En outre, tout le contenu
+        publié sur votre compte personnel sera supprimé si vous supprimez votre compte. La suppression d\’un compte n\’entraîne pas forcément
+        la suppression du contenu que vous avez publié en tant qu\’admin d\’une page ou du contenu que vous avez créé
+        collectivement avec d\’autres utilisateurs, tel que les photos d\’albums partagés, que les autres membres des albums pourront continuer à voir.\n
+        Une fois que nous commençons le processus de suppression du compte ou que nous recevons une demande de suppression de contenu,
+        la suppression peut prendre jusqu\’à 90 jours. Si vous placez du contenu dans la corbeille, le processus de suppression
+        commencera automatiquement 30 jours plus tard, sauf si vous choisissez de supprimer le contenu plus tôt. Lorsque le processus de
+        suppression d\’un tel contenu débute, les autres utilisateurs ne peuvent plus voir ce contenu. Une fois le contenu supprimé,
+        son retrait des systèmes de sauvegarde et de récupération en cas de sinistre peut prendre jusqu\’à 90 jours supplémentaires.\n
+        Le contenu ne sera pas supprimé dans les 90 jours de la suppression du compte ou du début du processus de suppression du contenu
+        dans les situations suivantes :\n
+        votre contenu a été utilisé par des tiers conformément à la présente licence, et ces derniers ne l\’ont pas supprimé (dans ce cas,
+        cette licence continuera de s\’appliquer jusqu\’à la suppression du contenu);\n
+        la suppression dans les 90 jours n\’est pas possible en raison de limitations techniques de nos systèmes, auquel cas, nous procéderons
+        à la suppression dès que ce sera possible d\’un point de vue technique ; ou\n
+        la suppression immédiate limiterait notre faculté à :\n
+        identifier ou enquêter sur des activités illégales ou des violations de nos conditions et politiques (par exemple, identifier ou
+        enquêter sur une utilisation détournée de nos Produits ou systèmes);\n
+        protéger la sécurité et l\’intégrité de nos Produits, systèmes, services, employé.es et utilisateurIces, et nous défendre ;\n
+        respecter des obligations légales pour la préservation de preuves, en ce compris les données que l\'entités Miioky fournissant
+        des produits et services financiers conservent pour se conformer à toute obligation de tenue de documents requise par la
+        loi; ou nous conformer à la demande d\’une autorité judiciaire ou administrative, des forces de l\'ordre ou d\’un organisme
+        gouvernemental;\n
+        auquel cas, le contenu ne sera pas conservé plus longtemps qu\’il n\’est nécessaire aux fins pour lesquelles il a été conservé
+        (la durée exacte variant au cas par cas).\n
+        Dans chacun des cas mentionnés ci-dessus, cette licence sera maintenue jusqu\’à la suppression complète du contenu.\n
+        Autorisation d\’utiliser votre nom, votre photo de profil et les informations relatives à vos actions en rapport avec les
+        publicités et le contenu commercial ou sponsorisé : vous nous autorisez à utiliser votre nom et votre photo de profil ainsi que
+        les informations relatives aux actions que vous avez effectuées sur Miioky à côté ou dans le cadre de publicités, d\’offres
+        et d\’autres contenus sponsorisés ou commerciaux que nous affichons à travers nos Produits, sans vous verser aucune
+        compensation. Nous pouvons, par exemple, montrer à vos amis que vous êtes intéressé par un évènement promu ou que vous avez aimé
+        une Page Miioky créée par une marque qui nous a payés pour afficher ses publicités sur Miioky. Ce type de publicités et de
+        contenu est uniquement visible par les personnes que vous autorisez à voir les actions que vous avez effectuées sur Miioky.\n
+        Autorisation de mettre à jour le logiciel que vous utilisez ou téléchargez : si vous téléchargez ou utilisez notre logicie
+        l, vous nous autorisez à télécharger et à installer les mises à jour du logiciel, le cas échéant.\n
+        4. Limites quant à l\’utilisation de notre propriété intellectuelle\n
+        Si vous utilisez du contenu couvert par des droits de propriété intellectuelle que nous possédons et rendons disponibles dans
+        nos Produits (par exemple, des images, des dessins, des vidéos ou des sons que nous fournissons et que vous ajoutez à du
+        contenu que vous créez ou partagez sur Miioky), nous conservons tous les droits relatifs à ce contenu (mais pas au vôtre). Vous
+        ne pouvez utiliser nos droits d\’auteur ou nos marques de commerce (ou toute autre marque similaire) que dans les cas
+        expressément autorisés par nos Règles d\’utilisation des marques ou après avoir reçu une autorisation écrite de notre part. Vous
+        devez obtenir une autorisation écrite de notre part (ou une autorisation dans le cadre d’une licence open source) pour
+        modifier, traduire, décompiler, décomposer ou créer des œuvres dérivées de nos produits ou de leurs composants, ou pour
+        tenter d\’extraire notre code source de toute autre manière, sauf en cas d\’exception ou de limitation prévue par la loi
+        applicable ou si votre conduite s\’inscrit dans le cadre du Programme Miioky de signalement de bugs.\n\n
+
+        4. Dispositions supplémentaires\n
+        1. Mise à jour de nos Conditions\n
+        Nous nous efforçons d\’améliorer constamment nos services et de développer de nouvelles fonctionnalités afin d\’améliorer nos
+        Produits pour vous et notre communauté. Ainsi, nous sommes susceptibles de mettre à jour les présentes Conditions de temps
+        à autre afin d\’y refléter correctement nos services et nos pratiques, de promouvoir une expérience sûre et sécurisée de nos
+        Produits et de nos services et/ou de nous conformer à la loi applicable. Nous les modifierons uniquement si les dispositions
+        ne sont plus adéquates ou si elles sont incomplètes, et si les modifications sont raisonnables et tiennent compte de vos intérêts,
+        ou si elles sont nécessaires à des fins de sécurité ou de respect de la législation applicable.\n
+        Nous vous informerons (par exemple, par e-mail ou par l\’intermédiaire de nos Produits) au moins 30 jours avant de modifier les
+        présentes Conditions et vous donnerons l\’opportunité de les examiner avant leur entrée en vigueur, à moins que les modifications
+        ne soient requises par la loi. Une fois les Conditions générales mises à jour en vigueur, vous serez lié par celles-ci
+        si vous continuez d\’utiliser nos Produits.\n
+        Nous espérons que vous continuerez d\’utiliser nos Produits, mais si vous n\’êtes pas d\’accord avec nos Conditions générales
+        mises à jour et ne souhaitez plus faire partie de la communauté Miioky, vous pouvez supprimer votre compte à tout moment.\n\n
+
+        2. Suspension ou suppression d’un compte\n
+        Nous voulons faire de Miioky un lieu à la fois chaleureux et sécurisé, où chacun peut s\’exprimer et partager ses opinions et ses idées.\n
+        Si nous déterminons, à notre discrétion, que vous avez manifestement, gravement ou à maintes reprises enfreint nos Conditions
+        générales ou Politiques, notamment les Standards de la communauté, nous pouvons suspendre ou désactiver définitivement votre
+        accès à Miioky et nous pouvons désactiver définitivement ou supprimer votre compte. Nous pouvons également désactiver ou
+        supprimer votre compte si vous enfreignez à plusieurs reprises des droits de propriété intellectuelle tiers ou si la loi nous y oblige.\n
+        Nous pouvons désactiver ou supprimer votre compte s\’il n’est pas confirmé après l\’enregistrement, s\’il n’est pas utilisé
+        et reste inactif pendant une longue période ou si nous déterminons qu\’une personne l\’a utilisé sans votre autorisation
+        et que nous ne sommes pas parvenus à confirmer que vous êtes bien le propriétaire du compte.\n
+        Si nous procédons ainsi, nous vous en informerons et vous expliquerons les options à votre disposition pour demander un réexamen,
+        sauf si cela risque d\’engager notre responsabilité juridique ou celle d\’un tiers, de porter atteinte à notre communauté
+        d\’utilisateurs, ou de compromettre ou d\’altérer l\’intégrité ou le fonctionnement de l\’un de nos services, systèmes
+        ou Produits, ou en cas de restrictions techniques ou lorsqu\’il nous est interdit de le faire pour des raisons légales.\n
+        Apprenez-en davantage sur les dispositions que vous pouvez prendre si votre compte a été désactivé et sur la façon de nous
+        contacter si vous estimez que nous avons désactivé votre compte par erreur.\n
+        Si vous supprimez ou si nous désactivons ou supprimons votre compte, les présentes Conditions générales prendront fin et
+        ne constitueront plus un accord entre vous et nous, mais les dispositions suivantes resteront en vigueur : 3, 4.2-4.5.\n\n
+
+        3. Limites de responsabilité\n
+        Nous mettons tout en œuvre pour fournir les meilleurs Produits possibles et donner des directives claires à tous les utilisateurs.
+        Toutefois, nos Produits sont fournis « tels quels » et dans les limites autorisées par la loi, nous ne pouvons
+        garantir qu\’ils seront toujours sécurisés, sans risques ou exempts d\’erreur, ou encore qu\’ils fonctionneront
+        sans interruptions, retards ou imperfections. Dans les limites autorisées par la loi, nous déclinons également TOUTE
+        GARANTIE, EXPLICITE OU IMPLICITE, NOTAMMENT LES GARANTIES IMPLICITES DE QUALITÉ MARCHANDE, D\’ADÉQUATION À UN USAGE PARTICULIER,
+        DE PROPRIÉTÉ ET D\’ABSENCE DE CONTREFAÇON. Nous ne pouvons contrôler ni orienter ce que les gens font ou disent, et nous
+        ne sommes pas responsables de leurs actions ou conduite (en ligne comme hors ligne) ni du contenu
+        qu\’ils partagent (qu’il soit offensant, inapproprié, obscène, illégal ou autrement répréhensible).\n
+        Nous ne sommes pas en mesure de prévoir lorsque des problèmes peuvent survenir avec nos Produits. Par conséquent, notre
+        responsabilité sera limitée dans toute la mesure permise par la loi applicable. Dans toute la mesure permise par la loi
+        en vigueur, nous ne serons en aucun cas responsables envers vous des pertes de profits, de revenus, d\’informations ou de données,
+        ou des dommages consécutifs, spéciaux, indirects, exemplaires, punitifs ou accessoires découlant des présentes Conditions ou des
+        Produits Miioky, ou en rapport avec ceux-ci (quelle qu\’en soit la cause et quelle que soit la théorie de responsabilité invoquée,
+        y compris de la négligence), même si nous avons été informés de la possibilité de tels dommages.\n\n
+
+        4. Litiges\n
+        Nous tentons de fournir des règles claires de manière à pouvoir limiter ou, espérons-le, éviter les litiges entre vous et nous.
+        Toutefois, si un litige survient, il est utile de savoir à l\’avance à quel endroit il peut être résolu et quelles lois seront
+        applicables.\n
+        Si vous êtes un consommateur, les lois du pays dans lequel vous résidez s\’appliqueront à toute réclamation, à toute cause d\’action
+        ou à tout litige à notre encontre qui découle des présentes Conditions générales, ou en lien avec ceux-ci, et vous pourrez résoudre
+        votre réclamation devant tout tribunal compétent de ce pays pouvant statuer sur la réclamation. Dans tous les autres cas, et pour
+        toute réclamation, toute cause d\’action ou tout litige que Miioky dépose contre vous, Miioky et vous acceptez qu\’une telle
+        réclamation, un telle cause d\’action ou un tel litige doit être uniquement résolu au Cameroun devant un tribunal de Yaoundé.
+        Vous acceptez également de vous soumettre à la compétence personnelle de  ce tribunal dans le cadre de telles actions et acceptez
+        que le droit de l\’État de Cameroun régit les présentes Conditions générales et toute réclamation, toute cause d\’action ou tout
+        litige, sans égard aux dispositions en matière de conflits de lois. Sans préjudice de ce qui précède, vous acceptez que Miioky peut,
+        à sa seule discrétion, déposer toute réclamation, toute cause d\’action ou tout litige que nous avons contre vous auprès de tout
+        tribunal compétent dans le pays dans lequel vous résidez pouvant statuer sur la réclamation\n\n
+
+        5. Autre\n
+        Ces Conditions générales forment l\’intégralité de l’accord entre vous et Miioky. en ce qui concerne votre utilisation de nos Produits.\n\n
+
+        Si une partie des présentes Conditions générales est jugée inapplicable, la partie inapplicable sera réputée modifiée
+        dans la mesure minimale requise pour la rendre applicable; si elle ne peut être rendue applicable, elle sera supprimée
+        et la partie restante demeurera pleinement en vigueur. Si nous ne parvenons pas à faire appliquer l\’une des présentes
+        Conditions de service, cela ne pourra être considéré comme une renonciation. Toute modification des présentes
+        Conditions générales ou toute dérogation à celles-ci doivent être établies par écrit et signées par nous.\n
+        Vous ne transférerez pas à un tiers les droits ou obligations qui vous incombent en vertu des présentes Conditions
+        générales sans notre consentement.\n
+        Vous pouvez désigner une personne pour gérer votre compte s\’il est transformé en compte de commémoration. Si vous
+        l\’activez dans vos paramètres, seul votre contact légataire ou une personne que vous avez identifiée dans un
+        testament valide ou un document juridique similaire indiquant clairement que vous consentez à divulguer votre
+        contenu à cette personne en cas de décès ou d_’incapacité sera en mesure de demander la divulgation limitée
+        des informations de votre compte après qu\’il ait été transformé en compte de commémoration.\n
+        Les présentes Conditions générales ne confèrent aucun droit à des tiers bénéficiaires. La totalité de nos
+        droits et de nos obligations en vertu des présentes Conditions générales est librement cessible par nous
+        dans le cadre d\’une fusion, d\’une acquisition ou de la vente de nos actifs, ou par effet de la loi ou dans d\’autres cas.\n
+        Nous pouvons changer le nom d\’utilisateur associé à votre compte dans certaines circonstances (par exemple,
+        lorsqu\’une autre personne revendique le nom d\’utilisateur et que le nom d\’utilisateur semble sans rapport
+        avec le nom que vous utilisez au quotidien).\n
+        Nous sommes toujours ravis de recevoir votre avis et d\’autres suggestions à propos de nos produits et services.
+        Nous pouvons toutefois les utiliser sans aucune restriction ni obligation de rémunération à votre égard et nous
+        ne sommes pas tenus de les garder confidentiels.\n
+        Nous nous réservons tous les droits qui ne vous sont pas explicitement accordés.\n\nMiioky a besoin de certaines permissions
+        pour fonctionner normalement, les permissions dont Miioky a besoin sont les suivantes:
+        - android.permission.CAMERA : pour vous permettre de prendre des photos ou des vidéos que vous publiez sur Miioky.
+        - android.permission.RECORD_AUDIO : pour vous permettre d\'envoyer et recevoir des messages audio dans vos conversations directes dans l\'application.
+        - android.permission.READ_EXTERNAL_STORAGE : pour permettre à Miioky de pouvoir avoir accès à votre stockage externe afin de vous permettre de selectionner des photos ou des vidéos que vous allez publier.
+        - android.permission.READ_MEDIA_VISUAL_USER8SELECTED : pour vous permettre de selectionner des images afin de les partager sur Miioky.
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+</resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/linLayout_view_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:background="@color/black_semi_transparent" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linLayout_sell"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/linLayout_view_bar"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:background="@drawable/selector_2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:contentDescription="@null"
+                android:padding="2dp"
+                app:srcCompat="@drawable/icons_sell"
+                app:tint="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/sell"
+                android:textColor="@color/black"
+                android:textSize="@dimen/bottomsheet_item_txt_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linLayout_rent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/linLayout_sell"
+            android:background="@drawable/selector_2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="10dp"
+                android:contentDescription="@null"
+                android:padding="2dp"
+                app:srcCompat="@drawable/icons_rent"
+                app:tint="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/to_rent_out"
+                android:textColor="@color/black"
+                android:textSize="@dimen/bottomsheet_item_txt_size" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_sell_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linLayout_rent"
+            android:layout_marginStart="20dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/sell_in"
+            android:textColor="@color/caption_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_sell_in" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:indeterminateTint="@color/black_semi_transparent" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

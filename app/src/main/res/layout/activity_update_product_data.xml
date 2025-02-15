@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:animateLayoutChanges="true"
+    tools:context=".market_place.update.UpdateProductData">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@drawable/white_grey_border_bottom">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/arrowBack"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_circle"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/close"
+                    android:layout_width="@dimen/icon_arrowback_size"
+                    android:layout_height="@dimen/icon_arrowback_size"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    app:tint="@color/black" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/arrowBack"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/back"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/caption_color"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/relLayout_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector_2"
+                android:padding="10dp"
+                tools:ignore="RelativeOverlap">
+
+                <TextView
+                    android:id="@+id/text_publish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/update"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/shinning_blue"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.bekambimouen.miiokychallenge.Utils.TouchDetectableScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- neighborhood section -->
+            <RelativeLayout
+                android:id="@+id/relLayout_neighborhood_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/neighborhood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/neighborhood"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/relLayout_neighborhood"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/neighborhood"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/cadre_rectangle"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/edit_neighborhood"
+                        android:layout_width="488dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:minHeight="48dp"
+                        android:background="@null"
+                        android:hint="@string/neighborhood"
+                        android:importantForAutofill="no"
+                        android:inputType="textCapSentences|textNoSuggestions"
+                        android:maxLines="1"
+                        android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                        android:textColor="@color/caption_color"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <!-- product name section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/caption_color"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/relLayout_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:background="@drawable/cadre_rectangle"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/relLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:elevation="10dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp">
+
+                    <com.bekambimouen.miiokychallenge.Utils.MyEditText
+                        android:id="@+id/edit_product_name"
+                        android:layout_width="488dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:background="@null"
+                        android:minHeight="48dp"
+                        android:hint="@string/name_the_product"
+                        android:importantForAutofill="no"
+                        android:inputType="textCapSentences|textNoSuggestions"
+                        android:maxLines="1"
+                        android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                        android:textColor="@color/caption_color"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <!-- price section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/price"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/caption_color"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/relLayout_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:background="@drawable/cadre_rectangle"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="6"
+                    android:elevation="10dp"
+                    android:baselineAligned="false"
+                    tools:ignore="UselessParent">
+
+                    <RelativeLayout
+                        android:id="@+id/relLayout52"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="4"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        >
+
+                        <com.bekambimouen.miiokychallenge.Utils.MyEditText
+                            android:id="@+id/edit_price"
+                            android:layout_width="488dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:minHeight="48dp"
+                            android:background="@null"
+                            android:hint="@string/price"
+                            android:importantForAutofill="no"
+                            android:inputType="number"
+                            android:maxLength="15"
+                            android:maxLines="1"
+                            android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/caption_color"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="2"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp">
+
+                        <View
+                            android:id="@+id/view_bar2"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@color/blue_grey_100"
+                            />
+
+                        <TextView
+                            android:id="@+id/country_devise2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="10dp"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/caption_color"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/old_price"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/caption_color"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/relLayout_old_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:background="@drawable/cadre_rectangle"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="6"
+                    android:elevation="10dp"
+                    android:baselineAligned="false">
+
+                    <RelativeLayout
+                        android:id="@+id/relLayout51"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="4"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        >
+
+                        <com.bekambimouen.miiokychallenge.Utils.MyEditText
+                            android:id="@+id/edit_old_price"
+                            android:layout_width="488dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:minHeight="48dp"
+                            android:background="@null"
+                            android:hint="@string/old_price"
+                            android:importantForAutofill="no"
+                            android:inputType="number"
+                            android:maxLength="15"
+                            android:maxLines="1"
+                            android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/caption_color"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="2"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp">
+
+                        <View
+                            android:id="@+id/view_bar"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@color/blue_grey_100"
+                            />
+
+                        <TextView
+                            android:id="@+id/country_devise1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="10dp"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/caption_color"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:background="@color/black"
+                    />
+
+            </RelativeLayout>
+
+            <!-- description section -->
+            <RelativeLayout
+                android:id="@+id/relLayout_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:elevation="10dp"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/relLayout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="80dp"
+                    android:background="@drawable/cadre_rectangle"
+                    android:padding="10dp">
+
+                    <com.bekambimouen.miiokychallenge.Utils.MyEditText
+                        android:id="@+id/edit_description"
+                        android:layout_width="488dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:background="@null"
+                        android:hint="@string/the_description"
+                        android:importantForAutofill="no"
+                        android:inputType="textCapSentences|textMultiLine|textAutoCorrect"
+                        android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/caption_color"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/relLayout7"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/a_detail_description_can_help_you_sell_faster"
+                    android:textSize="16sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </com.bekambimouen.miiokychallenge.Utils.TouchDetectableScrollView>
+
+</RelativeLayout>

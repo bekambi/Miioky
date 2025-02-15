@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/view_group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/share_link_via"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:id="@+id/linLayout_whatsapp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/selector_2"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/whatsapp_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:padding="5dp"
+            android:background="@drawable/cercle_parameters"
+            android:src="@drawable/logo_whatsapp"
+            app:tint="@color/black"
+            android:contentDescription="@null"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/whatsapp"
+            android:textSize="@dimen/bottomsheet_item_txt_size"
+            android:textColor="@color/black"
+            android:ellipsize="end"
+            android:maxLines="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linLayout_facebook"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/selector_2"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/facebook_logo"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="10dp"
+            android:padding="5dp"
+            android:background="@drawable/cercle_parameters"
+            android:src="@drawable/logo_facebook"
+            app:tint="@color/black"
+            android:contentDescription="@null"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/facebook"
+            android:textSize="@dimen/bottomsheet_item_txt_size"
+            android:textColor="@color/black"
+            android:ellipsize="end"
+            android:maxLines="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linLayout_instagram"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/selector_2"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/logo_instagram"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:padding="5dp"
+            android:background="@drawable/cercle_parameters"
+            android:src="@drawable/logo_instagram"
+            app:tint="@color/black"
+            android:contentDescription="@null"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/instagram"
+            android:textSize="@dimen/bottomsheet_item_txt_size"
+            android:textColor="@color/black"
+            android:ellipsize="end"
+            android:maxLines="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linLayout_twitter"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/selector_2"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/logo_x"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="10dp"
+            android:padding="5dp"
+            android:background="@drawable/cercle_parameters"
+            android:src="@drawable/logo_x"
+            android:contentDescription="@null"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/x"
+            android:textSize="@dimen/bottomsheet_item_txt_size"
+            android:textColor="@color/black"
+            android:ellipsize="end"
+            android:maxLines="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linLayout_snapchat"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/selector_2"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/logo_snapchat"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="10dp"
+            android:padding="5dp"
+            android:background="@drawable/cercle_parameters"
+            android:src="@drawable/logo_snapchat"
+            android:contentDescription="@null"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/snapchat"
+            android:textSize="@dimen/bottomsheet_item_txt_size"
+            android:textColor="@color/black"
+            android:ellipsize="end"
+            android:maxLines="1"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

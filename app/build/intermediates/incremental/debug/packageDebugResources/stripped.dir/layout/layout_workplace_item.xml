@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="4dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@null"
+        android:src="@drawable/icons_workplace"
+        app:tint="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/workplace_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@id/menu_item"
+        android:layout_toEndOf="@id/imageview"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text=""
+        android:textColor="@color/caption_color"
+        android:textSize="17sp"
+        />
+
+    <ImageView
+        android:id="@+id/menu_item"
+        android:layout_width="@dimen/menu_more_horiz_width"
+        android:layout_height="@dimen/menu_more_horiz_height"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="3dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_baseline_more_horiz_24"
+        app:tint="@color/black_semi_transparent"
+        android:background="@drawable/selector_2"/>
+
+</RelativeLayout>

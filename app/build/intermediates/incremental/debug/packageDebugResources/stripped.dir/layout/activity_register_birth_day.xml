@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".register.RegisterBirthDay">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@drawable/white_grey_border_bottom"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/arrowBack"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_circle">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_arrowback_size"
+                    android:layout_height="@dimen/icon_arrowback_size"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    app:tint="@color/black" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/arrowBack"
+                android:text="@string/back"
+                android:textColor="@color/caption_color"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/add_your_birthday"
+        android:textSize="20sp"
+        android:textColor="@color/caption_color"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/not_showing_birthday"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size"
+        />
+
+    <RelativeLayout
+        android:id="@+id/result_olds"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/cadre_rectangle"
+        >
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:text="@string/day"
+            android:textSize="@dimen/txt_size_17"
+            android:textColor="@color/caption_color" />
+
+        <TextView
+            android:id="@+id/tv_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/month"
+            android:textSize="@dimen/txt_size_17"
+            android:textColor="@color/caption_color"
+            android:layout_toEndOf="@id/tv_day"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/year"
+            android:textSize="@dimen/txt_size_17"
+            android:textColor="@color/caption_color"
+            android:layout_toEndOf="@id/tv_month"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rel_olds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/tv_user_year_olds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/caption_color"
+                android:textSize="@dimen/txt_size_17"
+                />
+            <TextView
+                android:id="@+id/tv_olds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/olds"
+                android:textSize="@dimen/txt_size_17"
+                android:textColor="@color/caption_color"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="3dp"
+                android:layout_toEndOf="@id/tv_user_year_olds"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/next"
+        android:textSize="@dimen/txt_size_17"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/blue_rounded_button"/>
+
+    <com.ozcanalasalvar.library.view.datePicker.DatePicker
+        android:id="@+id/datepicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        app:offset="3"
+        app:pickerMode="dayFirst"
+        app:textSize="19"
+        android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>

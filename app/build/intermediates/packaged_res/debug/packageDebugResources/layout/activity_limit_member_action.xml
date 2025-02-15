@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".groups.manage_member.limit_member_actions.LimitMemberAction">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@drawable/white_grey_border_bottom"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <RelativeLayout
+                android:id="@+id/arrowBack"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:background="@drawable/selector_circle">
+
+                <ImageView
+                    android:id="@+id/close"
+                    android:layout_width="@dimen/icon_arrowback_size"
+                    android:layout_height="@dimen/icon_arrowback_size"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    app:tint="@color/black" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/toolBar_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/arrowBack"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/caption_color"
+                android:textSize="18sp"
+                />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.bekambimouen.miiokychallenge.Utils.TouchDetectableScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar"
+        android:layout_above="@+id/linLayout_buttons"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            >
+
+            <LinearLayout
+                android:id="@+id/linLayout_limit_member_activities"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/activity_limit"
+                    android:textColor="@color/caption_color"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_firstInformation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="17sp"
+                    android:textColor="@color/black_semi_transparent"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/limit_posts"
+                    android:textColor="@color/caption_color"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/linLayout_limit_posts"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <Spinner
+                        android:id="@+id/spinnerCustom_number_posts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/custom_spinner_background"
+                        />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switchCompat_number_posts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:checked="false"
+                        android:text="@string/posts_in_group_per_day"
+                        android:theme="@style/SCBSwitch"
+                        android:textSize="16sp"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/expires_in"
+                    android:textColor="@color/caption_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+
+                <Spinner
+                    android:id="@+id/spinnerCustom_limit_posts_expiration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/custom_spinner_background"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/limit_comments"
+                    android:textColor="@color/caption_color"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/linLayout_limit_comments"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <Spinner
+                        android:id="@+id/spinnerCustom_number_comments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/custom_spinner_background"
+                        />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switchCompat_number_comments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:checked="false"
+                        android:text="@string/comments_in_group_per_day"
+                        android:theme="@style/SCBSwitch"
+                        android:textSize="16sp"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/expires_in"
+                    android:textColor="@color/caption_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+
+                <Spinner
+                    android:id="@+id/spinnerCustom_limit_comments_expiration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/custom_spinner_background"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout_admin_notes"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/admin_remarks"
+                    android:textColor="@color/caption_color"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/relLayout_edit_about_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/cadre_rectangle"
+                    >
+
+                    <com.bekambimouen.miiokychallenge.Utils.MyEditText
+                        android:id="@+id/edit_about_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:background="@null"
+                        android:hint="@string/write_comment"
+                        android:importantForAutofill="no"
+                        android:inputType="textMultiLine|textNoSuggestions|textCapSentences"
+                        android:maxLength="250"
+                        android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                        android:textColorHint="@color/black_semi_transparent2"
+                        android:textSize="17sp"
+                        android:textColor="@color/caption_color" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/linLayout_nber_char_sequence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/nber_char_sequence"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginEnd="3dp"
+                        android:text="@string/zero"
+                        android:textSize="17sp"
+                        android:textColor="@color/caption_color"
+                        />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="13dp"
+                        android:background="@color/caption_color"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:text="@string/two_hundred_and_fifty"
+                        android:textSize="17sp"
+                        android:textColor="@color/caption_color"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_add_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="@string/add_others_details"
+                    android:textSize="20sp"
+                    android:textColor="@color/caption_color"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_non_respected_rules"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="@string/the_non_respected_rules"
+                    android:textSize="18sp"
+                    android:textColor="@color/black_semi_transparent"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.bekambimouen.miiokychallenge.Utils.TouchDetectableScrollView>
+
+    <LinearLayout
+        android:id="@+id/linLayout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/button_cancel"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/grey_button"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/caption_color" />
+
+        <TextView
+            android:id="@+id/button_save"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_blue"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/white"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

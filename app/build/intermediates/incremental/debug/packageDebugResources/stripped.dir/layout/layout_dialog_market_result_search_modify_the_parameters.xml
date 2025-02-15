@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    >
+
+    <!-- town name section -->
+    <RelativeLayout
+        android:id="@+id/relLayout_update_town_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/town_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/town_name"
+            android:textColor="@color/caption_color"
+            android:textSize="20sp"/>
+
+        <RelativeLayout
+            android:id="@+id/relLayout_town_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/town_name"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/cadre_rectangle"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/edit_town_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@null"
+                android:hint="@string/your_town"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences|textNoSuggestions"
+                android:maxLines="1"
+                android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                android:textColor="@color/caption_color"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!-- town neighborhood section -->
+    <RelativeLayout
+        android:id="@+id/relLayout_update_neighborhood_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/neighborhood_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/your_neighborhood"
+            android:textColor="@color/caption_color"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/relLayout_neighborhood_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/neighborhood_name"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/cadre_rectangle"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/edit_neighborhood_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@null"
+                android:hint="@string/your_neighborhood"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences|textNoSuggestions"
+                android:maxLines="1"
+                android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+                android:textColor="@color/caption_color"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:padding="8dp"
+            android:layout_toStartOf="@id/update"
+            android:background="@drawable/cadre_selected_text"
+            android:backgroundTint="@color/blue_50"
+            android:gravity="center"
+            android:text="@string/txt_cancel"
+            android:textColor="@color/black_semi_transparent"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/update"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="8dp"
+            android:gravity="center"
+            android:text="@string/update"
+            android:textColor="@color/blue_600"
+            android:textSize="17sp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,1190 @@
+package com.bekambimouen.miiokychallenge.display_insta.adapter.viewholders;
+
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.text.Html;
+import android.transition.Slide;
+import android.util.Log;
+import android.view.GestureDetector;
+import android.view.Gravity;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.bekambimouen.miiokychallenge.R;
+import com.bekambimouen.miiokychallenge.bottomsheet.BottomSheetAddComment;
+import com.bekambimouen.miiokychallenge.bottomsheet.BottomSheetMenuOneFile;
+import com.bekambimouen.miiokychallenge.Utils.MyEditText;
+import com.bekambimouen.miiokychallenge.Utils.TimeUtils;
+import com.bekambimouen.miiokychallenge.Utils.Util;
+import com.bekambimouen.miiokychallenge.crushers_and_likers.Crushers;
+import com.bekambimouen.miiokychallenge.crushers_and_likers.Likers;
+import com.bekambimouen.miiokychallenge.like_button_animation.SmallBangView;
+import com.bekambimouen.miiokychallenge.model.BattleModel;
+import com.bekambimouen.miiokychallenge.model.Crush;
+import com.bekambimouen.miiokychallenge.model.Like;
+import com.bekambimouen.miiokychallenge.model.User;
+import com.bekambimouen.miiokychallenge.profile.Profile;
+import com.bekambimouen.miiokychallenge.search.ViewProfile;
+import com.bekambimouen.miiokychallenge.utils_from_firebase.Util_User;
+import com.bekambimouen.miiokychallenge.views_count.PublicationBattleManager;
+import com.bumptech.glide.Glide;
+import com.github.kshitij_jain.instalike.InstaLikeView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
+import com.google.gson.Gson;
+
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
+
+import de.hdodenhof.circleimageview.CircleImageView;
+
+public class CommentTextDisplay extends RecyclerView.ViewHolder {
+    private static final String TAG = "ImageUneDisplay";
+
+    // wifgets
+    private final ImageView conner_big_star_icon;
+    private final InstaLikeView insta_star_view;
+    private final SmallBangView like_star;
+    private final ImageView unlike_star_image;
+    private final SmallBangView like_heart;
+    private final ImageView image;
+    private final InstaLikeView mInstaLikeView;
+    public final ImageView menu_item;
+    public final ImageView delete_suggestion;
+    private final View view_online;
+    private final CircleImageView profile;
+    private final TextView nber_of_crush;
+    private final TextView crush_msg;
+    private final TextView tps_publication;
+    private final TextView username;
+    private final TextView comment_text;
+    public final TextView views;
+
+    private final TextView number_of_likes;
+    private final TextView number_of_comments;
+    private final TextView number_of_share;
+    private final LinearLayout linLayout_like;
+    private final LinearLayout linLayout_comment;
+    private final LinearLayout linLayout_share;
+    private final LinearLayout linLayout_count_like;
+
+    public final RelativeLayout relLayout_go_user_profile;
+    public final RelativeLayout relLayout_follow;
+
+    // vars
+    private final AppCompatActivity context;
+    private final GestureDetector mDetectorLike;
+    private BattleModel mPhoto, mModel;
+    private final RelativeLayout relLayout_view_overlay;
+    private MyEditText mComment;
+    private StringBuilder mUsers;
+    private StringBuilder updateLikeUsers;
+    private StringBuilder mUsersCrush;
+    private StringBuilder updateCrushUsers;
+    private User mCurrentUser;
+    private final ArrayList<String> liker_list, crusher_list;
+    private boolean mLikedByCurrentUser;
+    private boolean mCrushedByCurrentUser;
+    private int crush_count;
+    private int likes_count;
+    private int comments_count;
+    private int shares_count;
+
+    // firebase
+    private final DatabaseReference myRef;
+    private final FirebaseDatabase database;
+    private final String user_id;
+
+    @SuppressLint("ClickableViewAccessibility")
+    public CommentTextDisplay(AppCompatActivity context, BattleModel mModel,
+                              MyEditText mComment, RelativeLayout relLayout_view_overlay, @NonNull View itemView) {
+        super(itemView);
+        this.context = context;
+        this.relLayout_view_overlay = relLayout_view_overlay;
+
+        if (mModel != null) {
+            this.mModel = mModel;
+            this.mPhoto = mModel;
+            this.mComment = mComment;
+        }
+
+        FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+        myRef = firebaseDatabase.getReference();
+        database=FirebaseDatabase.getInstance();
+        user_id = Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid();
+
+        liker_list = new ArrayList<>();
+        crusher_list = new ArrayList<>();
+
+        view_online = itemView.findViewById(R.id.view_online);
+
+        LinearLayout parent = itemView.findViewById(R.id.parent);
+        profile = itemView.findViewById(R.id.profile_photo);
+        menu_item = itemView.findViewById(R.id.menu_item);
+        delete_suggestion = itemView.findViewById(R.id.delete_suggestion);
+        relLayout_go_user_profile = itemView.findViewById(R.id.relLayout_go_user_profile);
+        relLayout_follow = itemView.findViewById(R.id.relLayout_follow);
+
+        image = itemView.findViewById(R.id.image);
+        like_heart = itemView.findViewById(R.id.like_heart);
+        mInstaLikeView = itemView.findViewById(R.id.insta_like_view);
+        comment_text = itemView.findViewById(R.id.comment_text);
+        views = itemView.findViewById(R.id.views);
+        tps_publication = itemView.findViewById(R.id.tps_publication);
+        username = itemView.findViewById(R.id.username);
+
+        number_of_likes = itemView.findViewById(R.id.number_of_likes);
+        number_of_comments = itemView.findViewById(R.id.number_of_comments);
+        number_of_share = itemView.findViewById(R.id.number_of_share);
+        linLayout_count_like = itemView.findViewById(R.id.linLayout_count_like);
+        linLayout_comment = itemView.findViewById(R.id.linLayout_comment);
+        linLayout_like = itemView.findViewById(R.id.linLayout_like);
+        linLayout_share = itemView.findViewById(R.id.linLayout_share);
+        // crush
+        conner_big_star_icon = itemView.findViewById(R.id.conner_big_star_icon);
+        insta_star_view = itemView.findViewById(R.id.insta_star_view);
+        like_star = itemView.findViewById(R.id.like_star);
+        unlike_star_image = itemView.findViewById(R.id.unlike_star_image);
+
+        nber_of_crush = itemView.findViewById(R.id.nber_of_crush);
+        crush_msg = itemView.findViewById(R.id.crush_msg);
+
+        // for double tap to like
+        mDetectorLike = new GestureDetector(context, new GestureListenerLike());
+        comment_text.setOnTouchListener((view, motionEvent) -> mDetectorLike.onTouchEvent(motionEvent));
+
+        if (mModel != null) {
+            init(this.mModel);
+            parent.setPadding(0,0,0,100);
+        }
+    }
+
+    public void init(BattleModel model) {
+        mPhoto = model;
+
+        nber_of_crush.setText("0");
+        number_of_likes.setText("0");
+        number_of_comments.setText("0");
+        number_of_share.setText("0");
+
+        if(liker_list != null){
+            liker_list.clear();
+        }
+
+        if(crusher_list != null){
+            crusher_list.clear();
+        }
+
+        // verify if user is online
+        database.getReference()
+                .child(context.getString(R.string.dbname_presence))
+                .child(model.getUser_id())
+                .addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        if(snapshot.exists()){
+                            String status = snapshot.child(context.getString(R.string.field_onLine)).getValue(String.class);
+
+                            if(status != null && !status.isEmpty()){
+                                if(status.equals(context.getString(R.string.field_offLine))){
+                                    view_online.setVisibility(View.GONE);
+                                }else{
+                                    if (!model.getUser_id().equals(Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid()))
+                                        view_online.setVisibility(View.VISIBLE);
+                                }
+                            }
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+
+        // number of views
+        /*PublicationBattleManager publicationManager = new PublicationBattleManager(context);
+        publicationManager.incrementViewCount(model.getUser_id(), model.getPhoto_id());*/
+
+        setLikes();
+        setComments();
+        setShare();
+        setCrush();
+        getCurrentUser();
+        getLikesString();
+        updateLike();
+        getCrushString();
+        updateCrush();
+
+        long tv_date = mPhoto.getDate_created();
+        long time = (System.currentTimeMillis() - tv_date);
+        if (time >= 2*3600*24000254025L)
+            tps_publication.setText(TimeUtils.getTime(context, tv_date));
+        else
+            tps_publication.setText(Html.fromHtml(context.getString(R.string.there_is)+" "+ TimeUtils.getTime(context, tv_date)));
+
+        // get the comment
+        comment_text.setText(model.getComment_subject());
+        getTheComment();
+
+        //get the profile image and username
+        Query query = myRef
+                .child(context.getString(R.string.dbname_users))
+                .orderByChild(context.getString(R.string.field_user_id))
+                .equalTo(mPhoto.getUser_id());
+
+        query.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for(DataSnapshot ds : dataSnapshot.getChildren()){
+                    Map<Object, Object> objectMap = (HashMap<Object, Object>) ds.getValue();
+                    assert objectMap != null;
+                    User user = Util_User.getUser(context, objectMap, ds);
+
+                    Glide.with(context.getApplicationContext())
+                            .load(user.getProfileUrl())
+                            .placeholder(R.drawable.ic_baseline_person_24)
+                            .into(profile);
+
+                    Glide.with(context.getApplicationContext())
+                            .load(user.getFull_profileUrl())
+                            .preload();
+
+                    username.setText(user.getUsername());
+
+                    relLayout_go_user_profile.setOnClickListener(v -> {
+                        Log.d(TAG, "onClick: navigating to profile of: " +
+                                user.getUsername());
+
+                        if (relLayout_view_overlay != null)
+                            relLayout_view_overlay.setVisibility(View.VISIBLE);
+                        context.getWindow().setExitTransition(new Slide(Gravity.END));
+                        context.getWindow().setEnterTransition(new Slide(Gravity.START));
+                        Intent intent;
+                        if (user.getUser_id().equals(Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid())) {
+                            intent = new Intent(context, Profile.class);
+
+                        } else {
+                            intent = new Intent(context, ViewProfile.class);
+                            Gson gson = new Gson();
+                            String myJson = gson.toJson(user);
+                            intent.putExtra("user", myJson);
+                        }
+                        context.startActivity(intent);
+                    });
+                }
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
+        if (mModel != null) {
+            linLayout_comment.setOnClickListener(view -> {
+                // to show keyboard
+                InputMethodManager imm = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.toggleSoftInput(InputMethodManager.SHOW_FORCED,0);
+                mComment.requestFocus();
+            });
+
+        } else {
+            // rendre le lien et l'image visisble après le click
+            BottomSheetAddComment mSheetFragment = new BottomSheetAddComment(context, model, null, null,
+                    null, "comment_text", null, null, null, null,
+                    null, null, relLayout_view_overlay);
+            linLayout_comment.setOnClickListener(view -> {
+                if (mSheetFragment.isAdded())
+                    return;
+                mSheetFragment.show(context.getSupportFragmentManager(), "TAG");
+            });
+        }
+
+        // share
+        linLayout_share.setOnClickListener(view -> { });
+
+        // menu_item
+        BottomSheetMenuOneFile bottomSheet = new BottomSheetMenuOneFile(context);
+        menu_item.setOnClickListener(view -> {
+            if (bottomSheet.isAdded())
+                return;
+
+            Bundle args = new Bundle();
+            args.putParcelable("battle_model", model);
+            args.putString("miioky", "miioky");
+            bottomSheet.setArguments(args);
+            bottomSheet.show(context.getSupportFragmentManager(),
+                    "TAG");
+        });
+
+        linLayout_like.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Prevent Two Click
+                Util.preventTwoClick(v);
+
+                if (like_heart.isSelected()) {
+                    like_heart.setSelected(false);
+                    image.setImageResource(R.drawable.ic_baseline_favorite_border_24);
+                    like_heart.likeAnimation(new AnimatorListenerAdapter() {
+                        @Override
+                        public void onAnimationEnd(Animator animation) {
+                            super.onAnimationEnd(animation);
+                            removeLike();
+                        }
+                    });
+
+                } else {
+                    like_heart.setSelected(true);
+                    image.setImageResource(R.drawable.ic_heart_red);
+                    like_heart.likeAnimation(new AnimatorListenerAdapter() {
+                        @Override
+                        public void onAnimationEnd(Animator animation) {
+                            super.onAnimationEnd(animation);
+                            if (!mLikedByCurrentUser) {
+                                addNewLike();
+                            }
+                        }
+                    });
+                }
+            }
+        });
+
+        like_star.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Prevent Two Click
+                Util.preventTwoClick(v);
+
+                if (like_star.isSelected()) {
+                    like_star.setSelected(false);
+                    conner_big_star_icon.setVisibility(View.GONE);
+                    unlike_star_image.setImageResource(R.drawable.unlike_star);
+                    like_star.likeAnimation(new AnimatorListenerAdapter() {
+                        @Override
+                        public void onAnimationEnd(Animator animation) {
+                            super.onAnimationEnd(animation);
+                            removeCrush();
+                        }
+                    });
+
+                } else {
+                    like_star.setSelected(true);
+                    unlike_star_image.setImageResource(R.drawable.big_star_icon);
+                    insta_star_view.start();
+                    conner_big_star_icon.setVisibility(View.VISIBLE);
+                    like_star.likeAnimation(new AnimatorListenerAdapter() {
+                        @Override
+                        public void onAnimationEnd(Animator animation) {
+                            super.onAnimationEnd(animation);
+                            if (!mCrushedByCurrentUser) {
+                                addNewCrush();
+                            }
+                        }
+                    });
+                }
+            }
+        });
+    }
+
+    // get the comment text
+    private void getTheComment() {
+        String theme = mPhoto.getComment_theme();
+        if (theme.equals(context.getString(R.string.gradient_blue)))
+            comment_text.setBackground(ContextCompat.getDrawable(context, R.drawable.gradient_blue));
+        if (theme.equals(context.getString(R.string.gradient_red)))
+            comment_text.setBackground(ContextCompat.getDrawable(context, R.drawable.gradient_red));
+        if (theme.equals(context.getString(R.string.gradient_brown)))
+            comment_text.setBackground(ContextCompat.getDrawable(context, R.drawable.gradient_brown));
+        if (theme.equals(context.getString(R.string.gradient_yellow_yellow_and_pink)))
+            comment_text.setBackground(ContextCompat.getDrawable(context, R.drawable.gradient_yellow_yellow_and_pink));
+        if (theme.equals(context.getString(R.string.gradient_darkred_black_blue_shinning)))
+            comment_text.setBackground(ContextCompat.getDrawable(context, R.drawable.gradient_darkred_black_blue_shinning));
+        if (theme.equals(context.getString(R.string.gradient_black)))
+            comment_text.setBackground(ContextCompat.getDrawable(context, R.drawable.gradient_black));
+        if (theme.equals(context.getString(R.string.gradient_shinning_blue_darkred_chinning_blue)))
+            comment_text.setBackground(ContextCompat.getDrawable(context, R.drawable.gradient_shinning_blue_darkred_chinning_blue));
+        if (theme.equals(context.getString(R.string.gradient_shinning_blue_darkred_pink)))
+            comment_text.setBackground(ContextCompat.getDrawable(context, R.drawable.gradient_shinning_blue_darkred_pink));
+        if (theme.equals(context.getString(R.string.gradient_yellow_pink_dark_violet)))
+            comment_text.setBackground(ContextCompat.getDrawable(context, R.drawable.gradient_yellow_pink_dark_violet));
+        if (theme.equals(context.getString(R.string.gradient_pink)))
+            comment_text.setBackground(ContextCompat.getDrawable(context, R.drawable.gradient_pink));
+        if (theme.equals(context.getString(R.string.gradient_vertwhatsapp)))
+            comment_text.setBackground(ContextCompat.getDrawable(context, R.drawable.gradient_vertwhatsapp));
+        if (theme.equals(context.getString(R.string.gradient_dark_violet)))
+            comment_text.setBackground(ContextCompat.getDrawable(context, R.drawable.gradient_dark_violet));
+        if (theme.equals(context.getString(R.string.gradient_blue_green)))
+            comment_text.setBackground(ContextCompat.getDrawable(context, R.drawable.gradient_blue_green));
+    }
+
+    private final class GestureListenerLike extends GestureDetector.SimpleOnGestureListener {
+        @Override
+        public boolean onDown(@NonNull MotionEvent e) {
+            return true;
+        }
+
+        @Override
+        public boolean onSingleTapUp(@NonNull MotionEvent e) {
+
+            return super.onSingleTapUp(e);
+        }
+
+        @Override
+        public boolean onSingleTapConfirmed(@NonNull MotionEvent e) {
+
+            return super.onSingleTapConfirmed(e);
+        }
+
+        @Override
+        public boolean onDoubleTap(@NonNull MotionEvent e) {
+            Log.d(TAG, "onDoubleTap: single tap detected.");
+            if (like_heart.isSelected()) {
+                like_heart.setSelected(false);
+                image.setImageResource(R.drawable.ic_baseline_favorite_border_24);
+                like_heart.likeAnimation(new AnimatorListenerAdapter() {
+                    @Override
+                    public void onAnimationEnd(Animator animation) {
+                        super.onAnimationEnd(animation);
+                        removeLike();
+                    }
+                });
+
+            } else {
+                like_heart.setSelected(true);
+                image.setImageResource(R.drawable.ic_heart_red);
+                // screen like animation
+                mInstaLikeView.start();
+                like_heart.likeAnimation(new AnimatorListenerAdapter() {
+                    @Override
+                    public void onAnimationEnd(Animator animation) {
+                        super.onAnimationEnd(animation);
+                        if (!mLikedByCurrentUser) {
+                            addNewLike();
+                        }
+                    }
+                });
+            }
+            return super.onDoubleTap(e);
+        }
+
+        @Override
+        public void onLongPress(@NonNull MotionEvent e) {
+            super.onLongPress(e);
+        }
+    }
+
+    private void removeLike() {
+        Log.d(TAG, "onDoubleTap: single tap detected.");
+        Query query = myRef
+                .child(context.getString(R.string.dbname_battle_media))
+                .child(mPhoto.getPhoto_id())
+                .child(context.getString(R.string.field_likes));
+
+        query.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for (DataSnapshot ds: snapshot.getChildren()) {
+
+                    String keyID = ds.getKey();
+
+                    //case1: Then user already liked the photo
+                    if (mLikedByCurrentUser &&
+                            Objects.requireNonNull(ds.getValue(Like.class)).getUser_id()
+                                    .equals(Objects.requireNonNull(FirebaseAuth.getInstance()
+                                            .getCurrentUser()).getUid())) {
+
+                        // update like count
+                        int count = Integer.parseInt(number_of_likes.getText().toString());
+                        String str = String.valueOf(count-1);
+                        if (str.equals("0")) {
+                            linLayout_count_like.setVisibility(View.INVISIBLE);
+                            number_of_likes.setVisibility(View.GONE);
+                        }
+                        number_of_likes.setText(str);
+
+                        assert keyID != null;
+                        myRef.child(context.getString(R.string.dbname_battle_media))
+                                .child(mPhoto.getPhoto_id())
+                                .child(context.getString(R.string.field_likes))
+                                .child(keyID)
+                                .removeValue();
+
+                        myRef.child(context.getString(R.string.dbname_battle))
+                                .child(mPhoto.getUser_id())
+                                .child(mPhoto.getPhoto_id())
+                                .child(context.getString(R.string.field_likes))
+                                .child(keyID)
+                                .removeValue();
+
+                        getLikesString();
+                        updateLike();
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+    }
+
+    public void addNewLike(){
+        Log.d(TAG, "addNewLike: adding new like");
+        // update like count
+        int count = Integer.parseInt(number_of_likes.getText().toString());
+        String str = String.valueOf(count+1);
+        if (!str.equals("0")) {
+            number_of_likes.setVisibility(View.VISIBLE);
+            linLayout_count_like.setVisibility(View.VISIBLE);
+        }
+        if (linLayout_count_like.getVisibility() != View.VISIBLE)
+            linLayout_count_like.setVisibility(View.VISIBLE);
+
+        number_of_likes.setText(str);
+
+        // add new like
+        String newLikeID = myRef.push().getKey();
+        Like like = new Like();
+        like.setUser_id(Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid());
+
+        assert newLikeID != null;
+        myRef.child(context.getString(R.string.dbname_battle_media))
+                .child(mPhoto.getPhoto_id())
+                .child(context.getString(R.string.field_likes))
+                .child(newLikeID)
+                .setValue(like);
+
+        myRef.child(context.getString(R.string.dbname_battle))
+                .child(mPhoto.getUser_id())
+                .child(mPhoto.getPhoto_id())
+                .child(context.getString(R.string.field_likes))
+                .child(newLikeID)
+                .setValue(like);
+
+        // affichage à l'écran
+        getLikesString();
+        updateLike();
+    }
+
+    private void getLikesString(){
+        Log.d(TAG, "getLikesString: getting likes string");
+        Query query = myRef
+                .child(context.getString(R.string.dbname_battle_media))
+                .child(mPhoto.getPhoto_id())
+                .child(context.getString(R.string.field_likes));
+
+        // on parcours tous les likes
+        query.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                mUsers = new StringBuilder();
+
+                for (DataSnapshot ds: snapshot.getChildren()) {
+
+                    // ici on récupère l'identifiant du likeur et le like
+                    DatabaseReference reference1 = FirebaseDatabase.getInstance().getReference();
+                    Query query1 = reference1
+                            .child(context.getString(R.string.dbname_users))
+                            .orderByChild(context.getString(R.string.field_user_id))
+                            .equalTo(Objects.requireNonNull(ds.getValue(Like.class)).getUser_id());
+
+                    query1.addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                            for (DataSnapshot ds: snapshot.getChildren()) {
+
+                                Map<Object, Object> objectMap = (HashMap<Object, Object>) ds.getValue();
+                                assert objectMap != null;
+                                User user = Util_User.getUser(context, objectMap, ds);
+
+                                Log.d(TAG, "onDataChange: found like: " + user.getUsername());
+
+                                mUsers.append(user.getUsername());
+                                mUsers.append(",");
+                            }
+
+                            // vérifie si c'est l'utilistateur courant a liké
+                            mLikedByCurrentUser = mUsers.toString().contains(mCurrentUser.getUsername() + ",");
+                            setupLikeString();
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
+                }
+                if(!snapshot.exists()){
+                    mLikedByCurrentUser = false;
+                    setupLikeString();
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+    }
+
+    private void updateLike(){
+        Log.d(TAG, "getLikesString: getting likes string");
+        Query query = myRef
+                .child(context.getString(R.string.dbname_battle_media))
+                .child(mPhoto.getPhoto_id())
+                .child(context.getString(R.string.field_likes));
+
+        query.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                updateLikeUsers = new StringBuilder();
+
+                for (DataSnapshot ds: snapshot.getChildren()) {
+                    DatabaseReference reference1 = FirebaseDatabase.getInstance().getReference();
+                    Query query1 = reference1
+                            .child(context.getString(R.string.dbname_users))
+                            // comparaison des ID
+                            .orderByChild(context.getString(R.string.field_user_id))
+                            .equalTo(Objects.requireNonNull(ds.getValue(Like.class)).getUser_id());
+
+                    query1.addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            for (DataSnapshot ds: snapshot.getChildren()) {
+                                Map<Object, Object> objectMap = (HashMap<Object, Object>) ds.getValue();
+                                assert objectMap != null;
+                                User user = Util_User.getUser(context, objectMap, ds);
+
+                                Log.d(TAG, "onDataChange: found like: " +user.getUsername());
+
+                                updateLikeUsers.append(user.getUsername());
+                                updateLikeUsers.append(",");
+                            }
+
+                            // vérifie si c'est l'utilistateur courant a liké
+                            mLikedByCurrentUser = updateLikeUsers.toString().contains(mCurrentUser.getUsername() + ",");
+                            setupLikeString();
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
+                }
+                if(!snapshot.exists()){
+                    mLikedByCurrentUser = false;
+                    setupLikeString();
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+    }
+
+    @SuppressLint({"ClickableViewAccessibility", "SetTextI18n"})
+    private void setupLikeString() {
+        if (mLikedByCurrentUser) {
+            if (!like_heart.isSelected()) {
+                like_heart.setSelected(true);
+                image.setImageResource(R.drawable.ic_heart_red);
+            }
+
+        } else {
+            if (like_heart.isSelected()) {
+                like_heart.setSelected(false);
+                image.setImageResource(R.drawable.ic_baseline_favorite_border_24);
+            }
+        }
+    }
+
+    private void removeCrush() {
+        Query query = myRef
+                .child(context.getString(R.string.dbname_battle_media))
+                .child(mPhoto.getPhoto_id())
+                .child(context.getString(R.string.field_crush));
+
+        query.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for (DataSnapshot ds: snapshot.getChildren()) {
+                    String keyID = ds.getKey();
+
+                    //case1: Then user already liked the photo
+                    if (mCrushedByCurrentUser &&
+                            Objects.requireNonNull(ds.getValue(Crush.class)).getUser_id()
+                                    .equals(Objects.requireNonNull(FirebaseAuth.getInstance()
+                                            .getCurrentUser()).getUid())) {
+
+                        // update crush count
+                        int count = Integer.parseInt(nber_of_crush.getText().toString());
+                        String str = String.valueOf(count-1);
+                        if (str.equals("0"))
+                            nber_of_crush.setVisibility(View.GONE);
+                        nber_of_crush.setText(str);
+
+                        assert keyID != null;
+                        myRef.child(context.getString(R.string.dbname_battle_media))
+                                .child(mPhoto.getPhoto_id())
+                                .child(context.getString(R.string.field_crush))
+                                .child(keyID)
+                                .removeValue();
+
+                        myRef.child(context.getString(R.string.dbname_battle))
+                                .child(mPhoto.getUser_id())
+                                .child(mPhoto.getPhoto_id())
+                                .child(context.getString(R.string.field_crush))
+                                .child(keyID)
+                                .removeValue();
+
+                        getCrushString();
+                        updateCrush();
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+    }
+
+    public void addNewCrush(){
+        Log.d(TAG, "addNewCrush: adding new crush");
+        // update crush count
+        nber_of_crush.setVisibility(View.VISIBLE);
+        String str = String.valueOf(crush_count+1);
+        nber_of_crush.setText(str);
+
+        String newCrushID = myRef.push().getKey();
+        Crush crush = new Crush();
+        crush.setUser_id(Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid());
+
+        assert newCrushID != null;
+        myRef.child(context.getString(R.string.dbname_battle_media))
+                .child(mPhoto.getPhoto_id())
+                .child(context.getString(R.string.field_crush))
+                .child(newCrushID)
+                .setValue(crush);
+
+        myRef.child(context.getString(R.string.dbname_battle))
+                .child(mPhoto.getUser_id())
+                .child(mPhoto.getPhoto_id())
+                .child(context.getString(R.string.field_crush))
+                .child(newCrushID)
+                .setValue(crush);
+
+        // affichage à l'écran
+        getCrushString();
+        updateCrush();
+    }
+
+    private void getCrushString(){
+        Log.d(TAG, "getCrushString: getting likes string");
+        Query query = myRef
+                .child(context.getString(R.string.dbname_battle_media))
+                .child(mPhoto.getPhoto_id())
+                .child(context.getString(R.string.field_crush));
+
+        // on parcours tous les likes
+        query.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                mUsersCrush = new StringBuilder();
+
+                for (DataSnapshot ds: snapshot.getChildren()) {
+
+                    // ici on récupère l'identifiant du likeur et le like
+                    DatabaseReference reference1 = FirebaseDatabase.getInstance().getReference();
+                    Query query1 = reference1
+                            .child(context.getString(R.string.dbname_users))
+                            // comparaison des ID
+                            .orderByChild(context.getString(R.string.field_user_id))
+                            .equalTo(Objects.requireNonNull(ds.getValue(Crush.class)).getUser_id());
+
+                    query1.addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                            for (DataSnapshot ds: snapshot.getChildren()) {
+
+                                Map<Object, Object> objectMap = (HashMap<Object, Object>) ds.getValue();
+                                assert objectMap != null;
+                                User user = Util_User.getUser(context, objectMap, ds);
+
+                                Log.d(TAG, "onDataChange: found like: " +user.getUsername());
+
+                                mUsersCrush.append(user.getUsername());
+                                mUsersCrush.append(",");
+                            }
+
+                            // vérifie si c'est l'utilistateur courant a liké
+                            mCrushedByCurrentUser = mUsersCrush.toString().contains(mCurrentUser.getUsername() + ",");
+
+                            setupCrushString();
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
+                }
+                if(!snapshot.exists()){
+                    mCrushedByCurrentUser = false;
+                    setupCrushString();
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+    }
+
+    private void updateCrush(){
+        Log.d(TAG, "getLikesString: getting likes string");
+        Query query = myRef
+                .child(context.getString(R.string.dbname_battle_media))
+                .child(mPhoto.getPhoto_id())
+                .child(context.getString(R.string.field_crush));
+
+        query.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                updateCrushUsers = new StringBuilder();
+
+                for (DataSnapshot ds: snapshot.getChildren()) {
+                    DatabaseReference reference1 = FirebaseDatabase.getInstance().getReference();
+                    Query query1 = reference1
+                            .child(context.getString(R.string.dbname_users))
+                            .orderByChild(context.getString(R.string.field_user_id))
+                            .equalTo(Objects.requireNonNull(ds.getValue(Crush.class)).getUser_id());
+
+                    query1.addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                            for (DataSnapshot ds: snapshot.getChildren()) {
+
+                                Map<Object, Object> objectMap = (HashMap<Object, Object>) ds.getValue();
+                                assert objectMap != null;
+                                User user = Util_User.getUser(context, objectMap, ds);
+
+                                Log.d(TAG, "onDataChange: found crush: " +user.getUsername());
+
+                                updateCrushUsers.append(user.getUsername());
+                                updateCrushUsers.append(",");
+                            }
+
+                            // vérifie si c'est l'utilistateur courant a liké
+                            mCrushedByCurrentUser = updateCrushUsers.toString().contains(mCurrentUser.getUsername() + ",");
+
+                            setupCrushString();
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
+                }
+                if(!snapshot.exists()){
+                    mCrushedByCurrentUser = false;
+                    setupCrushString();
+                }
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+    }
+
+    @SuppressLint({"ClickableViewAccessibility", "SetTextI18n"})
+    private void setupCrushString() {
+        if (mCrushedByCurrentUser) {
+            if (!like_star.isSelected()) {
+                like_star.setSelected(true);
+                conner_big_star_icon.setVisibility(View.VISIBLE);
+                unlike_star_image.setImageResource(R.drawable.big_star_icon);
+            }
+
+        } else {
+            if (like_star.isSelected()) {
+                like_star.setSelected(false);
+                conner_big_star_icon.setVisibility(View.GONE);
+                unlike_star_image.setImageResource(R.drawable.unlike_star);
+            }
+        }
+    }
+
+    private void getCurrentUser(){
+        Query query = myRef
+                .child(context.getString(R.string.dbname_users))
+                .orderByChild(context.getString(R.string.field_user_id))
+                .equalTo(user_id);
+
+        query.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for (DataSnapshot ds: snapshot.getChildren()) {
+
+                    Map<Object, Object> objectMap = (HashMap<Object, Object>) ds.getValue();
+                    assert objectMap != null;
+                    mCurrentUser = Util_User.getUser(context, objectMap, ds);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Log.d(TAG, "onCancelled: query cancelled.");
+            }
+        });
+    }
+
+    public void setCrush() {
+        crush_count = 0;
+        nber_of_crush.setVisibility(View.GONE);
+
+        Query query = myRef
+                .child(context.getString(R.string.dbname_battle_media))
+                .child(mPhoto.getPhoto_id())
+                .child(context.getString(R.string.field_crush));
+
+        query.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for (DataSnapshot ds: snapshot.getChildren()) {
+                    // add user id to the list
+                    crusher_list.add(Objects.requireNonNull(ds.child(context.getString(R.string.field_user_id)).getValue()).toString());
+                    crush_count++;
+                }
+
+                if (crush_count >= 1) {
+                    nber_of_crush.setVisibility(View.VISIBLE);
+                    nber_of_crush.setText(String.valueOf(crush_count));
+
+                    if (crush_count >= 2)
+                        crush_msg.setText(context.getString(R.string.several_crush));
+
+                    nber_of_crush.setOnClickListener(view -> {
+                        if (relLayout_view_overlay != null)
+                            relLayout_view_overlay.setVisibility(View.VISIBLE);
+                        context.getWindow().setExitTransition(new Slide(Gravity.END));
+                        context.getWindow().setEnterTransition(new Slide(Gravity.START));
+                        Intent intent = new Intent(context, Crushers.class);
+                        intent.putStringArrayListExtra("crusher_list", crusher_list);
+                        context.startActivity(intent);
+                    });
+
+                    crush_msg.setOnClickListener(view -> {
+                        if (relLayout_view_overlay != null)
+                            relLayout_view_overlay.setVisibility(View.VISIBLE);
+                        context.getWindow().setExitTransition(new Slide(Gravity.END));
+                        context.getWindow().setEnterTransition(new Slide(Gravity.START));
+                        Intent intent = new Intent(context, Crushers.class);
+                        intent.putStringArrayListExtra("crusher_list", crusher_list);
+                        context.startActivity(intent);
+                    });
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+    }
+
+    public void setLikes() {
+        likes_count = 0;
+        linLayout_count_like.setVisibility(View.INVISIBLE);
+        number_of_likes.setVisibility(View.GONE);
+
+        Query query = myRef
+                .child(context.getString(R.string.dbname_battle_media))
+                .child(mPhoto.getPhoto_id())
+                .child(context.getString(R.string.field_likes));
+
+        query.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for (DataSnapshot ds: snapshot.getChildren()) {
+                    // add user id to the list
+                    liker_list.add(Objects.requireNonNull(ds.child(context.getString(R.string.field_user_id)).getValue()).toString());
+                    likes_count++;
+                }
+
+                if (likes_count >= 1) {
+                    linLayout_count_like.setVisibility(View.VISIBLE);
+                    number_of_likes.setVisibility(View.VISIBLE);
+
+                    double count;
+                    if (likes_count >= 1000) {
+                        count = (float)likes_count/1000;
+
+                        String tv_count = new DecimalFormat("##.##").format(count)+"k";
+
+                        number_of_likes.setText(tv_count);
+
+                    } else {
+                        number_of_likes.setText(String.valueOf(likes_count));
+                    }
+
+                    linLayout_count_like.setOnClickListener(view -> {
+                        if (relLayout_view_overlay != null)
+                            relLayout_view_overlay.setVisibility(View.VISIBLE);
+                        context.getWindow().setExitTransition(new Slide(Gravity.END));
+                        context.getWindow().setEnterTransition(new Slide(Gravity.START));
+                        Intent intent = new Intent(context, Likers.class);
+                        intent.putStringArrayListExtra("liker_list", liker_list);
+                        context.startActivity(intent);
+                    });
+
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+    }
+
+    public void setComments() {
+        comments_count = 0;
+        number_of_comments.setVisibility(View.GONE);
+
+        Query query = myRef
+                .child(context.getString(R.string.dbname_battle_media))
+                .child(mPhoto.getPhoto_id())
+                .child(context.getString(R.string.field_comments));
+
+        query.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for (DataSnapshot ds: snapshot.getChildren()) {
+                    String keyID = ds.getKey();
+                    comments_count++;
+                    assert keyID != null;
+                    Query query1 = myRef
+                            .child(context.getString(R.string.dbname_battle_media))
+                            .child(mPhoto.getPhoto_id())
+                            .child(context.getString(R.string.field_comments))
+                            .child(keyID)
+                            .child(context.getString(R.string.field_comments));
+
+                    query1.addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            for (DataSnapshot data: snapshot.getChildren()) {
+                                Log.d(TAG, "onDataChange: data: "+data);
+                                comments_count++;
+                            }
+
+                            if (comments_count >= 1) {
+                                number_of_comments.setVisibility(View.VISIBLE);
+
+                                double count;
+                                if (comments_count >= 1000) {
+                                    count = (float)comments_count/1000;
+
+                                    String tv_count = new DecimalFormat("##.##").format(count)+"k";
+                                    number_of_comments.setText(tv_count);
+
+                                } else {
+                                    number_of_comments.setText(String.valueOf(comments_count));
+                                }
+                            }
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+    }
+
+    private void setShare() {
+        shares_count = 0;
+        number_of_share.setVisibility(View.GONE);
+
+        Query query = myRef
+                .child(context.getString(R.string.dbname_share_video))
+                .child(mPhoto.getPhoto_id());
+
+        query.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for (DataSnapshot ds: snapshot.getChildren()) {
+                    Log.d(TAG, "onDataChange: "+ds.getKey());
+                    shares_count++;
+                }
+
+                if (shares_count >= 1) {
+                    number_of_share.setVisibility(View.VISIBLE);
+
+                    double count;
+                    if (shares_count >= 1000) {
+                        count = (float)shares_count/1000;
+
+                        String tv_count = new DecimalFormat("##.##").format(count)+"k";
+                        number_of_share.setText(tv_count);
+
+                    } else {
+                        number_of_share.setText(String.valueOf(shares_count));
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+    }
+}
+
