@@ -27,7 +27,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9216c541-bd79-49d8-9883-097c3ed4564d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bekambimouen/miiokychallenge/challenges_view_all/adapter/ViewInviteVideoAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bekambimouen/miiokychallenge/challenges_view_all/adapter/ViewInviteVideoAdapter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

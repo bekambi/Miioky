@@ -162,7 +162,7 @@ public class ViewInviteVideoAdapter extends PaginatedAdapter<ModelInvite, Recycl
             });
         }
 
-        if (progressBar != null && progressBar.getVisibility() == View.VISIBLE)
+        if (progressBar.getVisibility() == View.VISIBLE)
             progressBar.setVisibility(View.GONE);
     }
 
